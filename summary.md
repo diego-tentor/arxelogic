@@ -1,12 +1,12 @@
 # Summary with line numbers
 - **readme_en.md**
-[GitHub: readme_en.md](https://github.com/diego-tentor/arxelogic/tree/master/10_final\readme_en.md)
+[GitHub: readme_en.md](https://github.com/diego-tentor/arxelogic/tree/master/10_final/readme_en.md)
   - ArXe Theory [1]
   - Status [5]
   - How to Explore [10]
 
 - **arxe_factic_theory_en.md**
-[GitHub: arxe_factic_theory_en.md](https://github.com/diego-tentor/arxelogic/tree/master/1_digest\arxe_factic_theory_en.md)
+[GitHub: arxe_factic_theory_en.md](https://github.com/diego-tentor/arxelogic/tree/master/1_digest/arxe_factic_theory_en.md)
   - ArXe Theory: The Logical-Physical Co-emergence of the Universe [1]
   - A Cosmology from the Fundamental Contradictory Act [2]
   - 1. Purpose and Scope [4]
@@ -91,7 +91,7 @@
   - Experimental Implications and Predictions [798]
 
 - **arxe_factic_theory_en_V2.md**
-[GitHub: arxe_factic_theory_en_V2.md](https://github.com/diego-tentor/arxelogic/tree/master/1_digest\arxe_factic_theory_en_V2.md)
+[GitHub: arxe_factic_theory_en_V2.md](https://github.com/diego-tentor/arxelogic/tree/master/1_digest/arxe_factic_theory_en_V2.md)
   - 1. Purpose and Scope [1]
   - 4. Axiom [6]
   - 5. Recursive Fractal Ontology and Dimensional Mapping [10]
@@ -153,7 +153,7 @@
   - Energy and Work [625]
 
 - **arxe_factic_theory_es_V2.md**
-[GitHub: arxe_factic_theory_es_V2.md](https://github.com/diego-tentor/arxelogic/tree/master/1_digest\arxe_factic_theory_es_V2.md)
+[GitHub: arxe_factic_theory_es_V2.md](https://github.com/diego-tentor/arxelogic/tree/master/1_digest/arxe_factic_theory_es_V2.md)
   - 1. Propósito y Alcance [1]
   - 4. Axioma [6]
   - 5. Ontología Fractal Recursiva y Mapeo Dimensional [10]
@@ -229,7 +229,7 @@
   - Óptica y Ondas [732]
 
 - **dimensional-units-table_en.md**
-[GitHub: dimensional-units-table_en.md](https://github.com/diego-tentor/arxelogic/tree/master/1_digest\dimensional-units-table_en.md)
+[GitHub: dimensional-units-table_en.md](https://github.com/diego-tentor/arxelogic/tree/master/1_digest/dimensional-units-table_en.md)
   - Physical Units System by Exentation Exponent [1]
   - Fundamental Assignment [3]
   - 1. Fundamental Exponents [12]
@@ -262,7 +262,7 @@
   - Optics and Waves [248]
 
 - **arxe_anti_platonism_es.md**
-[GitHub: arxe_anti_platonism_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2b_insights\arxe_anti_platonism_es.md)
+[GitHub: arxe_anti_platonism_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2b_insights/arxe_anti_platonism_es.md)
   - 11. Arqueología de la Elusión: Red Flags [17]
   - 11.1 Método de Detección [19]
   - 11.2 ZF: El Sistema Elusivo por Excelencia [44]
@@ -374,7 +374,7 @@
   - 10.3 Renormalización en QFT [2776]
 
 - **arxe_insights_exploration_es.md**
-[GitHub: arxe_insights_exploration_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2b_insights\arxe_insights_exploration_es.md)
+[GitHub: arxe_insights_exploration_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2b_insights/arxe_insights_exploration_es.md)
   - ArXe: Exploración de Insights Fundamentales [1]
   - Sin Restricciones de Formalismo [2]
   - 1. El Lenguaje de T^k: Condiciones de Contorno como Sintaxis [8]
@@ -417,7 +417,7 @@
   - 9.3 ¿Información? [739]
 
 - **arxe_insight_absolute_act_es.md**
-[GitHub: arxe_insight_absolute_act_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2b_insights\arxe_insight_absolute_act_es.md)
+[GitHub: arxe_insight_absolute_act_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2b_insights/arxe_insight_absolute_act_es.md)
   - ArXe: El Acto Absoluto [1]
   - Ontología del Presente Deslocalizado [2]
   - Resumen Ejecutivo [8]
@@ -466,7 +466,7 @@
   - 12. Conclusión [662]
 
 - **arxe_logic_n2_contradiction_es.md**
-[GitHub: arxe_logic_n2_contradiction_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2b_insights\arxe_logic_n2_contradiction_es.md)
+[GitHub: arxe_logic_n2_contradiction_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2b_insights/arxe_logic_n2_contradiction_es.md)
   - ArXe: n=2 y la Contradicción Fundamental [1]
   - Más Allá del Tercero Excluido [2]
   - 1. El Problema de n=2 [8]
@@ -562,7 +562,7 @@
   - 23. Conclusión: La Revolución Lógica de ArXe [1722]
 
 - **arxe_mutuality_principle_es.md**
-[GitHub: arxe_mutuality_principle_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2b_insights\arxe_mutuality_principle_es.md)
+[GitHub: arxe_mutuality_principle_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2b_insights/arxe_mutuality_principle_es.md)
   - ArXe: El Principio de Mutualidad [1]
   - Fenómenos Simétricos Interpretados Asimétricamente [2]
   - 1. La Indecidibilidad Fundamental [8]
@@ -650,7 +650,7 @@
   - 20. Conclusión: Hacia una Física Mutualista [1690]
 
 - **arxe_logic_n_ary_1_en.md**
-[GitHub: arxe_logic_n_ary_1_en.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core\arxe_logic_n_ary_1_en.md)
+[GitHub: arxe_logic_n_ary_1_en.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core/arxe_logic_n_ary_1_en.md)
   - n-ary Logics: Complete Formalization [1]
   - ArXe Fundamental Logical System [2]
   - 0. Notation and Conventions [8]
@@ -743,7 +743,7 @@
   - 18.1 Formal Problems [1572]
 
 - **arxe_logic_n_ary_1__es.md**
-[GitHub: arxe_logic_n_ary_1__es.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core\arxe_logic_n_ary_1__es.md)
+[GitHub: arxe_logic_n_ary_1__es.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core/arxe_logic_n_ary_1__es.md)
   - 8.2 Propiedades Lógicas por Nivel [1]
   - 8.3 Operadores por Nivel [18]
   - 9. Axiomas Generales para Todas las Lógicas n-arias [30]
@@ -835,7 +835,7 @@
   - 8.2 [1575]
 
 - **arxe_n-aridad_logica_formal_es.md**
-[GitHub: arxe_n-aridad_logica_formal_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core\arxe_n-aridad_logica_formal_es.md)
+[GitHub: arxe_n-aridad_logica_formal_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core/arxe_n-aridad_logica_formal_es.md)
   - Lógicas n-arias: Formalización Completa [1]
   - Sistema Lógico Fundamental de ArXe [2]
   - 0. Notación y Convenciones [8]
@@ -888,7 +888,7 @@
   - 8.1 Tabla Resumen [893]
 
 - **Logicas n-arias_es.md**
-[GitHub: Logicas n-arias_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core\Logicas n-arias_es.md)
+[GitHub: Logicas n-arias_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core/Logicas n-arias_es.md)
   - Lo que sigue es un descripción abstracta, no demostrada, sobre aridad lógica [2]
   - Principales características Lógica unaria o 1aria(T^0) [14]
   - Principales características Lógica binaria o 2aria(T^1) [26]
@@ -909,10 +909,10 @@
   - Ambiguedad espacial: radial-angular (n=3) [304]
 
 - **ArXe Derivation of Lepton Mass Ratios Evaluation_es.md**
-[GitHub: ArXe Derivation of Lepton Mass Ratios Evaluation_es.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\ArXe Derivation of Lepton Mass Ratios Evaluation_es.md)
+[GitHub: ArXe Derivation of Lepton Mass Ratios Evaluation_es.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/ArXe Derivation of Lepton Mass Ratios Evaluation_es.md)
 
 - **arxe-commutator-markdown_en.md**
-[GitHub: arxe-commutator-markdown_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\arxe-commutator-markdown_en.md)
+[GitHub: arxe-commutator-markdown_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe-commutator-markdown_en.md)
   - Rigorous Derivation of [x, p] = iℏ from ArXe Theory [1]
   - Executive Summary [7]
   - Part 1: Level Identification [25]
@@ -955,7 +955,7 @@
   - References [600]
 
 - **arxe-klein-gordon_en.md**
-[GitHub: arxe-klein-gordon_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\arxe-klein-gordon_en.md)
+[GitHub: arxe-klein-gordon_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe-klein-gordon_en.md)
   - 1. Executive Summary [1]
   - What We Derive: [5]
   - Foundation [24]
@@ -1071,7 +1071,7 @@
   - What We Derive: [1678]
 
 - **arxe-lepton-electron_muon_tau_mass_en.md**
-[GitHub: arxe-lepton-electron_muon_tau_mass_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\arxe-lepton-electron_muon_tau_mass_en.md)
+[GitHub: arxe-lepton-electron_muon_tau_mass_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe-lepton-electron_muon_tau_mass_en.md)
   - ArXe Derivation of Lepton Mass Ratios from Buffon's Problem [1]
   - Executive Summary [7]
   - Part I: Empirical Recursive Formula [19]
@@ -1126,7 +1126,7 @@
   - Muon to Tau [687]
 
 - **arxe-maxwell-derivation_en.md**
-[GitHub: arxe-maxwell-derivation_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\arxe-maxwell-derivation_en.md)
+[GitHub: arxe-maxwell-derivation_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe-maxwell-derivation_en.md)
   - ArXe Theory: Derivation of Maxwell's Equations [1]
   - From U(1) Gauge Symmetry and Vectorial Quantum Field [2]
   - Table of Contents [8]
@@ -1181,7 +1181,7 @@
   - 12.1 Detailed n=11 Structure [935]
 
 - **arxe-quantum-derivation_2_en.md**
-[GitHub: arxe-quantum-derivation_2_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\arxe-quantum-derivation_2_en.md)
+[GitHub: arxe-quantum-derivation_2_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe-quantum-derivation_2_en.md)
   - ArXe Theory: Complete Derivation of Quantum Mechanics [1]
   - From n-ary Logic to Schrödinger Equation and Born Rule [2]
   - Table of Contents [8]
@@ -1276,7 +1276,7 @@
   - 16. Contact and Contributions [1436]
 
 - **arxe-quantum-derivation_en.md**
-[GitHub: arxe-quantum-derivation_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\arxe-quantum-derivation_en.md)
+[GitHub: arxe-quantum-derivation_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe-quantum-derivation_en.md)
   - ArXe Theory: Complete Derivation of Quantum Mechanics [1]
   - From n-ary Logic to Schrödinger Equation and Born Rule [2]
   - Table of Contents [8]
@@ -1371,7 +1371,7 @@
   - 16. Contact and Contributions [1436]
 
 - **arxe-spin-derivation_en.md**
-[GitHub: arxe-spin-derivation_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\arxe-spin-derivation_en.md)
+[GitHub: arxe-spin-derivation_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe-spin-derivation_en.md)
   - ArXe Theory: Derivation of Spin from Spiral Exentation [1]
   - Non-Closing Circles and the Geometry of Intrinsic Angular Momentum [2]
   - Table of Contents [8]
@@ -1461,7 +1461,7 @@
   - Document Statistics [1765]
 
 - **arxe_derive_4pi_es.md**
-[GitHub: arxe_derive_4pi_es.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\arxe_derive_4pi_es.md)
+[GitHub: arxe_derive_4pi_es.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe_derive_4pi_es.md)
   - ArXe: Derivación Pura de 4π [1]
   - Desde Estructura n-aria y Transiciones Temporales [2]
   - 1. El Problema de Buffon: Lección Clave [13]
@@ -1511,7 +1511,7 @@
   - 11.3 Veredicto Final: α^-1 [781]
 
 - **arxe_dirac_derivation_en.md**
-[GitHub: arxe_dirac_derivation_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\arxe_dirac_derivation_en.md)
+[GitHub: arxe_dirac_derivation_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe_dirac_derivation_en.md)
   - ArXe Theory: Derivation of Dirac Equation [1]
   - From T³ Structure and Spinorial Necessity [2]
   - Table of Contents [8]
@@ -1590,7 +1590,7 @@
   - Philosophical Difference: [1918]
 
 - **arxe_maxwell_part2.md**
-[GitHub: arxe_maxwell_part2.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\arxe_maxwell_part2.md)
+[GitHub: arxe_maxwell_part2.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe_maxwell_part2.md)
   - ArXe Theory: Derivation of Maxwell's Equations [1]
   - Part 2: Sections 9-15 [2]
   - 9. Electromagnetic Waves [8]
@@ -1678,7 +1678,7 @@
   - Philosophical Stance: [1549]
 
 - **Common Mathematical Framework for ArXe Constant Derivations_appendix_en.md**
-[GitHub: Common Mathematical Framework for ArXe Constant Derivations_appendix_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\Common Mathematical Framework for ArXe Constant Derivations_appendix_en.md)
+[GitHub: Common Mathematical Framework for ArXe Constant Derivations_appendix_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/Common Mathematical Framework for ArXe Constant Derivations_appendix_en.md)
   - Appendix B: Probabilistic Foundations and n-ary Logic [1]
   - B.1 Purpose and Scope [3]
   - B.2 Temporal Particles (Tf) and Phase Structure [17]
@@ -1747,7 +1747,7 @@
   - B.17.3 Philosophical Background [855]
 
 - **Common Mathematical Framework for ArXe Constant Derivations_en.md**
-[GitHub: Common Mathematical Framework for ArXe Constant Derivations_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\Common Mathematical Framework for ArXe Constant Derivations_en.md)
+[GitHub: Common Mathematical Framework for ArXe Constant Derivations_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/Common Mathematical Framework for ArXe Constant Derivations_en.md)
   - Appendix A: Foundational Structures [1]
   - A.1 The Exentation Hierarchy [7]
   - A.1.1 Definition [9]
@@ -1803,13 +1803,13 @@
   - A.12.3 Error Conventions [736]
 
 - **DERIVATION OF THE FINE STRUCTURE CONSTAN from ArXe_en.md**
-[GitHub: DERIVATION OF THE FINE STRUCTURE CONSTAN from ArXe_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\DERIVATION OF THE FINE STRUCTURE CONSTAN from ArXe_en.md)
+[GitHub: DERIVATION OF THE FINE STRUCTURE CONSTAN from ArXe_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/DERIVATION OF THE FINE STRUCTURE CONSTAN from ArXe_en.md)
 
 - **DERIVATION OF THE WEINBERG ANGLE from ArXe_en.md**
-[GitHub: DERIVATION OF THE WEINBERG ANGLE from ArXe_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants\DERIVATION OF THE WEINBERG ANGLE from ArXe_en.md)
+[GitHub: DERIVATION OF THE WEINBERG ANGLE from ArXe_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/DERIVATION OF THE WEINBERG ANGLE from ArXe_en.md)
 
 - **Arxe-madelung-complete_V2_en.md**
-[GitHub: Arxe-madelung-complete_V2_en.md](https://github.com/diego-tentor/arxelogic/tree/master/4_electronic_levels\Arxe-madelung-complete_V2_en.md)
+[GitHub: Arxe-madelung-complete_V2_en.md](https://github.com/diego-tentor/arxelogic/tree/master/4_electronic_levels/Arxe-madelung-complete_V2_en.md)
   - Ontological Derivation of Madelung's Rule from ArXe Theory [1]
   - A Complete Framework: From Nuclear Structure to Atomic Orbitals [2]
   - Abstract [10]
@@ -1905,7 +1905,7 @@
   - 9.3 Quantitative Limitations and Qualitative Power [1956]
 
 - **arxe_qcd_freedom_en.md**
-[GitHub: arxe_qcd_freedom_en.md](https://github.com/diego-tentor/arxelogic/tree/master/5_QCD\arxe_qcd_freedom_en.md)
+[GitHub: arxe_qcd_freedom_en.md](https://github.com/diego-tentor/arxelogic/tree/master/5_QCD/arxe_qcd_freedom_en.md)
   - ArXe Interpretation of QCD: Asymptotic Freedom as Dimensional Transition [1]
   - Confinement and Running Coupling from Pre-Spatial Structure [2]
   - 1. EXPLANATION [6]
@@ -1939,7 +1939,7 @@
   - 6. SUMMARY [552]
 
 - **arxe_qcd_freedom_en_V3.md**
-[GitHub: arxe_qcd_freedom_en_V3.md](https://github.com/diego-tentor/arxelogic/tree/master/5_QCD\arxe_qcd_freedom_en_V3.md)
+[GitHub: arxe_qcd_freedom_en_V3.md](https://github.com/diego-tentor/arxelogic/tree/master/5_QCD/arxe_qcd_freedom_en_V3.md)
   - ArXe Interpretation of QCD: Asymptotic Freedom as Dimensional Transition [1]
   - Confinement and Running Coupling from Pre-Spatial Structure [2]
   - 1. EXPLANATION [6]
@@ -1991,7 +1991,7 @@
   - E. References and Further Reading [806]
 
 - **arxe_qcd_freedom_es_V3.md**
-[GitHub: arxe_qcd_freedom_es_V3.md](https://github.com/diego-tentor/arxelogic/tree/master/5_QCD\arxe_qcd_freedom_es_V3.md)
+[GitHub: arxe_qcd_freedom_es_V3.md](https://github.com/diego-tentor/arxelogic/tree/master/5_QCD/arxe_qcd_freedom_es_V3.md)
   - Interpretación ArXe de QCD: Libertad Asintótica como Transición Dimensional [1]
   - Confinamiento y Acoplamiento Variable desde Estructura Pre-Espacial [2]
   - 1. EXPLICACIÓN [6]
@@ -2043,7 +2043,7 @@
   - E. Referencias y Lecturas Adicionales [806]
 
 - **additional_divergence_cases_en.md**
-[GitHub: additional_divergence_cases_en.md](https://github.com/diego-tentor/arxelogic/tree/master/6_TDSL\additional_divergence_cases_en.md)
+[GitHub: additional_divergence_cases_en.md](https://github.com/diego-tentor/arxelogic/tree/master/6_TDSL/additional_divergence_cases_en.md)
   - 15 Casos Adicionales de Divergencias Físicas [1]
   - Análisis ArXe para Fortalecer/Falsar el Teorema [2]
   - CASOS NUEVOS 16-30 [6]
@@ -2077,7 +2077,7 @@
   - RECOMENDACIÓN FINAL [588]
 
 - **arxe_divergence_theorem_TDSL_70_en.md**
-[GitHub: arxe_divergence_theorem_TDSL_70_en.md](https://github.com/diego-tentor/arxelogic/tree/master/6_TDSL\arxe_divergence_theorem_TDSL_70_en.md)
+[GitHub: arxe_divergence_theorem_TDSL_70_en.md](https://github.com/diego-tentor/arxelogic/tree/master/6_TDSL/arxe_divergence_theorem_TDSL_70_en.md)
   - ArXe Divergence Theorem — Empirical Expansion (TDSL-70) [1]
   - Overview [3]
   - Table of 70 Cases [10]
@@ -2089,7 +2089,7 @@
   - Conclusion [113]
 
 - **tdsl_complete_theorem_en.md**
-[GitHub: tdsl_complete_theorem_en.md](https://github.com/diego-tentor/arxelogic/tree/master/6_TDSL\tdsl_complete_theorem_en.md)
+[GitHub: tdsl_complete_theorem_en.md](https://github.com/diego-tentor/arxelogic/tree/master/6_TDSL/tdsl_complete_theorem_en.md)
   - Empirical Pattern in Physical Divergences [1]
   - Analysis of 70 Cases Across Multiple Domains [2]
   - Abstract [6]
@@ -2136,7 +2136,7 @@
   - References [405]
 
 - **tdsl_unified_70_cases_en.md**
-[GitHub: tdsl_unified_70_cases_en.md](https://github.com/diego-tentor/arxelogic/tree/master/6_TDSL\tdsl_unified_70_cases_en.md)
+[GitHub: tdsl_unified_70_cases_en.md](https://github.com/diego-tentor/arxelogic/tree/master/6_TDSL/tdsl_unified_70_cases_en.md)
   - TDSL Theorem: Unified Analysis of 70 Cases [1]
   - Complete Verification and Classification [3]
   - Executive Summary [7]
@@ -2174,7 +2174,7 @@
   - APPENDIX: VERIFICATION DISTRIBUTION BY ΔN [362]
 
 - **arxe_complex_mapping_en.md**
-[GitHub: arxe_complex_mapping_en.md](https://github.com/diego-tentor/arxelogic/tree/master/8_complex_analogy\arxe_complex_mapping_en.md)
+[GitHub: arxe_complex_mapping_en.md](https://github.com/diego-tentor/arxelogic/tree/master/8_complex_analogy/arxe_complex_mapping_en.md)
   - ArXe Exentations ↔ Complex Phases: Exact Mapping [1]
   - The Core Isomorphism [3]
   - The Exact Table [18]
@@ -2196,7 +2196,7 @@
   - Summary [172]
 
 - **principio_indeterminacion_es.md**
-[GitHub: principio_indeterminacion_es.md](https://github.com/diego-tentor/arxelogic/tree/master/9_triadic_colpase\principio_indeterminacion_es.md)
+[GitHub: principio_indeterminacion_es.md](https://github.com/diego-tentor/arxelogic/tree/master/9_triadic_colpase/principio_indeterminacion_es.md)
   - El Problema de la Medición Cuántica en la Teoría ArXe: [1]
   - El Colapso como Exentación Triádica desde la Estructura Lógica Ternaria a la Binaria [2]
   - 1. Introducción [16]
@@ -2287,5 +2287,5 @@
 
 - **summary.md**
 [GitHub: summary.md](https://github.com/diego-tentor/arxelogic/tree/master/summary.md)
-  - Índice de artefactos con líneas [1]
+  - Summary with line numbers [1]
 
