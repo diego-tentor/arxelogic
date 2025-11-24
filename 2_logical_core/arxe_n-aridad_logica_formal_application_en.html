@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n-ary Logics Implementation</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #0f0f23;
+            color: #cccccc;
+        }
+        .logic-section {
+            background: #1a1a2e;
+            border: 1px solid #333344;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .logic-title {
+            color: #66ccff;
+            border-bottom: 2px solid #333344;
+            padding-bottom: 10px;
+        }
+        .example {
+            background: #2d2d44;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #66ccff;
+        }
+        .truth-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1px;
+            background: #333344;
+            margin: 10px 0;
+        }
+        .truth-table div {
+            background: #1a1a2e;
+            padding: 8px;
+            text-align: center;
+        }
+        .truth-table .header {
+            background: #2d2d44;
+            font-weight: bold;
+        }
+        .value-true { color: #66ff66; }
+        .value-false { color: #ff6666; }
+        .value-undecided { color: #ffcc66; }
+        .value-special { color: #cc66ff; }
+        code {
+            background: #2d2d44;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #ffcc66;
+        }
+    </style>
+</head>
+<body>
+    <h1>n-ary Logics JavaScript Implementation</h1>
+    
+    <div id="output"></div>
+
+    <script>
+        // n-ary Logics Implementation
+        class NaryLogic {
+            constructor() {
+                this.logics = {
+                    L0: new L0(),
+                    L1: new L1(),
+                    L2: new L2(),
+                    L3: new L3(),
+                    L6: new L6(),
+                    L11: new L11(),
+                    L13: new L13()
+                };
+            }
+
+            evaluate(logicName, operation, ...args) {
+                const logic = this.logics[logicName];
+                if (!logic) throw new Error(`Unknown logic: ${logicName}`);
+                return logic[operation](...args);
+            }
+
+            getTruthTable(logicName, operator) {
+                const logic = this.logics[logicName];
+                if (!logic) throw new Error(`Unknown logic: ${logicName}`);
+                return logic.getTruthTable(operator);
+            }
+        }
+
+        // L₀: Contradictory Logic
+        class L0 {
+            constructor() {
+                this.values = ['⊤⊥'];
+                this.currentValue = '⊤⊥';
+            }
+
+            negate(p) {
+                return '⊤⊥';
+            }
+
+            conjunction(p, q) {
+                return '⊤⊥';
+            }
+
+            disjunction(p, q) {
+                return '⊤⊥';
+            }
+
+            implication(p, q) {
+                return '⊤⊥';
+            }
+
+            equivalence(p, q) {
+                return '⊤⊥';
+            }
+
+            getTruthTable(operator) {
+                return {
+                    operator,
+                    table: [
+                        { p: '⊤⊥', result: '⊤⊥' }
+                    ]
+                };
+            }
+        }
+
+        // L₁: Logic of Possibility
+        class L1 {
+            constructor() {
+                this.values = ['a', 'a′'];
+                this.undecided = '⊗₁';
+            }
+
+            negate(p) {
+                return p === 'a' ? 'a′' : 'a';
+            }
+
+            conjunction(p, q) {
+                if (p === q) return p;
+                return this.undecided;
+            }
+
+            disjunction(p, q) {
+                if (p === q) return p;
+                return this.undecided;
+            }
+
+            coConstitution(p, q) {
+                if (p === 'a') return 'a′';
+                if (p === 'a′') return 'a';
+                return this.undecided;
+            }
+
+            getTruthTable(operator) {
+                const table = [];
+                for (let p of this.values) {
+                    for (let q of this.values) {
+                        let result;
+                        switch(operator) {
+                            case '∧₁': result = this.conjunction(p, q); break;
+                            case '∨₁': result = this.disjunction(p, q); break;
+                            case '↔₁': result = this.coConstitution(p, q); break;
+                            case '∼₁': result = this.negate(p); break;
+                            default: result = '?';
+                        }
+                        table.push({ p, q, result });
+                    }
+                }
+                return { operator, table };
+            }
+        }
+
+        // L₂: Dual Logic (Quantum Superposition)
+        class L2 {
+            constructor() {
+                this.values = ['⊤', '⊥', '⊗'];
+                this.undecided = '⊗';
+            }
+
+            negate(p) {
+                const table = { '⊤': '⊥', '⊥': '⊤', '⊗': '⊗' };
+                return table[p] || '⊗';
+            }
+
+            conjunction(p, q) {
+                const table = {
+                    '⊤': { '⊤': '⊤', '⊥': '⊥', '⊗': '⊗' },
+                    '⊥': { '⊤': '⊥', '⊥': '⊥', '⊗': '⊥' },
+                    '⊗': { '⊤': '⊗', '⊥': '⊥', '⊗': '⊗' }
+                };
+                return table[p][q] || '⊗';
+            }
+
+            disjunction(p, q) {
+                const table = {
+                    '⊤': { '⊤': '⊤', '⊥': '⊤', '⊗': '⊤' },
+                    '⊥': { '⊤': '⊤', '⊥': '⊥', '⊗': '⊗' },
+                    '⊗': { '⊤': '⊤', '⊥': '⊗', '⊗': '⊗' }
+                };
+                return table[p][q] || '⊗';
+            }
+
+            implication(p, q) {
+                const table = {
+                    '⊤': { '⊤': '⊤', '⊥': '⊥', '⊗': '⊗' },
+                    '⊥': { '⊤': '⊤', '⊥': '⊤', '⊗': '⊤' },
+                    '⊗': { '⊤': '⊤', '⊥': '⊗', '⊗': '⊗' }
+                };
+                return table[p][q] || '⊗';
+            }
+
+            mutuality(p, q) {
+                if (p === '⊗' && q === '⊗') return '⊤';
+                if (p === q) return '⊤';
+                if (p !== q && p !== '⊗' && q !== '⊗') return '⊥';
+                return '⊗';
+            }
+
+            getTruthTable(operator) {
+                const table = [];
+                for (let p of this.values) {
+                    for (let q of this.values) {
+                        let result;
+                        switch(operator) {
+                            case '∧₂': result = this.conjunction(p, q); break;
+                            case '∨₂': result = this.disjunction(p, q); break;
+                            case '→₂': result = this.implication(p, q); break;
+                            case '↔₂': result = this.mutuality(p, q); break;
+                            case '∼₂': result = this.negate(p); break;
+                            default: result = '?';
+                        }
+                        table.push({ p, q, result });
+                    }
+                }
+                return { operator, table };
+            }
+        }
+
+        // L₃: Ternary Logic with Observer
+        class L3 {
+            constructor() {
+                this.values = ['⊤', '⊥'];
+            }
+
+            negate(p) {
+                return p === '⊤' ? '⊥' : '⊤';
+            }
+
+            conjunction(p, q) {
+                return (p === '⊤' && q === '⊤') ? '⊤' : '⊥';
+            }
+
+            disjunction(p, q) {
+                return (p === '⊤' || q === '⊤') ? '⊤' : '⊥';
+            }
+
+            implication(p, q) {
+                return (p === '⊥' || q === '⊤') ? '⊤' : '⊥';
+            }
+
+            equivalence(p, q) {
+                return p === q ? '⊤' : '⊥';
+            }
+
+            getTruthTable(operator) {
+                const table = [];
+                for (let p of this.values) {
+                    for (let q of this.values) {
+                        let result;
+                        switch(operator) {
+                            case '∧₃': result = this.conjunction(p, q); break;
+                            case '∨₃': result = this.disjunction(p, q); break;
+                            case '→₃': result = this.implication(p, q); break;
+                            case '↔₃': result = this.equivalence(p, q); break;
+                            case '∼₃': result = this.negate(p); break;
+                            default: result = '?';
+                        }
+                        table.push({ p, q, result });
+                    }
+                }
+                return { operator, table };
+            }
+        }
+
+        // L₆: Bayesian Logic
+        class L6 {
+            constructor() {
+                this.values = [0, 0.166, 0.333, 0.5, 0.666, 0.833, 1];
+            }
+
+            negate(p) {
+                return 1 - p;
+            }
+
+            conjunction(p, q) {
+                // Assuming independence for simplicity
+                return p * q;
+            }
+
+            disjunction(p, q) {
+                return p + q - (p * q);
+            }
+
+            implication(p, q) {
+                return Math.max(1 - p, q);
+            }
+
+            bayesUpdate(prior, likelihood, evidence) {
+                return (likelihood * prior) / evidence;
+            }
+
+            getTruthTable(operator) {
+                // Simplified discrete version
+                const table = [];
+                const discreteValues = [0, 0.5, 1];
+                for (let p of discreteValues) {
+                    for (let q of discreteValues) {
+                        let result;
+                        switch(operator) {
+                            case '∼₆': result = this.negate(p); break;
+                            case '∧₆': result = this.conjunction(p, q); break;
+                            case '∨₆': result = this.disjunction(p, q); break;
+                            case '→₆': result = this.implication(p, q); break;
+                            default: result = '?';
+                        }
+                        table.push({ 
+                            p: p.toFixed(2), 
+                            q: q.toFixed(2), 
+                            result: typeof result === 'number' ? result.toFixed(2) : result 
+                        });
+                    }
+                }
+                return { operator, table };
+            }
+        }
+
+        // L₁₁: U(1) Gauge Logic
+        class L11 {
+            constructor() {
+                this.values = [];
+            }
+
+            gaugeTransform(p, alpha) {
+                // Simulate gauge transformation: p → e^(iα)p
+                return {
+                    magnitude: p.magnitude,
+                    phase: (p.phase + alpha) % (2 * Math.PI),
+                    original: p
+                };
+            }
+
+            equivalenceClass(p) {
+                // All points with same magnitude are equivalent
+                return `[|p|=${p.magnitude.toFixed(2)}]`;
+            }
+
+            observable(p) {
+                // Gauge invariant observable (magnitude squared)
+                return p.magnitude * p.magnitude;
+            }
+
+            getTruthTable(operator) {
+                return {
+                    operator,
+                    table: [
+                        { description: 'Gauge transformation preserves physics', result: '✓' },
+                        { description: 'Observables are phase-independent', result: '✓' },
+                        { description: '2 physical polarizations from 2048 configs', result: '✓' }
+                    ]
+                };
+            }
+        }
+
+        // L₁₃: Weak Mixing Logic
+        class L13 {
+            constructor() {
+                this.flavorBasis = ['ν_e', 'ν_μ', 'ν_τ'];
+                this.massBasis = ['ν₁', 'ν₂', 'ν₃'];
+                // Simplified PMNS matrix (mixing angles)
+                this.pmns = [
+                    [0.8, 0.5, 0.3],
+                    [0.5, 0.7, 0.5],
+                    [0.3, 0.5, 0.8]
+                ];
+            }
+
+            flavorToMass(flavorState) {
+                const flavorIndex = this.flavorBasis.indexOf(flavorState);
+                if (flavorIndex === -1) return null;
+                
+                // Simple projection using PMNS matrix
+                const masses = {};
+                this.massBasis.forEach((mass, i) => {
+                    masses[mass] = this.pmns[flavorIndex][i];
+                });
+                return masses;
+            }
+
+            oscillationProbability(initialFlavor, finalFlavor, time) {
+                // Simplified oscillation calculation
+                const initialIndex = this.flavorBasis.indexOf(initialFlavor);
+                const finalIndex = this.flavorBasis.indexOf(finalFlavor);
+                
+                if (initialIndex === -1 || finalIndex === -1) return 0;
+                
+                // Simple oscillation based on mixing matrix
+                let prob = 0;
+                for (let i = 0; i < 3; i++) {
+                    prob += this.pmns[initialIndex][i] * this.pmns[finalIndex][i];
+                }
+                
+                // Add time-dependent oscillation
+                const oscillation = Math.sin(time * 0.1) * 0.3;
+                return Math.max(0, Math.min(1, prob + oscillation));
+            }
+
+            getTruthTable(operator) {
+                return {
+                    operator,
+                    table: [
+                        { process: 'ν_e → ν_μ', probability: '> 0', result: 'Oscillation' },
+                        { process: 'ν_μ → ν_τ', probability: '> 0', result: 'Oscillation' },
+                        { process: 'Flavor conservation', probability: '≠ 1', result: 'Violated' }
+                    ]
+                };
+            }
+        }
+
+        // Demonstration and Examples
+        function demonstrateLogics() {
+            const nary = new NaryLogic();
+            const output = document.getElementById('output');
+            
+            // L₀ Examples
+            output.innerHTML += `
+                <div class="logic-section">
+                    <h2 class="logic-title">L₀: Contradictory Logic Examples</h2>
+                    <div class="example">
+                        <strong>Basic Operations:</strong><br>
+                        ∼₀p = ${nary.evaluate('L0', 'negate', 'p')}<br>
+                        p ∧₀ q = ${nary.evaluate('L0', 'conjunction', 'p', 'q')}<br>
+                        p ∨₀ q = ${nary.evaluate('L0', 'disjunction', 'p', 'q')}
+                    </div>
+                    <div class="example">
+                        <strong>Theorems:</strong><br>
+                        ⊢₀ p ↔₀ ∼₀p: ${nary.evaluate('L0', 'equivalence', 'p', nary.evaluate('L0', 'negate', 'p'))}<br>
+                        ⊢₀ (p → q) ∧ (∼p → q): ${nary.evaluate('L0', 'conjunction', 
+                            nary.evaluate('L0', 'implication', 'p', 'q'), 
+                            nary.evaluate('L0', 'implication', nary.evaluate('L0', 'negate', 'p'), 'q')
+                        )}
+                    </div>
+                </div>
+            `;
+
+            // L₁ Examples
+            const l1Negation = nary.evaluate('L1', 'negate', 'a');
+            const l1Conjunction = nary.evaluate('L1', 'conjunction', 'a', 'a′');
+            
+            output.innerHTML += `
+                <div class="logic-section">
+                    <h2 class="logic-title">L₁: Logic of Possibility Examples</h2>
+                    <div class="example">
+                        <strong>Basic Operations:</strong><br>
+                        ∼₁a = <span class="value-special">${l1Negation}</span><br>
+                        a ∧₁ a′ = <span class="value-undecided">${l1Conjunction}</span><br>
+                        a ↔₁ a = <span class="value-special">${nary.evaluate('L1', 'coConstitution', 'a', 'a')}</span>
+                    </div>
+                    ${renderTruthTable(nary.getTruthTable('L1', '∧₁'))}
+                    <div class="example">
+                        <strong>Key Property:</strong> No excluded middle:<br>
+                        a ∨₁ ∼₁a = <span class="value-undecided">${nary.evaluate('L1', 'disjunction', 'a', l1Negation)}</span>
+                    </div>
+                </div>
+            `;
+
+            // L₂ Examples
+            output.innerHTML += `
+                <div class="logic-section">
+                    <h2 class="logic-title">L₂: Dual Logic (Quantum) Examples</h2>
+                    <div class="example">
+                        <strong>Superposition Operations:</strong><br>
+                        ⊗ ∧₂ ⊤ = <span class="value-undecided">${nary.evaluate('L2', 'conjunction', '⊗', '⊤')}</span><br>
+                        ⊗ ∨₂ ⊥ = <span class="value-undecided">${nary.evaluate('L2', 'disjunction', '⊗', '⊥')}</span><br>
+                        ⊗ →₂ ⊗ = <span class="value-undecided">${nary.evaluate('L2', 'implication', '⊗', '⊗')}</span>
+                    </div>
+                    ${renderTruthTable(nary.getTruthTable('L2', '∧₂'))}
+                    <div class="example">
+                        <strong>Quantum Interpretation:</strong><br>
+                        Undecidable (⊗) represents quantum superposition<br>
+                        Requires observer (L₃) to collapse to ⊤ or ⊥
+                    </div>
+                </div>
+            `;
+
+            // L₃ Examples
+            output.innerHTML += `
+                <div class="logic-section">
+                    <h2 class="logic-title">L₃: Ternary Logic with Observer Examples</h2>
+                    <div class="example">
+                        <strong>Classical Operations Restored:</strong><br>
+                        ∼₃⊤ = <span class="value-false">${nary.evaluate('L3', 'negate', '⊤')}</span><br>
+                        ⊤ ∧₃ ⊥ = <span class="value-false">${nary.evaluate('L3', 'conjunction', '⊤', '⊥')}</span><br>
+                        ⊤ ∨₃ ⊥ = <span class="value-true">${nary.evaluate('L3', 'disjunction', '⊤', '⊥')}</span>
+                    </div>
+                    ${renderTruthTable(nary.getTruthTable('L3', '→₃'))}
+                    <div class="example">
+                        <strong>Observer Context:</strong><br>
+                        Truth is relative to observer's frame<br>
+                        Different observers may get different results for same proposition
+                    </div>
+                </div>
+            `;
+
+            // L₆ Examples
+            output.innerHTML += `
+                <div class="logic-section">
+                    <h2 class="logic-title">L₆: Bayesian Logic Examples</h2>
+                    <div class="example">
+                        <strong>Probabilistic Operations:</strong><br>
+                        P(∼₆p) when P(p)=0.7: ${nary.evaluate('L6', 'negate', 0.7).toFixed(2)}<br>
+                        P(p ∧₆ q) when P(p)=0.6, P(q)=0.8: ${nary.evaluate('L6', 'conjunction', 0.6, 0.8).toFixed(2)}<br>
+                        P(p ∨₆ q) when P(p)=0.6, P(q)=0.8: ${nary.evaluate('L6', 'disjunction', 0.6, 0.8).toFixed(2)}
+                    </div>
+                    <div class="example">
+                        <strong>Bayesian Update Example:</strong><br>
+                        Prior P(H)=0.3, Likelihood P(E|H)=0.8, Evidence P(E)=0.5<br>
+                        Posterior P(H|E) = ${nary.evaluate('L6', 'bayesUpdate', 0.3, 0.8, 0.5).toFixed(2)}
+                    </div>
+                </div>
+            `;
+
+            // L₁₃ Examples
+            const l13 = new L13();
+            output.innerHTML += `
+                <div class="logic-section">
+                    <h2 class="logic-title">L₁₃: Weak Mixing Logic Examples</h2>
+                    <div class="example">
+                        <strong>Neutrino Oscillation:</strong><br>
+                        P(ν_e → ν_μ, t=1) = ${l13.oscillationProbability('ν_e', 'ν_μ', 1).toFixed(3)}<br>
+                        P(ν_μ → ν_τ, t=2) = ${l13.oscillationProbability('ν_μ', 'ν_τ', 2).toFixed(3)}<br>
+                        P(ν_e → ν_e, t=1) = ${l13.oscillationProbability('ν_e', 'ν_e', 1).toFixed(3)}
+                    </div>
+                    <div class="example">
+                        <strong>Flavor to Mass Mapping:</strong><br>
+                        ν_e in mass basis: ${JSON.stringify(l13.flavorToMass('ν_e'))}<br>
+                        Basis mixing enables oscillation phenomena
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderTruthTable(truthTable) {
+            if (!truthTable.table || truthTable.table.length === 0) return '';
+            
+            let html = `<div class="example"><strong>Truth Table for ${truthTable.operator}:</strong><div class="truth-table">`;
+            
+            // Determine headers based on first row
+            const firstRow = truthTable.table[0];
+            const headers = Object.keys(firstRow);
+            
+            // Header row
+            headers.forEach(header => {
+                html += `<div class="header">${header}</div>`;
+            });
+            
+            // Data rows
+            truthTable.table.forEach(row => {
+                headers.forEach(header => {
+                    const value = row[header];
+                    let className = '';
+                    if (value === '⊤') className = 'value-true';
+                    else if (value === '⊥') className = 'value-false';
+                    else if (value === '⊗' || value === '⊗₁') className = 'value-undecided';
+                    else if (value === 'a' || value === 'a′') className = 'value-special';
+                    
+                    html += `<div class="${className}">${value}</div>`;
+                });
+            });
+            
+            html += '</div></div>';
+            return html;
+        }
+
+        // Initialize demonstration when page loads
+        document.addEventListener('DOMContentLoaded', demonstrateLogics);
+    </script>
+</body>
+</html>

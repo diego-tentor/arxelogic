@@ -1,9 +1,1172 @@
+# Physical Units System by Exentation Exponent
+
+## Fundamental Assignment
+
+**System basis:**
+- **T¹ = T** (Time)
+- **T² = L** (Length)  
+- **T³ = M** (Mass)
+
+---
+
+## 1. Fundamental Exponents
+
+### Positive Exponents (Direct Dimensions)
+
+| k | n | Tᵏ | Dimension | SI Unit | Physical Meaning |
+|---|---|-------|-----------|---------|------------------|
+| 0 | 1 | T⁰ | 1 | — | Dimensionless (pure numbers, radians) |
+| 1 | 2 | T¹ | T | s | Time, duration, period |
+| 2 | 4 | T² | L | m | Length, distance, displacement |
+| 3 | 6 | T³ | M | kg | Mass, amount of matter |
+| 4 | 8 | T⁴ | T² | s² | Time squared |
+| 5 | 10 | T⁵ | L² | m² | Area, surface |
+| 6 | 12 | T⁶ | M² | kg² | Mass squared |
+| 7 | 14 | T⁷ | T³ | s³ | Time cubed |
+| 8 | 16 | T⁸ | L³ | m³ | Volume |
+
+### Negative Exponents (Inverse Dimensions)
+
+| k | n | Tᵏ | Dimension | SI Unit | Physical Meaning |
+|---|---|-------|-----------|---------|------------------|
+| -1 | 3 | T⁻¹ | T⁻¹ | s⁻¹ = Hz | Frequency, temporal rate |
+| -2 | 5 | T⁻² | L⁻¹ | m⁻¹ | Wave number, linear density |
+| -2 | 5 | T⁻² | L⁻² | m⁻² | Curvature, surface density |
+| -3 | 7 | T⁻³ | M⁻¹ | kg⁻¹ | Inverse specific mass |
+| -4 | 9 | T⁻⁴ | T⁻² | s⁻² | Temporal acceleration |
+| -5 | 11 | T⁻⁵ | L⁻³ | m⁻³ | Inverse volumetric density |
+| -6 | 13 | T⁻⁶ | M⁻² | kg⁻² | Inverse mass squared |
+
+---
+
+## 2. Physical Units by Exentation Level
+
+### Level k = -1 (n = 3): Temporal Variation
+
+**Dimension: T⁻¹ = 1/T**
+
+| Quantity | SI Unit | Symbol | Applications |
+|----------|---------|--------|--------------|
+| **Frequency** | hertz | Hz = s⁻¹ | Waves, oscillations, radiation |
+| **Angular velocity** | radian/second | rad/s | Rotations, circular motion |
+| **Event rate** | events/second | s⁻¹ | Stochastic processes |
+| **Decay constant** | inverse second | s⁻¹ | Radioactive decay, half-life |
+| **Radioactive activity** | becquerel | Bq = s⁻¹ | Disintegrations per second |
+| **Refresh rate** | hertz | Hz | Displays, processors |
+
+**General interpretation:** *"How many times per unit of time"*
+
+---
+
+### Level k = -2 (n = 5): Spatial Variation
+
+**Dimension: L⁻¹ and L⁻²**
+
+#### Linear Variation (L⁻¹)
+
+| Quantity | SI Unit | Symbol | Applications |
+|----------|---------|--------|--------------|
+| **Wave number** | inverse meter | m⁻¹ | Optics (k = 2π/λ) |
+| **Diopters** | inverse meter | m⁻¹ | Lens power |
+| **Linear gradient** | per meter | m⁻¹ | Spatial variations |
+| **Linear concentration** | particles/meter | m⁻¹ | One-dimensional density |
+
+#### Surface Variation (L⁻²)
+
+| Quantity | SI Unit | Symbol | Applications |
+|----------|---------|--------|--------------|
+| **Gaussian curvature** | inverse square meter | m⁻² | Surface geometry |
+| **Surface mass density** | kilogram/m² | kg/m² | Mass per unit area |
+| **Surface charge density** | coulomb/m² | C/m² | Electrostatics |
+| **Irradiance** | watt/m² | W/m² | Energy flux per area |
+| **Illuminance** | lux | lx = lm/m² | Light per unit surface |
+| **Pressure** | pascal | Pa = N/m² | Force per unit area |
+| **Surface tension** | newton/meter | N/m | Liquid interfaces |
+
+**General interpretation:** *"How much per unit of space (linear or surface)"*
+
+---
+
+### Level k = -3 (n = 7): Mass Variation
+
+**Dimension: M⁻¹**
+
+| Quantity | SI Unit | Symbol | Applications |
+|----------|---------|--------|--------------|
+| **Inverse specific mass** | inverse kg | kg⁻¹ | Relations per unit mass |
+| **Charge-to-mass ratio** | coulomb/kg | C/kg | Particle physics (e/m) |
+| **Specific heat capacity** | joule/(kg·K) | J/(kg·K) | Thermodynamics |
+
+**General interpretation:** *"How much per unit of mass"*
+
+---
+
+### Level k = -5 (n = 11): Volumetric Variation
+
+**Dimension: L⁻³**
+
+| Quantity | SI Unit | Symbol | Applications |
+|----------|---------|--------|--------------|
+| **Volume mass density** | kilogram/m³ | kg/m³ | Material density |
+| **Volume charge density** | coulomb/m³ | C/m³ | Electrostatics |
+| **Number concentration** | particles/m³ | m⁻³ | Particle density |
+| **Energy density** | joule/m³ | J/m³ | Energy per unit volume |
+
+**General interpretation:** *"How much per unit of volume"*
+
+---
+
+## 3. Composite Units (Combinations)
+
+### Kinematics
+
+| Quantity | Dimension | Tᵏ Combination | SI Unit | Expression |
+|----------|-----------|----------------|---------|------------|
+| **Velocity** | L/T | T²·T⁻¹ | m/s | L·T⁻¹ |
+| **Acceleration** | L/T² | T²·T⁻¹·T⁻¹ | m/s² | L·T⁻² |
+| **Angular velocity** | 1/T | T⁻¹ | rad/s | T⁻¹ |
+| **Angular acceleration** | 1/T² | T⁻¹·T⁻¹ | rad/s² | T⁻² |
+| **Jerk** | L/T³ | T²·T⁻¹·T⁻¹·T⁻¹ | m/s³ | L·T⁻³ |
+
+### Dynamics
+
+| Quantity | Dimension | Tᵏ Combination | SI Unit | Expression |
+|----------|-----------|----------------|---------|------------|
+| **Linear momentum** | M·L/T | T³·T²·T⁻¹ | kg·m/s | M·L·T⁻¹ |
+| **Force** | M·L/T² | T³·T²·T⁻¹·T⁻¹ | N (Newton) | M·L·T⁻² |
+| **Angular momentum** | M·L²/T | T³·T²·T²·T⁻¹ | kg·m²/s | M·L²·T⁻¹ |
+| **Impulse** | M·L/T | T³·T²·T⁻¹ | N·s | M·L·T⁻¹ |
+| **Torque** | M·L²/T² | T³·T²·T²·T⁻¹·T⁻¹ | N·m | M·L²·T⁻² |
+
+### Energy and Work
+
+| Quantity | Dimension | Tᵏ Combination | SI Unit | Expression |
+|----------|-----------|----------------|---------|------------|
+| **Energy/Work** | M·L²/T² | T³·T²·T²·T⁻¹·T⁻¹ | J (Joule) | M·L²·T⁻² |
+| **Power** | M·L²/T³ | T³·T²·T²·T⁻¹·T⁻¹·T⁻¹ | W (Watt) | M·L²·T⁻³ |
+| **Action** | M·L²/T | T³·T²·T²·T⁻¹ | J·s | M·L²·T⁻¹ |
+| **Energy density** | M/(L·T²) | T³·T⁻²·T⁻¹·T⁻¹ | J/m³ | M·L⁻¹·T⁻² |
+
+### Fluid Mechanics and Thermodynamics
+
+| Quantity | Dimension | Tᵏ Combination | SI Unit | Expression |
+|----------|-----------|----------------|---------|------------|
+| **Pressure** | M/(L·T²) | T³·T⁻²·T⁻¹·T⁻¹ | Pa (Pascal) | M·L⁻¹·T⁻² |
+| **Density** | M/L³ | T³·T⁻²·T⁻²·T⁻² | kg/m³ | M·L⁻³ |
+| **Dynamic viscosity** | M/(L·T) | T³·T⁻²·T⁻¹ | Pa·s | M·L⁻¹·T⁻¹ |
+| **Kinematic viscosity** | L²/T | T²·T²·T⁻¹ | m²/s | L²·T⁻¹ |
+| **Surface tension** | M/T² | T³·T⁻¹·T⁻¹ | N/m | M·T⁻² |
+| **Volumetric flow rate** | L³/T | T²·T²·T²·T⁻¹ | m³/s | L³·T⁻¹ |
+| **Mass flow rate** | M/T | T³·T⁻¹ | kg/s | M·T⁻¹ |
+
+### Waves and Oscillations
+
+| Quantity | Dimension | Tᵏ Combination | SI Unit | Expression |
+|----------|-----------|----------------|---------|------------|
+| **Frequency** | 1/T | T⁻¹ | Hz | T⁻¹ |
+| **Wave number** | 1/L | T⁻² | m⁻¹ | L⁻¹ |
+| **Wave velocity** | L/T | T²·T⁻¹ | m/s | L·T⁻¹ |
+| **Acoustic impedance** | M/(L²·T) | T³·T⁻²·T⁻²·T⁻¹ | Pa·s/m | M·L⁻²·T⁻¹ |
+| **Acoustic intensity** | M/T³ | T³·T⁻¹·T⁻¹·T⁻¹ | W/m² | M·T⁻³ |
+
+### Gravitation
+
+| Quantity | Dimension | Tᵏ Combination | SI Unit | Expression |
+|----------|-----------|----------------|---------|------------|
+| **Gravitational constant G** | L³/(M·T²) | T²·T²·T²·T⁻³·T⁻¹·T⁻¹ | m³/(kg·s²) | L³·M⁻¹·T⁻² |
+| **Gravitational field** | L/T² | T²·T⁻¹·T⁻¹ | m/s² | L·T⁻² |
+| **Gravitational potential** | L²/T² | T²·T²·T⁻¹·T⁻¹ | m²/s² | L²·T⁻² |
+
+---
+
+## 4. Summary by Variation Type
+
+### Synthetic Table of Interpretations
+
+| Exponent k | Level n | Dimension | Variation Type | Typical Quantities |
+|------------|---------|-----------|----------------|-------------------|
+| **0** | 1 | 1 | None | Dimensionless constants, angles |
+| **1** | 2 | T | Direct temporal | Duration, period |
+| **2** | 4 | L | Direct spatial | Distance, length |
+| **3** | 6 | M | Direct mass | Mass, quantity |
+| **-1** | 3 | T⁻¹ | **Inverse temporal** | Frequency, rate, rhythm |
+| **-2** | 5 | L⁻¹, L⁻² | **Inverse spatial** | Curvature, surface density |
+| **-3** | 7 | M⁻¹ | **Inverse mass** | Ratio per unit mass |
+| **-4** | 9 | T⁻² | **Temporal acceleration** | Frequency change rate |
+| **-5** | 11 | L⁻³ | **Volumetric** | Density, concentration |
+
+---
+
+## 5. Key Observations
+
+### Coherence with MLT System
+
+The system **T¹=T, T²=L, T³=M** exactly reproduces the **MLT system** (Mass-Length-Time) of classical dimensional analysis:
+
+✅ All mechanical quantities are expressible  
+✅ Negative exponents generate rates, densities and variations  
+✅ The structure is consistent with standard dimensional physics  
+✅ Combinations produce all derived SI units  
+
+### Pattern of Negative Exponents
+
+- **k = -1**: Temporal variation (how many times per second?)
+- **k = -2**: Linear/surface spatial variation (how much per meter/meter²?)
+- **k = -3**: Mass variation (how much per kilogram?)
+- **k = -5**: Volumetric spatial variation (how much per meter³?)
+
+### Fundamental Duality
+
+Each positive exponent has its negative "dual":
+- **T¹ (time) ↔ T⁻¹ (frequency)**
+- **T² (length) ↔ T⁻² (curvature)**
+- **T³ (mass) ↔ T⁻³ (per unit mass)**
+
+---
+
+## 6. Complete Physical Quantities by Category
+
+### Classical Mechanics
+- Position: L
+- Velocity: L·T⁻¹
+- Acceleration: L·T⁻²
+- Force: M·L·T⁻²
+- Energy: M·L²·T⁻²
+- Power: M·L²·T⁻³
+- Momentum: M·L·T⁻¹
+- Pressure: M·L⁻¹·T⁻²
+
+### Thermodynamics
+- Temperature: (requires system extension)
+- Entropy: M·L²·T⁻²·K⁻¹ (with temperature)
+- Heat: M·L²·T⁻²
+- Heat capacity: M·L²·T⁻²·K⁻¹
+
+### Electromagnetism
+(Would require adding electric charge dimension Q as T⁴ or equivalent)
+
+### Optics and Waves
+- Frequency: T⁻¹
+- Wavelength: L
+- Phase velocity: L·T⁻¹
+- Wave number: L⁻¹
+- Intensity: M·T⁻³
+
+---
+
+**ArXe System** — Recursive Exentational Architecture  
+Complete dimensional mapping from fractal logical structure
+## Appendix: 1_appendix.md
+
+# Appendix: ArXe Theory The Logical-Physical Co-emergence of the Universe
+## A Cosmology from the Fundamental Contradictory Act
+
+## 1a.
+This appendix focuses on the **Factic Theory** of the ArXe system, providing the necessary metatheoretical support for the structural relationships among the different levels of logic ($L_n$).
+
+Responds to:** The crucial question of the **formal justification for the relationship between the *arity* ($n$) and the set of truth values ($V_n$)**. It provides the theoretical basis for the non-trivial choice of $V_n$'s cardinality and the associated number of **Temporal Phases** ($Tf$).
+Key Contribution:** It details the underlying theoretical postulates that ensure the **Principle of Elusion** (MA3), which guarantees that each logic $L_n$ successfully overcomes the inconsistencies detected in $L_{n-1}$, maintaining the system's strict hierarchy.
+
+## 1b. Purpose and Scope
+This document formally specifies the foundations of ArXe Theory from T^0 to T^3. ArXe is a generative ontological theory that explains the emergence of structure, existence, spatiality, temporality and objectivity from contradictory principles.
+It does not claim or achieve mathematical rigor, focusing on the understanding of the system of ideas being transmitted.
+ArXe compares its a priori results with phenomena demonstrated by science and even some speculative ones as a form of self-validation and not as competition in the field of knowledge.
+
+### Introduction
+
+ArXe Theory presents a radical proposal for understanding the fundamental nature of reality: instead of seeking to reduce the physical to the logical-mathematical (as in Platonism) or the logical to the physical (as in physicalism), it establishes a **fundamental kinship** between both domains at their most basic level. This theory does not transfer the ontological mystery to a separate ideal realm, but locates it in the **pure empirical act**, albeit contradictory and unprovable.
+
+The conceptual core of ArXe lies in recognizing that the fundamental question is not "why does something exist instead of nothing?" but "why can what exists not be the foundation of itself?" This paradoxical circularity drives what we call **exentations**: movements through which reality tries to "escape" from its constitutive contradiction, generating levels of increasing complexity that can be read simultaneously as logical developments and physical emergences.
+
+### 4. Axiom
+** ArXe Theory proposes a single axiom of its own
+** Axiom: ¬() ≡ Tf ≡ 1Tp (Planck Time)
+
+### The Fundamental Axiom
+
+The ArXe axiom establishes: **¬() = Tf = Tp**
+
+This equation arbitrarily relates three elements:
+- Logical negation ¬() as the fundamental unit of logical structure
+- A fundamental Time (Tf) as the minimum temporal unit with physical meaning  
+- Planck Time (Tp) as the fundamental physical unit
+
+It is not a **reduction** of one domain to the other, but a **kinship** that establishes correspondence between the most basic units of logic and physics. It's like "tying two threads at their ends": a bold theoretical gesture that allows explaining the universe from the fundamentals of both domains simultaneously.
+
+### The Act as Fundamental Contradiction
+
+In ArXe, the fundamental physical act is analogous to logical contradiction. Paraphrasing its nature: *"This precise instant, in its fundamental physical expression, is absolutely actual, it is not possible and cannot be verified or demonstrated, it does not exist nor is it true"*.
+
+This contradiction is not a problem to solve but the **generative engine** of all reality. Similar to Dedekind's cut that allows constructing real numbers from a division that does not completely belong to any of the sets it separates, the contradictory act is **non-possible** (therefore actual) and generates the **real line of temporal existence**.
+
+Crucially, this contradiction prevents what exists from being the foundation of itself, avoiding the circular paradox of a reality that would sustain itself without external reference.
+
+---
+
+# 5. Recursive Fractal Ontology and Dimensional Mapping
+## Recursive Exentation System
+### Definition
+**Entification** (conjunction):
+```
+Entₙ := Entₙ₋₁ ∧ ExEntₙ₋₁
+```
+**Exentation** (negation → disjunction):
+```
+ExEntₙ := ¬(Entₙ₋₁ ∧ ExEntₙ₋₁) ≡ ¬Entₙ₋₁ ∨ ¬ExEntₙ₋₁
+```
+**Initial condition**:
+```
+Ent₁ := S ∧ ¬S
+ExEnt₁ := S ∨ ¬S
+```
+
+### 5.2 Logical Structure
+Each level of exentation exposes an n-ary logical structure
+** Examples
+- e(1) = Unary logic: contradictories, false, negative
+- e(2) = Binary logic: excluded middle, non-contradictory contraries, (t) true and (f) false, (b) beginning and (e) end, pair, both, non-objective distinction, phases
+- e(3) = Ternary logic: modality, included middle, "observer", third to the pair, mediator, participant, objective distinction
+- e(4) = 4-ary logic: pairs of contraries, opposition, polarity
+- e (n) = n-ary logic.
+
+** Phases
+- The exentation number determines the number of phases; at its level each phase is isomorphic
+- The phenomenological totality is the superposition of levels
+
+### 5.2 Recursive Structure
+
+Each level n generates two complementary elements through con-junction (represented by the logical AND operator) and dis-junction (represented by the XOR operator), creating an infinite self-similar hierarchy.
+
+---
+
+## 5.3 Mapping Function e(n) → k
+
+### 5.4 Definition
+
+```
+e(n) = {
+  0                    if n = 1
+  (-1)ⁿ · ⌊n/2⌋        if n > 1
+}
+```
+
+### 5.5 Generated Sequence
+
+| n | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|---|
+| **e(n)** | **0** | **1** | **-1** | **2** | **-2** | **3** | **-3** | **4** | **-4** |
+
+**Pattern**: {0, 1, -1, 2, -2, 3, -3, ...}
+
+**Property**: The function maps ℕ → ℤ surjectively, alternating positive (n even) and negative (n odd) exponents.
+
+---
+
+## 5.6 Inverse Function n(k) ← k
+
+### 5.7 Derivation
+
+To invert e(n) = k:
+
+- **k = 0**: Only n = 1 satisfies e(1) = 0
+- **k > 0**: Occurs when n is even, then k = n/2 → **n = 2k**
+- **k < 0**: Occurs when n is odd, then k = -(n-1)/2 → **n = -2k + 1**
+
+### 5.8 Inverse Formula
+
+```
+n(k) = {
+  1           if k = 0
+  2k          if k > 0
+  -2k + 1     if k < 0
+}
+```
+
+### 5.9 Verification
+
+- n(0) = 1, e(1) = 0 ✓
+- n(2) = 4, e(4) = 2 ✓  
+- n(-2) = 5, e(5) = -2 ✓
+
+**Theorem**: e and n establish a bijection between ℕ and ℤ.
+
+---
+
+### Consequences
+
+1. Each logical transition (n → n+1) corresponds to an exponential transition
+2. The recursive structure isomorphizes with an exponential structure
+3. The system has a singular zero point (T⁰) and two branches (k > 0, k < 0)
+
+---
+
+## 6. Dimensional Assignment
+
+### 6.1 Hypothesis
+
+- Each exponent indicates a pair of contraries and existents, as typical example: beginning and end
+- T (Time) "finite unit (that has beginning and end), existent, tautological"
+- It is deduced that a thing and its contrary are possible if they do not occur in the same Tf
+
+** T^n = ArXe existent Time
+- It is distinguished from Tf in that T^1 equals 2*Tf
+- According to PNC, if something and its contrary are not possible in 1Tf, it is possible in 2TF = T^1 = T (physical)
+
+```
+T¹ ≡ T    (analogous to physical Time)
+T² ≡ L    (analogous to physical Length)
+T³ ≡ M    (analogous to physical Mass)
+```
+
+- T^1 can be interpreted as an analog of Time or one-dimensional physical space insofar as possible, real, existent and true units.
+- T^2 can be interpreted:
+  - as an analog of Length or two-dimensional space, insofar as it extends from one T^1 point to another T^1, or from an initial moment to a final moment
+  - as a double temporal sense, one and an inverse
+  - as double finitude: existing starting point and existing ending point
+- T^3 can be interpreted:
+  - as an analog of three-dimensional space following the previous reasoning
+  - as unification of space and time
+
+### 6.2 Ontological Isomorphisms Table
+* Following the previous analogies and inferring new ones
+
+| n | k | Tᵏ | Dimension | Interpretation |
+|---|---|-------|-----------|----------------|
+| 1 | 0 | T⁰ | 1 | Dimensionless |
+| 2 | 1 | T¹ | **T** | Time |
+| 3 | -1 | T⁻¹ | 1/T | Frequency |
+| 4 | 2 | T² | **L** | Length |
+| 5 | -2 | T⁻² | 1/L² | Curvature |
+| 6 | 3 | T³ | **M** | Mass |
+| 7 | -3 | T⁻³ | 1/M³ | Inverse density |
+
+### 6.3 Observations
+
+- **Positive exponents**: Direct dimensions (T, L, M)
+- **Negative exponents**: Inverse dimensions (1/T, 1/L², 1/M³)
+- Compatible with standard dimensional analysis
+
+---
+
+## 6.4 Algebraic Structure
+
+### 6.5 Exponent Group
+
+The exponents {Tᵏ : k ∈ ℤ} form an abelian group:
+
+```
+Tᵏ · Tᵐ = Tᵏ⁺ᵐ
+(Tᵏ)⁻¹ = T⁻ᵏ
+T⁰ = identity
+```
+
+Isomorphic to (ℤ, +).
+
+### 6.6 Duality
+
+The system exhibits multiple dualities:
+- **Logical**: Conjunction (∧) ↔ Disjunction (∨)
+- **Exponential**: k ↔ -k
+- **Dimensional**: Direct ↔ Inverse
+- **Parity**: Even (k > 0) ↔ Odd (k < 0)
+
+---
+
+### The Structure of Exentations
+
+From the original contradictory act arise successive **exentations** that build a hierarchical logical-temporal structure. Each level preserves the logical capacities of previous ones while developing new dimensions of complexity:
+
+#### **T^0 - Absolute Non-existence**
+*Logic: Unary*
+
+Absolutely negative time lacks existence and physical expression. It represents pure logical non-existence, prior to any determination. It has no physical meaning and cannot be experienced; it constitutes the "zero degree" from which all subsequent determination emerges.
+
+#### **T^1 - Homogeneous Positive Time** 
+*Logic: Binary, Unary*
+
+Time that occurs positively with a single direction, but still lacks measurable physical expression. It is a homogeneous temporal field where nothing can be distinguished. It represents pure temporality prior to any variation or differentiation. At this level, temporal experience as we know it does not exist, only **flow** as such.
+
+**Physical similarities**: This level could correspond to the pre-inflationary state of the universe, where temporality exists but without differentiable structure. Quantum vacuum fluctuations would be echoes of the transition from this homogeneous state.
+
+#### **T^-1 - Temporal Alterity**
+*Logic: Ternary, Binary, UNary*
+
+The variation of time arises: experienceable, empirical time as we know it. Temporal phase changes occur, not necessarily regular. Here **alterity** emerges as a principle: the other, the different, the variation.
+
+**Physical similarities**: 
+- The **arrow of time** and thermodynamic irreversibility
+- **Irregular variations** in quantum processes
+- **Decoherence** as a transition from homogeneity (T1) towards variability
+- Natural **rhythms** and the emergence of periodicities
+
+#### **T^2 - Spatial Anteriority**
+*Logic: 4-ary, 3-ary, Binary, Unary*
+
+**Anteriority** emerges (what is before, in front, without implying temporality of before/after): spatial simultaneity. Minkowski space is constituted as a great empty and homogeneous field whose evolution is not temporal. Space appears as **contrary** to time: a spatial evolution is not temporal, it is not possible to trace a temporal evolution of empty space.
+
+**Physical similarities**:
+- The **constancy of c** as a consequence of space-time opposition
+- **Special relativity** and the structure of flat spacetime
+- The emergence of **extension** and **length** as physical concepts
+- **Fields** as homogeneous spatial structures
+
+#### **T^-2 - Spatial Variation**
+*Logic: 5-ary to Unary*  
+
+**Geodesics** and variations of space become possible. Regions of different temporal densities and the first 'virtual' **particles** of relational character emerge. Here begins the curvature of spacetime.
+
+**Physical similarities**:
+- **General relativity** and spacetime curvature
+- **Virtual particles** as relational effects between different temporal densities
+- **Gravitational fields** as variations of the spatial metric
+- **Gravitational waves** as propagation of spatial variations
+- **Prediction**: There should exist measurable correlation between spatial metric variations and local temporal fluctuations
+
+### Emergence of the Massive Dimension
+
+#### **T^3 - Mass as Space-Time**
+*Logic: 6-ary to Unary*
+
+Mass arises as **T2 + T1**: it combines spatiality with positive temporality, corresponding to relativistic spacetime. Temporal distinction between **past-present-future** becomes possible. Physics becomes **'Bayesian'** in the sense that probabilistic structure emerges.
+
+**Physical similarities**:
+- The **Higgs mechanism** as manifestation of the fundamental massive field
+- The **distinction** past-present-future emerges only with mass (explaining why massless quantum mechanics is "atemporal")
+- **Quantum probability** as an emergent property of this level
+- Appearance of **physical particles** as we know them
+- The **Higgs Boson** and the universal massive field
+
+**Prediction**: Fundamental particle masses should follow patterns derivable from the underlying ternary logical structure.
+
+#### **T^-3 - Massive Variation**  
+*Logic: 7-ary to Unary*
+
+**Massive bodies** and Newtonian physics as a limiting case become possible. Here operate the classical laws of motion and mechanics of extended bodies.
+
+**Physical similarities**:
+- **Newtonian mechanics** as limiting regime of stabilized mass variations
+- **Astronomical bodies** and orbital dynamics
+- **Inertia** as resistance to massive variation
+- **Planetary systems** and large-scale structure
+
+### 4.3 T^-1: Alternation (Exentation of T^1)
+
+**Generative process:**
+- T^1 (static alterity) exents from itself
+- Produces alternation: the universe acts as one or as the other
+- No record of what came before
+
+**Logical structure:**
+```
+S → ¬S → S → ¬S → ...
+(alternation without memory)
+```
+
+**Properties:**
+- **Irreversible temporal:** Advancing without return
+- **Without milestones:** When B is reached, A no longer exists
+- **Absolute irregularity:** The universe "chooses" without reason when to alternate
+- **Emergent regularity:** For an external observer, irregularity is perceived as regular
+- **Probabilistic:** Each transition is (S or ¬S) with P = 1/2
+
+**Fundamental characteristic:**
+```
+From A to B: when B is reached, A has ceased to exist
+(essence of time: irreversibility)
+```
+
+**Ontological state:** Exists as succession
+
+**Temporality:** Pure time (without spatiality)
+
+---
+
+### 4.4 T^2: Anteriority (Exentation of T^-1)
+
+**Generative process:**
+- T^-1 (temporal alternation) exents
+- Produces contrary variations = contrary directions
+- Spatiality and causality emerge
+
+**Logical structure:**
+```
+Contrary variations = Reversible directions
+
+A <──────> B
+
+From A to B: when B is reached, A CONTINUES TO EXIST
+(essence of space: reversibility, persistence)
+```
+
+**Properties:**
+- **Spatiality:** 2D (plane, anteriority = "what is before me")
+- **Reversibility:** I can go from A to B and return to A
+- **Ontological persistence:** Points do not disappear when abandoned
+- **Symmetric causality:** Between two isolated bodies, there are no absolute ponderable truths
+  - Does A push B, or does B push A? → Indistinguishable
+  - Does A enlarge, or does B shrink? → Indistinguishable
+- **Ternary logic (included middle):** Requires a third to determine relationships
+- **Causal memory:** There is cause-effect, but without distinguishable present
+
+**Probability:**
+- Chained probabilities (Kolmogorov type)
+- P(B|A): causal conditionality
+- Without Bayesian updating (no present that observes and revises)
+
+**Ontological state:** Exists as spatial-causal relation
+
+**Dimensionality:** 2D spatial + irreversible time
+
+**Without objectivity:** There are no ponderable facts with two bodies only
+
+---
+
+### 4.5 T^3: Depth and Objectivity (Exentation of T^2)
+
+**Generative process:**
+- T^2 (two-dimensional anteriority) exents
+- Introduces the "structural third" that breaks symmetry
+- Simultaneously emerge: 3D spatial + distinguishable present + objectivity
+
+**Logical structure:**
+```
+Triadic structure:
+- Two terms in relation
+- A third that fixes/determines that relation
+
+Result: Objective facts, ponderable truths
+```
+
+**Properties:**
+- **Spatiality:** 3D (volume, depth)
+- **Distinguishable present:** Now ≠ before ≠ after
+- **Historical memory:** Objective past, present, future
+- **Emergent objectivity:** With three bodies (or triadic structure), there are ponderable truths
+  - NOW we CAN say: "A pushed B" (C saw it)
+  - NOW we CAN say: "A enlarged" (B and C remained constant)
+- **Facts:** What really happened exists as objective record
+- **Operative ternary logic:** The third allows verification
+
+**Probability:**
+- Bayesian probabilities (ternary)
+- Structure: Prior (expectation) → Evidence (experience) → Posterior (valuation)
+- Requires T^3 because it needs:
+  - Distinguishable present (moment to observe evidence)
+  - Objectivity (facts that count as evidence)
+  - Historical memory (remember prior to update)
+
+**Ontological state:** Exists as objective fact
+
+**Dimensionality:** 3D spatial + historical time (past/present/future)
+
+**Simultaneous emergence:**
+- The third spatial dimension and historical time emerge together
+- Both require the same triadic structure
+- The present is the "structural third" that fixes past and future as objective
+
+---
+
+## 6. Structural Progression Table
+
+| Level | Structure | Logic | Spatial | Temporal | Probability | Objectivity |
+|-------|-----------|--------|----------|----------|--------------|-------------|
+| **T^0** | (S and ¬S) | Contradictory | 0D (point) | Tf (unverifiable) | Does not apply | Circular |
+| **T^1** | (S or ¬S) | Binary (excluded middle) | 1D (contraries) | — | 1/2 (equiprobable) | Without record |
+| **T^-1** | Alternation | 3-ary (included middle) | — | Irreversible, without memory | 1/2 per transition | Without record |
+| **T^2** | Contrary variations | 4-ary | 2D (plane) | Symmetric causality | Kolmogorov (conditional) | Not ponderable (2 bodies) |
+| **T^3** | Triadic depth | 6-ary | 3D (volume) | Past/present/future | Bayesian (updating) | Ponderable facts |
+
+---
+
+### Higher Levels: Hyperspaces and Information Processing
+
+#### **T4 - Computational Hyperspace**
+*Logic: 8-ary to Unary*
+
+**Multiple universes** and **natural computers** emerge: black holes, life and intelligence. **Dark physics** develops as manifestation of hyperspatial properties.
+
+**Physical connections and predictions**:
+- **Black holes** as natural processors of information from lower dimensions
+- **Life** as natural phenomenon of informational processing at T4 level
+- **Intelligence** emerges naturally from hyperspatial structure
+- **Dark matter** as effect of hyperspatial interactions
+- **Dark energy** manifesting hyperspatial expansion
+- **Prediction**: Black holes would have specific computable computational capacities according to their mass/size
+
+#### **T5 - Hyper-computers**
+*Logic: 10-ary to 1-ary*
+
+Level of **hyper-computers** and **black hole sinks**. Here would operate information processing processes at cosmic scale.
+
+**Physical connections**:
+- **Black hole sinks** connecting with cyclic universe theories
+- **Informational processing** at cosmological scale
+- Possible **phase transitions** between universes
+- **Prediction**: It should be possible to observe signs of informational processing in the largest cosmological structures
+
+---
+
+## 7. Similarities with Physical and Philosophical Concepts
+
+### 7.1 Fundamental Time (Tf) and Physics
+
+**Relation with measurement:**
+- Tf is structurally prior to any temporal measurement
+- Measurable physical time emerges from the accumulation of Tf in T^2 and T^3
+- Analogy: Tf is to physical time what the instant is to duration
+
+**Relation with Planck:**
+- Tf could relate to Planck scale (speculative, not formally derived)
+- Both represent limits of empirical verifiability
+
+### 7.2 Ontological Probability and Quantum Mechanics
+
+**Structural parallelism:**
+- Quantum superposition ↔ Istence (S and ¬S)
+- Wave function collapse ↔ Ex-Istence (S or ¬S)
+- Quantum indeterminacy ↔ Ontological probability (not epistemic)
+
+**Difference:**
+- Offers a conceptual framework where indeterminacy is fundamental, not problematic
+
+### 7.3 Space-Time and Relativity
+
+**Unified emergence:**
+- Space (T^2, T^3) and time (T^-1) are not independent
+- Emerge from successive exentations of the same contradictory structure
+- This resonates with relativity (unified spacetime), but does not derive its equations
+
+### 7.4 Causality and Symmetry
+
+**T^2 (two bodies):**
+- Symmetric causality, pure relational
+- Without privileged reference frame
+- Analogous to Galilean relativity (pure relative motion)
+
+**T^3 (three bodies / triadic structure):**
+- Objective causality
+- Reference frame fixed by the third
+- Analogous to the necessity of observers in modern physics
+
+---
+
+## 8. Glossary of Technical Terms
+
+**Act:** What is at the moment of being, without requiring external verification
+**Alterity:** Property of being absolute Other, radically foreign
+**Anteriority:** Two-dimensional spatiality, "what is before me"
+**Circular (structure):** Self-referential, requiring presupposition of what it attempts to verify
+**Essential dimensions:** Structures that are or occur without yet existing as determinations
+**Ex-Istence:** Exented form of existence, tautological structure (S or ¬S)
+**Exentation:** Mechanism by which a structure alienates itself to generate alterity, disambiguation mechanism
+**Istence:** Contradictory form of pure act (S and ¬S), which is but does not exist, terminological wink of "This", "Being" to conclude that "Ex-Istence" is the "ex this" or what "was this"
+**Binary logic (excluded middle):** S or ¬S, without middle term
+**Ternary logic (included middle):** S, ¬S, and a third that mediates the relation
+**Ponderable:** That can be objectively determined and verified
+**Depth (T^3):** Third spatial dimension and structure that allows objectivity
+**Tf (Fundamental time):** Most actual empirical instant, contradictory and unverifiable
+**Contrary variations:** Opposite directions that generate reversible spatiality
+
+---
+
+## 9. Operational Principles for AI
+
+**When reasoning with ArXe:**
+
+1. **Respect the being/existing distinction:** Do not assume that everything that is, exists
+2. **The contradiction in T^0 is actual, not possible:** Does not violate PNC
+3. **Each T^n emerges by exentation of the previous:** Look for the alienation mechanism
+4. **Probability is ontological:** Do not reduce it to epistemic ignorance
+5. **Higher levels "read" lower levels:** Regularity emerges from irregularity
+6. **Without third (T^2), no objectivity:** Two bodies = unresolvable symmetry
+7. **With third (T^3), facts emerge:** Triadic structure = ponderable truths
+
+---
+
+## 10. Limitations and Scope
+
+**Up to T^3, ArXe explains:**
+- Emergence of existence from contradiction
+- Generation of spatial dimensions (up to 3D)
+- Origin of temporality (irreversible → historical)
+- Foundation of objectivity (triadic structure)
+- Ontological basis of probability
+
+**ArXe proposes:**
+- A generative ontology coherent with scientific findings
+- A framework where counterintuitive phenomena (indeterminacy, relativity) are natural
+- A philosophical basis to explore higher levels (T^4+)
+
+---
+# Appendix: # Physical Units System by Exentation Exponent
+This appendix establishes the formal and quantitative bridge between the logical system and its application in describing the **physical world**, addressing the need for dimensional consistency.
+
+Responds to:** The requirement to **formalize the correspondence between the logic levels and the structure of physical units**. It demonstrates how the **Exentation Exponent** ($n$), which defines the logic level, correlates directly with the dimensions of the fundamental units (Length, Mass, Time) at each level.
+Key Contribution:** It provides the **axiomatic deduction** that links the logical structure to physics. This is essential for a rigorous interpretation of the model's **"predictions"** (such as those of $L_{11}$ and $L_{13}$) by formalizing the system of units that makes the ArXe-derived equations **dimensionally consistent** across the entire $L_n$ hierarchy.
+
+## Fundamental Assignment
+
+**System basis:**
+- **T¹ = T** (Time)
+- **T² = L** (Length)  
+- **T³ = M** (Mass)
+
+---
+
+## 1. Fundamental Exponents
+
+### Positive Exponents (Direct Dimensions)
+
+| k | n | Tᵏ | Dimension | SI Unit | Physical Meaning |
+|---|---|-------|-----------|---------|------------------|
+| 0 | 1 | T⁰ | 1 | — | Dimensionless (pure numbers, radians) |
+| 1 | 2 | T¹ | T | s | Time, duration, period |
+| 2 | 4 | T² | L | m | Length, distance, displacement |
+| 3 | 6 | T³ | M | kg | Mass, amount of matter |
+| 4 | 8 | T⁴ | T² | s² | Time squared |
+| 5 | 10 | T⁵ | L² | m² | Area, surface |
+| 6 | 12 | T⁶ | M² | kg² | Mass squared |
+| 7 | 14 | T⁷ | T³ | s³ | Time cubed |
+| 8 | 16 | T⁸ | L³ | m³ | Volume |
+
+### Negative Exponents (Inverse Dimensions)
+
+| k | n | Tᵏ | Dimension | SI Unit | Physical Meaning |
+|---|---|-------|-----------|---------|------------------|
+| -1 | 3 | T⁻¹ | T⁻¹ | s⁻¹ = Hz | Frequency, temporal rate |
+| -2 | 5 | T⁻² | L⁻¹ | m⁻¹ | Wave number, linear density |
+| -2 | 5 | T⁻² | L⁻² | m⁻² | Curvature, surface density |
+| -3 | 7 | T⁻³ | M⁻¹ | kg⁻¹ | Inverse specific mass |
+| -4 | 9 | T⁻⁴ | T⁻² | s⁻² | Temporal acceleration |
+| -5 | 11 | T⁻⁵ | L⁻³ | m⁻³ | Inverse volumetric density |
+| -6 | 13 | T⁻⁶ | M⁻² | kg⁻² | Inverse mass squared |
+
+---
+
+## 2. Physical Units by Exentation Level
+
+### Level k = -1 (n = 3): Temporal Variation
+
+**Dimension: T⁻¹ = 1/T**
+
+| Quantity | SI Unit | Symbol | Applications |
+|----------|---------|--------|--------------|
+| **Frequency** | hertz | Hz = s⁻¹ | Waves, oscillations, radiation |
+| **Angular velocity** | radian/second | rad/s | Rotations, circular motion |
+| **Event rate** | events/second | s⁻¹ | Stochastic processes |
+| **Decay constant** | inverse second | s⁻¹ | Radioactive decay, half-life |
+| **Radioactive activity** | becquerel | Bq = s⁻¹ | Disintegrations per second |
+| **Refresh rate** | hertz | Hz | Displays, processors |
+
+**General interpretation:** *"How many times per unit of time"*
+
+---
+
+### Level k = -2 (n = 5): Spatial Variation
+
+**Dimension: L⁻¹ and L⁻²**
+
+#### Linear Variation (L⁻¹)
+
+| Quantity | SI Unit | Symbol | Applications |
+|----------|---------|--------|--------------|
+| **Wave number** | inverse meter | m⁻¹ | Optics (k = 2π/λ) |
+| **Diopters** | inverse meter | m⁻¹ | Lens power |
+| **Linear gradient** | per meter | m⁻¹ | Spatial variations |
+| **Linear concentration** | particles/meter | m⁻¹ | One-dimensional density |
+
+#### Surface Variation (L⁻²)
+
+| Quantity | SI Unit | Symbol | Applications |
+|----------|---------|--------|--------------|
+| **Gaussian curvature** | inverse square meter | m⁻² | Surface geometry |
+| **Surface mass density** | kilogram/m² | kg/m² | Mass per unit area |
+| **Surface charge density** | coulomb/m² | C/m² | Electrostatics |
+| **Irradiance** | watt/m² | W/m² | Energy flux per area |
+| **Illuminance** | lux | lx = lm/m² | Light per unit surface |
+| **Pressure** | pascal | Pa = N/m² | Force per unit area |
+| **Surface tension** | newton/meter | N/m | Liquid interfaces |
+
+**General interpretation:** *"How much per unit of space (linear or surface)"*
+
+---
+
+### Level k = -3 (n = 7): Mass Variation
+
+**Dimension: M⁻¹**
+
+| Quantity | SI Unit | Symbol | Applications |
+|----------|---------|--------|--------------|
+| **Inverse specific mass** | inverse kg | kg⁻¹ | Relations per unit mass |
+| **Charge-to-mass ratio** | coulomb/kg | C/kg | Particle physics (e/m) |
+| **Specific heat capacity** | joule/(kg·K) | J/(kg·K) | Thermodynamics |
+
+**General interpretation:** *"How much per unit of mass"*
+
+---
+
+### Level k = -5 (n = 11): Volumetric Variation
+
+**Dimension: L⁻³**
+
+| Quantity | SI Unit | Symbol | Applications |
+|----------|---------|--------|--------------|
+| **Volume mass density** | kilogram/m³ | kg/m³ | Material density |
+| **Volume charge density** | coulomb/m³ | C/m³ | Electrostatics |
+| **Number concentration** | particles/m³ | m⁻³ | Particle density |
+| **Energy density** | joule/m³ | J/m³ | Energy per unit volume |
+
+**General interpretation:** *"How much per unit of volume"*
+
+---
+
+## 3. Composite Units (Combinations)
+
+### Kinematics
+
+| Quantity | Dimension | Tᵏ Combination | SI Unit | Expression |
+|----------|-----------|----------------|---------|------------|
+| **Velocity** | L/T | T²·T⁻¹ | m/s | L·T⁻¹ |
+| **Acceleration** | L/T² | T²·T⁻¹·T⁻¹ | m/s² | L·T⁻² |
+| **Angular velocity** | 1/T | T⁻¹ | rad/s | T⁻¹ |
+| **Angular acceleration** | 1/T² | T⁻¹·T⁻¹ | rad/s² | T⁻² |
+| **Jerk** | L/T³ | T²·T⁻¹·T⁻¹·T⁻¹ | m/s³ | L·T⁻³ |
+
+### Dynamics
+
+| Quantity | Dimension | Tᵏ Combination | SI Unit | Expression |
+|----------|-----------|----------------|---------|------------|
+| **Linear momentum** | M·L/T | T³·T²·T⁻¹ | kg·m/s | M·L·T⁻¹ |
+| **Force** | M·L/T² | T³·T²·T⁻¹·T⁻¹ | N (Newton) | M·L·T⁻² |
+| **Angular momentum** | M·L²/T | T³·T²·T²·T⁻¹ | kg·m²/s | M·L²·T⁻¹ |
+| **Impulse** | M·L/T | T³·T²·T⁻¹ | N·s | M·L·T⁻¹ |
+| **Torque** | M·L²/T² | T³·T²·T²·T⁻¹·T⁻¹ | N·m | M·L²·T⁻² |
+
+### Energy and Work
+
+| Quantity | Dimension | Tᵏ Combination | SI Unit | Expression |
+|----------|-----------|----------------|---------|------------|
+| **Energy/Work** | M·L²/T² | T³·T²·T²·T⁻¹·T⁻¹ | J (Joule) | M·L²·T⁻² |
+| **Power** | M·L²/T³ | T³·T²·T²·T⁻¹·T⁻¹·T⁻¹ | W (Watt) | M·L²·T⁻³ |
+| **Action** | M·L²/T | T³·T²·T²·T⁻¹ | J·s | M·L²·T⁻¹ |
+| **Energy density** | M/(L·T²) | T³·T⁻²·T⁻¹·T⁻¹ | J/m³ | M·L⁻¹·T⁻² |
+
+### Fluid Mechanics and Thermodynamics
+
+| Quantity | Dimension | Tᵏ Combination | SI Unit | Expression |
+|----------|-----------|----------------|---------|------------|
+| **Pressure** | M/(L·T²) | T³·T⁻²·T⁻¹·T⁻¹ | Pa (Pascal) | M·L⁻¹·T⁻² |
+| **Density** | M/L³ | T³·T⁻²·T⁻²·T⁻² | kg/m³ | M·L⁻³ |
+| **Dynamic viscosity** | M/(L·T) | T³·T⁻²·T⁻¹ | Pa·s | M·L⁻¹·T⁻¹ |
+| **Kinematic viscosity** | L²/T | T²·T²·T⁻¹ | m²/s | L²·T⁻¹ |
+| **Surface tension** | M/T² | T³·T⁻¹·T⁻¹ | N/m | M·T⁻² |
+| **Volumetric flow rate** | L³/T | T²·T²·T²·T⁻¹ | m³/s | L³·T⁻¹ |
+| **Mass flow rate** | M/T | T³·T⁻¹ | kg/s | M·T⁻¹ |
+
+### Waves and Oscillations
+
+| Quantity | Dimension | Tᵏ Combination | SI Unit | Expression |
+|----------|-----------|----------------|---------|------------|
+| **Frequency** | 1/T | T⁻¹ | Hz | T⁻¹ |
+| **Wave number** | 1/L | T⁻² | m⁻¹ | L⁻¹ |
+| **Wave velocity** | L/T | T²·T⁻¹ | m/s | L·T⁻¹ |
+| **Acoustic impedance** | M/(L²·T) | T³·T⁻²·T⁻²·T⁻¹ | Pa·s/m | M·L⁻²·T⁻¹ |
+| **Acoustic intensity** | M/T³ | T³·T⁻¹·T⁻¹·T⁻¹ | W/m² | M·T⁻³ |
+
+### Gravitation
+
+| Quantity | Dimension | Tᵏ Combination | SI Unit | Expression |
+|----------|-----------|----------------|---------|------------|
+| **Gravitational constant G** | L³/(M·T²) | T²·T²·T²·T⁻³·T⁻¹·T⁻¹ | m³/(kg·s²) | L³·M⁻¹·T⁻² |
+| **Gravitational field** | L/T² | T²·T⁻¹·T⁻¹ | m/s² | L·T⁻² |
+| **Gravitational potential** | L²/T² | T²·T²·T⁻¹·T⁻¹ | m²/s² | L²·T⁻² |
+
+---
+
+## 4. Summary by Variation Type
+
+### Synthetic Table of Interpretations
+
+| Exponent k | Level n | Dimension | Variation Type | Typical Quantities |
+|------------|---------|-----------|----------------|-------------------|
+| **0** | 1 | 1 | None | Dimensionless constants, angles |
+| **1** | 2 | T | Direct temporal | Duration, period |
+| **2** | 4 | L | Direct spatial | Distance, length |
+| **3** | 6 | M | Direct mass | Mass, quantity |
+| **-1** | 3 | T⁻¹ | **Inverse temporal** | Frequency, rate, rhythm |
+| **-2** | 5 | L⁻¹, L⁻² | **Inverse spatial** | Curvature, surface density |
+| **-3** | 7 | M⁻¹ | **Inverse mass** | Ratio per unit mass |
+| **-4** | 9 | T⁻² | **Temporal acceleration** | Frequency change rate |
+| **-5** | 11 | L⁻³ | **Volumetric** | Density, concentration |
+
+---
+
+## 5. Key Observations
+
+### Coherence with MLT System
+
+The system **T¹=T, T²=L, T³=M** exactly reproduces the **MLT system** (Mass-Length-Time) of classical dimensional analysis:
+
+✅ All mechanical quantities are expressible  
+✅ Negative exponents generate rates, densities and variations  
+✅ The structure is consistent with standard dimensional physics  
+✅ Combinations produce all derived SI units  
+
+### Pattern of Negative Exponents
+
+- **k = -1**: Temporal variation (how many times per second?)
+- **k = -2**: Linear/surface spatial variation (how much per meter/meter²?)
+- **k = -3**: Mass variation (how much per kilogram?)
+- **k = -5**: Volumetric spatial variation (how much per meter³?)
+
+### Fundamental Duality
+
+Each positive exponent has its negative "dual":
+- **T¹ (time) ↔ T⁻¹ (frequency)**
+- **T² (length) ↔ T⁻² (curvature)**
+- **T³ (mass) ↔ T⁻³ (per unit mass)**
+
+---
+
+## 6. Complete Physical Quantities by Category
+
+### Classical Mechanics
+- Position: L
+- Velocity: L·T⁻¹
+- Acceleration: L·T⁻²
+- Force: M·L·T⁻²
+- Energy: M·L²·T⁻²
+- Power: M·L²·T⁻³
+- Momentum: M·L·T⁻¹
+- Pressure: M·L⁻¹·T⁻²
+
+### Thermodynamics
+- Temperature: (requires system extension)
+- Entropy: M·L²·T⁻²·K⁻¹ (with temperature)
+- Heat: M·L²·T⁻²
+- Heat capacity: M·L²·T⁻²·K⁻¹
+
+### Electromagnetism
+(Would require adding electric charge dimension Q as T⁴ or equivalent)
+
+### Optics and Waves
+- Frequency: T⁻¹
+- Wavelength: L
+- Phase velocity: L·T⁻¹
+- Wave number: L⁻¹
+- Intensity: M·T⁻³
+
+---
+
+**ArXe System** — Recursive Exentational Architecture  
+Complete dimensional mapping from fractal logical structure
+
+# Appendix: Summary
+### 📝 Appendix: Summary of Complementary Documents
+
+This appendix serves as an **index of external resources** and ensures the traceability of all supporting material. For each document that complements this work, the following information is specified:
+
+* **File Name:** Unique identifier of the document.
+* **Download Location:** Path or URL for accessing the file.
+* **Thematic Item:** The main area of the theory addressed by the document.
+* **Line Number:** The precise reference within the body of this work.
+
+
+## Appendix: 2_summary.md
+
 # Summary with line numbers
 - **readme_en.md**
 [GitHub: readme_en.md](https://github.com/diego-tentor/arxelogic/tree/master/10_final/readme_en.md)
   - ArXe Theory [1]
   - Status [5]
   - How to Explore [10]
+
+- **1_appendix.md**
+[GitHub: 1_appendix.md](https://github.com/diego-tentor/arxelogic/tree/master/1_appendix.md)
+  - Appendix: ArXe Theory The Logical-Physical Co-emergence of the Universe [1]
+  - A Cosmology from the Fundamental Contradictory Act [2]
+  - 1a. [4]
+  - 1b. Purpose and Scope [10]
+  - Introduction [15]
+  - 4. Axiom [21]
+  - The Fundamental Axiom [25]
+  - The Act as Fundamental Contradiction [36]
+  - 5. Recursive Fractal Ontology and Dimensional Mapping [46]
+  - Recursive Exentation System [47]
+  - Definition [48]
+  - 5.2 Logical Structure [63]
+  - 5.2 Recursive Structure [76]
+  - 5.3 Mapping Function e(n) → k [82]
+  - 5.4 Definition [84]
+  - 5.5 Generated Sequence [93]
+  - 5.6 Inverse Function n(k) ← k [105]
+  - 5.7 Derivation [107]
+  - 5.8 Inverse Formula [115]
+  - 5.9 Verification [125]
+  - Consequences [135]
+  - 6. Dimensional Assignment [143]
+  - 6.1 Hypothesis [145]
+  - 6.2 Ontological Isomorphisms Table [170]
+  - 6.3 Observations [183]
+  - 6.4 Algebraic Structure [191]
+  - 6.5 Exponent Group [193]
+  - 6.6 Duality [205]
+  - The Structure of Exentations [215]
+  - **T^0 - Absolute Non-existence** [219]
+  - **T^1 - Homogeneous Positive Time** [224]
+  - **T^-1 - Temporal Alterity** [231]
+  - **T^2 - Spatial Anteriority** [242]
+  - **T^-2 - Spatial Variation** [253]
+  - Emergence of the Massive Dimension [265]
+  - **T^3 - Mass as Space-Time** [267]
+  - **T^-3 - Massive Variation** [281]
+  - 4.3 T^-1: Alternation (Exentation of T^1) [292]
+  - 4.4 T^2: Anteriority (Exentation of T^-1) [324]
+  - 4.5 T^3: Depth and Objectivity (Exentation of T^2) [364]
+  - 6. Structural Progression Table [409]
+  - Higher Levels: Hyperspaces and Information Processing [421]
+  - **T4 - Computational Hyperspace** [423]
+  - **T5 - Hyper-computers** [436]
+  - 7. Similarities with Physical and Philosophical Concepts [449]
+  - 7.1 Fundamental Time (Tf) and Physics [451]
+  - 7.2 Ontological Probability and Quantum Mechanics [462]
+  - 7.3 Space-Time and Relativity [472]
+  - 7.4 Causality and Symmetry [479]
+  - 8. Glossary of Technical Terms [493]
+  - 9. Operational Principles for AI [512]
+  - 10. Limitations and Scope [526]
+  - Appendix: # Physical Units System by Exentation Exponent [541]
+  - Fundamental Assignment [547]
+  - 1. Fundamental Exponents [556]
+  - Positive Exponents (Direct Dimensions) [558]
+  - Negative Exponents (Inverse Dimensions) [572]
+  - 2. Physical Units by Exentation Level [586]
+  - Level k = -1 (n = 3): Temporal Variation [588]
+  - Level k = -2 (n = 5): Spatial Variation [605]
+  - Linear Variation (L⁻¹) [609]
+  - Surface Variation (L⁻²) [618]
+  - Level k = -3 (n = 7): Mass Variation [634]
+  - Level k = -5 (n = 11): Volumetric Variation [648]
+  - 3. Composite Units (Combinations) [663]
+  - Kinematics [665]
+  - Dynamics [675]
+  - Energy and Work [685]
+  - Fluid Mechanics and Thermodynamics [694]
+  - Waves and Oscillations [706]
+  - Gravitation [716]
+  - 4. Summary by Variation Type [726]
+  - Synthetic Table of Interpretations [728]
+  - 5. Key Observations [744]
+  - Coherence with MLT System [746]
+  - Pattern of Negative Exponents [755]
+  - Fundamental Duality [762]
+  - 6. Complete Physical Quantities by Category [771]
+  - Classical Mechanics [773]
+  - Thermodynamics [783]
+  - Electromagnetism [789]
+  - Optics and Waves [792]
+  - Appendix: Summary [804]
+  - 📝 Appendix: Summary of Complementary Documents [805]
 
 - **arxe_factic_theory_en.md**
 [GitHub: arxe_factic_theory_en.md](https://github.com/diego-tentor/arxelogic/tree/master/1_digest/arxe_factic_theory_en.md)
@@ -18,215 +1181,107 @@
   - Recursive Exentation System [41]
   - Definition [42]
   - 5.2 Logical Structure [57]
-  - 5.2 Recursive Structure [69]
-  - 5.3 Mapping Function e(n) → k [75]
-  - 5.4 Definition [77]
-  - 5.5 Generated Sequence [86]
-  - 5.6 Inverse Function n(k) ← k [98]
-  - 5.7 Derivation [100]
-  - 5.8 Inverse Formula [108]
-  - 5.9 Verification [118]
-  - Consequences [128]
-  - 6. Dimensional Assignment [136]
-  - 6.1 Hypothesis [138]
-  - 6.2 Ontological Isomorphisms Table [163]
-  - 6.3 Observations [176]
-  - 6.4 Algebraic Structure [184]
-  - 6.5 Exponent Group [186]
-  - 6.6 Duality [198]
-  - The Structure of Exentations [208]
-  - **T0 - Absolute Non-existence** [212]
-  - **T1 - Homogeneous Positive Time** [217]
-  - **T-1 - Temporal Alterity** [224]
-  - **T2 - Spatial Anteriority** [235]
-  - **T-2 - Spatial Variation** [246]
-  - Emergence of the Massive Dimension [258]
-  - **T3 - Mass as Space-Time** [260]
-  - **T-3 - Massive Variation** [274]
-  - 4.3 T^-1: Alternation (Exentation of T^1) [285]
-  - 4.4 T^2: Anteriority (Exentation of T^-1) [317]
-  - 4.5 T^3: Depth and Objectivity (Exentation of T^2) [357]
-  - 6. Structural Progression Table [402]
-  - Higher Levels: Hyperspaces and Information Processing [414]
-  - **T4 - Computational Hyperspace** [416]
-  - **T5 - Hyper-computers** [429]
-  - 7. Similarities with Physical and Philosophical Concepts [442]
-  - 7.1 Fundamental Time (Tf) and Physics [444]
-  - 7.2 Ontological Probability and Quantum Mechanics [455]
+  - 5.2 Recursive Structure [70]
+  - 5.3 Mapping Function e(n) → k [76]
+  - 5.4 Definition [78]
+  - 5.5 Generated Sequence [87]
+  - 5.6 Inverse Function n(k) ← k [99]
+  - 5.7 Derivation [101]
+  - 5.8 Inverse Formula [109]
+  - 5.9 Verification [119]
+  - Consequences [129]
+  - 6. Dimensional Assignment [137]
+  - 6.1 Hypothesis [139]
+  - 6.2 Ontological Isomorphisms Table [164]
+  - 6.3 Observations [177]
+  - 6.4 Algebraic Structure [185]
+  - 6.5 Exponent Group [187]
+  - 6.6 Duality [199]
+  - The Structure of Exentations [209]
+  - **T^0 - Absolute Non-existence** [213]
+  - **T^1 - Homogeneous Positive Time** [218]
+  - **T^-1 - Temporal Alterity** [225]
+  - **T^2 - Spatial Anteriority** [236]
+  - **T^-2 - Spatial Variation** [247]
+  - Emergence of the Massive Dimension [259]
+  - **T^3 - Mass as Space-Time** [261]
+  - **T^-3 - Massive Variation** [275]
+  - 4.3 T^-1: Alternation (Exentation of T^1) [286]
+  - 4.4 T^2: Anteriority (Exentation of T^-1) [318]
+  - 4.5 T^3: Depth and Objectivity (Exentation of T^2) [358]
+  - 6. Structural Progression Table [403]
+  - Higher Levels: Hyperspaces and Information Processing [415]
+  - **T4 - Computational Hyperspace** [417]
+  - **T5 - Hyper-computers** [430]
+  - 7. Similarities with Physical and Philosophical Concepts [443]
+  - 7.1 Fundamental Time (Tf) and Physics [445]
+  - 7.2 Ontological Probability and Quantum Mechanics [456]
   - 7.3 Space-Time and Relativity [466]
   - 7.4 Causality and Symmetry [473]
   - 8. Glossary of Technical Terms [487]
   - 9. Operational Principles for AI [506]
   - 10. Limitations and Scope [520]
-  - Physical Units System by Exentation Exponent [542]
-  - Fundamental Assignment [544]
-  - 1. Fundamental Exponents [553]
-  - Positive Exponents (Direct Dimensions) [555]
-  - Negative Exponents (Inverse Dimensions) [569]
-  - 2. Physical Units by Exentation Level [583]
-  - Level k = -1 (n = 3): Temporal Variation [585]
-  - Level k = -2 (n = 5): Spatial Variation [602]
-  - Linear Variation (L⁻¹) [606]
-  - Surface Variation (L⁻²) [615]
-  - Level k = -3 (n = 7): Massive Variation [631]
-  - Level k = -5 (n = 11): Volumetric Variation [645]
-  - 3. Compound Units (Combinations) [660]
-  - Kinematics [662]
-  - Dynamics [672]
-  - Energy and Work [682]
-  - Fluid Mechanics and Thermodynamics [691]
-  - Waves and Oscillations [703]
-  - Gravitation [713]
-  - 4. Summary by Type of Variation [723]
-  - Synthetic Table of Interpretations [725]
-  - 5. Key Observations [741]
-  - Coherence with MLT System [743]
-  - Pattern of Negative Exponents [752]
-  - Fundamental Duality [759]
-  - 6. Complete Physical Magnitudes by Category [768]
-  - Classical Mechanics [770]
-  - Thermodynamics [780]
-  - Electromagnetism [786]
-  - Optics and Waves [789]
-  - Experimental Implications and Predictions [798]
-
-- **arxe_factic_theory_en_V2.md**
-[GitHub: arxe_factic_theory_en_V2.md](https://github.com/diego-tentor/arxelogic/tree/master/1_digest/arxe_factic_theory_en_V2.md)
-  - 1. Purpose and Scope [1]
-  - 4. Axiom [6]
-  - 5. Recursive Fractal Ontology and Dimensional Mapping [10]
-  - Recursive Exentation System [11]
-  - Definition [12]
-  - 5.2 Logical Structure [28]
-  - 5.2 Recursive Structure [41]
-  - 5.3 Mapping Function e(n) → k [46]
-  - 5.4 Definition [48]
-  - 5.5 Generated Sequence [57]
-  - 5.6 Inverse Function n(k) ← k [69]
-  - 5.7 Derivation [71]
-  - 5.8 Inverse Formula [79]
-  - 5.9 Verification [89]
-  - Consequences [98]
-  - 6. Dimensional Assignment [106]
-  - 6.1 Hypothesis [108]
-  - 6.2 Ontological Isomorphism Table [134]
-  - 6.3 Observations [147]
-  - 6.4 Algebraic Structure [155]
-  - 6.5 Exponent Group [157]
-  - 6.6 Duality [169]
-  - The Structure of Exentations [179]
-  - **T0 - Absolute Non-existence** [183]
-  - **T1 - Homogeneous Positive Time** [188]
-  - **T-1 - Temporal Alterity** [195]
-  - **T2 - Spatial Anteriority** [206]
-  - **T-2 - Spatial Variation** [217]
-  - Emergence of the Massive Dimension [229]
-  - **T3 - Mass as Space-Time** [231]
-  - **T-3 - Massive Variation** [245]
-  - 4.3 T^-1: Alternation (Exentation of T^1) [256]
-  - 4.4 T^2: Anteriority (Exentation of T^-1) [288]
-  - 4.5 T^3: Depth and Objectivity (Exentation of T^2) [328]
-  - 6. Structural Progression Table [373]
-  - 7. Similarities with Physical and Philosophical Concepts [385]
-  - 7.1 Fundamental Time (Tf) and Physics [387]
-  - 7.2 Ontological Probability and Quantum Mechanics [398]
-  - 7.3 Space-Time and Relativity [409]
-  - 7.4 Causality and Symmetry [416]
-  - 8. Glossary of Technical Terms [430]
-  - 9. Operational Principles for AI [449]
-  - 10. Limitations and Scope [463]
-  - Physical Units System by Exentation Exponent [485]
-  - Fundamental Assignment [487]
-  - 1. Fundamental Exponents [496]
-  - Positive Exponents (Direct Dimensions) [498]
-  - Negative Exponents (Inverse Dimensions) [512]
-  - 2. Physical Units by Exentation Level [526]
-  - Level k = -1 (n = 3): Temporal Variation [528]
-  - Level k = -2 (n = 5): Spatial Variation [545]
-  - Linear Variation (L⁻¹) [549]
-  - Surface Variation (L⁻²) [558]
-  - Level k = -3 (n = 7): Massive Variation [574]
-  - Level k = -5 (n = 11): Volumetric Variation [588]
-  - 3. Compound Units (Combinations) [603]
-  - Kinematics [605]
-  - Dynamics [615]
-  - Energy and Work [625]
-
-- **arxe_factic_theory_es_V2.md**
-[GitHub: arxe_factic_theory_es_V2.md](https://github.com/diego-tentor/arxelogic/tree/master/1_digest/arxe_factic_theory_es_V2.md)
-  - 1. Propósito y Alcance [1]
-  - 4. Axioma [6]
-  - 5. Ontología Fractal Recursiva y Mapeo Dimensional [10]
-  - Sistema de Exentación Recursivo [11]
-  - Definición [12]
-  - 5.2 Estructura Lógica [28]
-  - 5.2 Estructura Recursiva [41]
-  - 5.3 Función de Mapeo e(n) → k [46]
-  - 5.4 Definición [48]
-  - 5.5 Secuencia Generada [57]
-  - 5.6 Función Inversa n(k) ← k [69]
-  - 5.7 Derivación [71]
-  - 5.8 Fórmula Inversa [79]
-  - 5.9 Verificación [89]
-  - Consecuencias [98]
-  - 6. Asignación Dimensional [106]
-  - 6.1 Hipótesis [108]
-  - 6.2 Tabla de Isomorfismos Ontológicos [134]
-  - 6.3 Observaciones [147]
-  - 6.4 Estructura Algebraica [155]
-  - 6.5 Grupo de Exponentes [157]
-  - 6.6 Dualidad [169]
-  - La Estructura de las Exentaciones [179]
-  - **T0 - Inexistencia Absoluta** [183]
-  - **T1 - Tiempo Positivo Homogéneo** [188]
-  - **T-1 - Alteridad Temporal** [195]
-  - **T2 - Anterioridad Espacial** [206]
-  - **T-2 - Variación Espacial** [217]
-  - Emergencia de la Dimensión Másica [229]
-  - **T3 - Masa como Espacio-Tiempo** [231]
-  - **T-3 - Variación Másica** [245]
-  - 4.3 T^-1: Alternancia (Exentación de T^1) [256]
-  - 4.4 T^2: Anterioridad (Exentación de T^-1) [288]
-  - 4.5 T^3: Profundidad y Objetividad (Exentación de T^2) [328]
-  - 6. Tabla de Progresión Estructural [373]
-  - 7. Similitudes con Conceptos Físicos y Filosóficos [385]
-  - 7.1 Tiempo Fundamental (Tf) y Física [387]
-  - 7.2 Probabilidad Ontológica y Mecánica Cuántica [398]
-  - 7.3 Espacio-Tiempo y Relatividad [409]
-  - 7.4 Causalidad y Simetría [416]
-  - 8. Glosario de Términos Técnicos [430]
-  - 9. Principios Operativos para IA [449]
-  - 10. Limitaciones y Alcance [463]
-  - Sistema de Unidades Físicas por Exponente de Exentación [485]
-  - Asignación Fundamental [487]
-  - 1. Exponentes Fundamentales [496]
-  - Exponentes Positivos (Dimensiones Directas) [498]
-  - Exponentes Negativos (Dimensiones Inversas) [512]
-  - 2. Unidades Físicas por Nivel de Exentación [526]
-  - Nivel k = -1 (n = 3): Variación Temporal [528]
-  - Nivel k = -2 (n = 5): Variación Espacial [545]
-  - Variación Lineal (L⁻¹) [549]
-  - Variación Superficial (L⁻²) [558]
-  - Nivel k = -3 (n = 7): Variación Másica [574]
-  - Nivel k = -5 (n = 11): Variación Volumétrica [588]
-  - 3. Unidades Compuestas (Combinaciones) [603]
-  - Cinemática [605]
-  - Dinámica [615]
-  - Energía y Trabajo [625]
-  - Mecánica de Fluidos y Termodinámica [634]
-  - Ondas y Oscilaciones [646]
-  - Gravitación [656]
-  - 4. Resumen por Tipo de Variación [666]
-  - Tabla Sintética de Interpretaciones [668]
-  - 5. Observaciones Clave [684]
-  - Coherencia con el Sistema MLT [686]
-  - Patrón de Exponentes Negativos [695]
-  - Dualidad Fundamental [702]
-  - 6. Magnitudes Físicas Completas por Categoría [711]
-  - Mecánica Clásica [713]
-  - Termodinámica [723]
-  - Electromagnetismo [729]
-  - Óptica y Ondas [732]
+  - Physical Units System by Exentation Exponent [536]
+  - Fundamental Assignment [538]
+  - 1. Fundamental Exponents [547]
+  - Positive Exponents (Direct Dimensions) [549]
+  - Negative Exponents (Inverse Dimensions) [563]
+  - 2. Physical Units by Exentation Level [577]
+  - Level k = -1 (n = 3): Temporal Variation [579]
+  - Level k = -2 (n = 5): Spatial Variation [596]
+  - Linear Variation (L⁻¹) [600]
+  - Surface Variation (L⁻²) [609]
+  - Level k = -3 (n = 7): Massive Variation [625]
+  - Level k = -5 (n = 11): Volumetric Variation [639]
+  - 3. Compound Units (Combinations) [654]
+  - Kinematics [656]
+  - Dynamics [666]
+  - Energy and Work [676]
+  - Fluid Mechanics and Thermodynamics [685]
+  - Waves and Oscillations [697]
+  - Gravitation [707]
+  - 4. Summary by Type of Variation [717]
+  - Synthetic Table of Interpretations [719]
+  - 5. Key Observations [735]
+  - Coherence with MLT System [737]
+  - Pattern of Negative Exponents [746]
+  - Fundamental Duality [753]
+  - 6. Some Physical Magnitudes by Category [762]
+  - Classical Mechanics [764]
+  - Thermodynamics [774]
+  - Electromagnetism [780]
+  - Optics and Waves [783]
+  - Experimental Implications and Predictions [792]
+  - Appendix: Physical Units System by Exentation Exponent [807]
+  - Fundamental Assignment [809]
+  - 1. Fundamental Exponents [818]
+  - Positive Exponents (Direct Dimensions) [820]
+  - Negative Exponents (Inverse Dimensions) [834]
+  - 2. Physical Units by Exentation Level [848]
+  - Level k = -1 (n = 3): Temporal Variation [850]
+  - Level k = -2 (n = 5): Spatial Variation [867]
+  - Linear Variation (L⁻¹) [871]
+  - Surface Variation (L⁻²) [880]
+  - Level k = -3 (n = 7): Mass Variation [896]
+  - Level k = -5 (n = 11): Volumetric Variation [910]
+  - 3. Composite Units (Combinations) [925]
+  - Kinematics [927]
+  - Dynamics [937]
+  - Energy and Work [947]
+  - Fluid Mechanics and Thermodynamics [956]
+  - Waves and Oscillations [968]
+  - Gravitation [978]
+  - 4. Summary by Variation Type [988]
+  - Synthetic Table of Interpretations [990]
+  - 5. Key Observations [1006]
+  - Coherence with MLT System [1008]
+  - Pattern of Negative Exponents [1017]
+  - Fundamental Duality [1024]
+  - 6. Complete Physical Quantities by Category [1033]
+  - Classical Mechanics [1035]
+  - Thermodynamics [1045]
+  - Electromagnetism [1051]
+  - Optics and Waves [1054]
 
 - **dimensional-units-table_en.md**
 [GitHub: dimensional-units-table_en.md](https://github.com/diego-tentor/arxelogic/tree/master/1_digest/dimensional-units-table_en.md)
@@ -649,8 +1704,8 @@
   - 19.3 ¿Cómo Emergen las Asimetrías? [1672]
   - 20. Conclusión: Hacia una Física Mutualista [1690]
 
-- **arxe_logic_n_ary_1_en.md**
-[GitHub: arxe_logic_n_ary_1_en.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core/arxe_logic_n_ary_1_en.md)
+- **arxe_n-aridad_logica_formal_deep_en.md**
+[GitHub: arxe_n-aridad_logica_formal_deep_en.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core/arxe_n-aridad_logica_formal_deep_en.md)
   - n-ary Logics: Complete Formalization [1]
   - ArXe Fundamental Logical System [2]
   - 0. Notation and Conventions [8]
@@ -742,174 +1797,124 @@
   - 18. Limitations and Open Problems [1570]
   - 18.1 Formal Problems [1572]
 
-- **arxe_logic_n_ary_1__es.md**
-[GitHub: arxe_logic_n_ary_1__es.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core/arxe_logic_n_ary_1__es.md)
-  - 8.2 Propiedades Lógicas por Nivel [1]
-  - 8.3 Operadores por Nivel [18]
-  - 9. Axiomas Generales para Todas las Lógicas n-arias [30]
-  - 9.1 Meta-axiomas [32]
-  - 9.2 Esquema de Axiomatización por Nivel [71]
-  - 10. Teoremas Meta-lógicos [107]
-  - 10.1 Teoremas de Transición [109]
-  - 10.2 Teoremas de Completitud [137]
-  - 10.3 Teoremas de Consistencia [164]
-  - 11. Operadores n-arios Generales [192]
-  - 11.1 Operadores Básicos Parametrizados [194]
-  - 11.2 Operadores Específicos por Familia [222]
-  - 11.3 Composición de Operadores [236]
-  - 12. Semánticas Formales [256]
-  - 12.1 Semántica de Mundos Posibles (para L_2) [258]
-  - 12.2 Semántica Probabilística (para L_6) [283]
-  - 12.3 Semántica de Fibrados (para L_11, L_13) [304]
-  - 13. Sistemas de Deducción [333]
-  - 13.1 Sistema de Hilbert para L_3 [335]
-  - 13.2 Sistema de Gentzen para L_2 (Sequent Calculus) [356]
-  - 13.3 Deducción Natural para L_6 (Probabilística) [387]
-  - 14. Ejemplos de Derivaciones [405]
-  - 14.1 En L_3: Tercero Excluido [407]
-  - 14.2 En L_2: Indecidibilidad [418]
-  - 14.3 En L_6: Regla de Bayes [436]
-  - 14.4 En L_11: Invariancia Gauge [447]
-  - 15. Relaciones Entre Lógicas [463]
-  - 15.1 Diagramas de Inclusión [465]
-  - 15.2 Functores Entre Lógicas [490]
-  - 15.3 Adjunciones [514]
-  - 16. Aplicaciones Físicas [533]
-  - 16.1 Correspondencia Lógica-Física [535]
-  - 16.2 Ecuaciones Físicas como Lógicas [547]
-  - 16.3 Predicciones Desde Lógicas n-arias [577]
-  - 17. Extensiones y Generalizaciones [607]
-  - 17.1 Lógicas n-arias Cuánticas [609]
-  - 17.2 Lógicas n-arias Temporales [629]
-  - 17.3 Lógicas n-arias Fuzzy [645]
-  - 18. Limitaciones y Problemas Abiertos [666]
-  - 18.1 Problemas Formales [668]
-  - Sistema Lógico Fundamental [686]
-  - 0. Preliminares: Notación y Convenciones [692]
-  - 0.1 Notación Básica [694]
-  - 0.2 Operadores Básicos [726]
-  - 1. Lógica L_0: Lógica Contradictoria (n=0) [743]
-  - 1.1 Estructura [745]
-  - 1.2 Tabla de Verdad (Trivial) [760]
-  - 1.3 Axiomas de L_0 [785]
-  - 1.4 Teoremas [798]
-  - 1.5 Propiedades Metalógicas [815]
-  - 2. Lógica L_1: Lógica de Posibilidad (n=1) [829]
-  - 2.1 Estructura [831]
-  - 2.2 Tabla de Verdad [846]
-  - 2.3 Axiomas de L_1 [877]
-  - 2.4 Teoremas [898]
-  - 2.5 Propiedades Metalógicas [924]
-  - 3. Lógica L_2: Lógica Dual (n=2) [938]
-  - 3.1 Estructura [940]
-  - 3.2 Tablas de Verdad [955]
-  - 3.3 Axiomas de L_2 [1008]
-  - 3.4 Teoremas [1041]
-  - 3.5 Propiedades Metalógicas [1075]
-  - 4. Lógica L_3: Lógica Ternaria (n=3) [1090]
-  - 4.1 Estructura [1092]
-  - 4.2 Tablas de Verdad [1110]
-  - 4.3 Axiomas de L_3 [1168]
-  - 4.4 Teoremas [1198]
-  - 4.5 Propiedades Metalógicas [1232]
-  - 5. Lógica L_6: Lógica Bayesiana (n=6) [1246]
-  - 5.1 Estructura [1248]
-  - 5.2 Operadores (Probabilísticos) [1263]
-  - 5.3 Axiomas de L_6 (Kolmogorov + Bayesiano) [1286]
-  - 5.4 Teoremas [1323]
-  - 5.5 Propiedades Metalógicas [1350]
-  - 6. Lógica L_11: Lógica Gauge U(1) (n=11) [1364]
-  - 6.1 Estructura [1366]
-  - 6.2 Operadores [1380]
-  - 6.3 Axiomas de L_11 [1397]
-  - 6.4 Teoremas [1430]
-  - 6.5 Propiedades Metalógicas [1452]
-  - 7. Lógica L_13: Lógica SU(2) Débil (n=13) [1466]
-  - 7.1 Estructura [1468]
-  - 7.2 Operadores [1482]
-  - 7.3 Axiomas de L_13 [1499]
-  - 7.4 Teoremas [1526]
-  - 7.5 Propiedades Metalógicas [1546]
-  - 8. Tablas Comparativas [1560]
-  - 8.1 Valores de Verdad por Nivel [1562]
-  - 8.2 [1575]
+- **arxe_n-aridad_logica_formal_en.md**
+[GitHub: arxe_n-aridad_logica_formal_en.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core/arxe_n-aridad_logica_formal_en.md)
+  - n-ary Logics: Complete Formalization [1]
+  - ArXe's Fundamental Logical System [2]
+  - 0. Notation and Conventions [8]
+  - 0.1 Basic Symbols [10]
+  - 0.2 Propositional Variables [26]
+  - 0.3 Meta-language [32]
+  - 1. L₀: Contradictory Logic (n=0) [41]
+  - 1.1 Structure [43]
+  - 1.2 Axioms of L₀ [58]
+  - 1.3 Truth Tables (Degenerate) [78]
+  - 1.4 Theorems of L₀ [98]
+  - 1.5 Properties of L₀ [118]
+  - 2. L₁: Logic of Possibility (n=1) [139]
+  - 2.1 Structure [141]
+  - 2.2 Axioms of L₁ [156]
+  - 2.3 Truth Tables [184]
+  - 2.4 Theorems of L₁ [215]
+  - 2.5 Properties of L₁ [241]
+  - 3. L₂: Dual Logic (n=2) [259]
+  - 3.1 Structure [261]
+  - 3.2 Axioms of L₂ [280]
+  - 3.3 Truth Tables [305]
+  - 3.4 Theorems of L₂ [344]
+  - 3.5 Properties of L₂ [371]
+  - 4. L₃: Ternary Logic with Observer (n=3) [390]
+  - 4.1 Structure [392]
+  - 4.2 Axioms of L₃ [407]
+  - 4.3 Truth Tables (Classical) [433]
+  - 4.4 Theorems of L₃ (Classical) [465]
+  - 4.5 Properties of L₃ [491]
+  - 5. L₆: Bayesian Logic (n=6) [516]
+  - 5.1 Structure [518]
+  - 5.2 Axioms of L₆ [533]
+  - 5.3 Operators (Probabilistic) [559]
+  - 5.4 Theorems of L₆ [582]
+  - 5.5 Properties of L₆ [610]
+  - 6. L₁₁: U(1) Gauge Logic (n=11) [629]
+  - 6.1 Structure [631]
+  - 6.2 Axioms of L₁₁ [646]
+  - 6.3 Operators (with Gauge) [673]
+  - 6.4 Theorems of L₁₁ [694]
+  - 6.5 Properties of L₁₁ [723]
+  - 7. L₁₃: Weak Mixing Logic (n=13) [742]
+  - 7.1 Structure [744]
+  - 7.2 Axioms of L₁₃ [759]
+  - 7.3 Operators (Basis-Dependent) [787]
+  - 7.4 Theorems of L₁₃ [806]
+  - 7.5 Properties of L₁₃ [835]
+  - 8. Complete Hierarchy of Logics [854]
+  - 8.1 Summary Table [856]
 
-- **arxe_n-aridad_logica_formal_es.md**
-[GitHub: arxe_n-aridad_logica_formal_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core/arxe_n-aridad_logica_formal_es.md)
-  - Lógicas n-arias: Formalización Completa [1]
-  - Sistema Lógico Fundamental de ArXe [2]
-  - 0. Notación y Convenciones [8]
-  - 0.1 Símbolos Básicos [10]
-  - 0.2 Variables Proposicionales [27]
-  - 0.3 Meta-lenguaje [34]
-  - 1. L₀: Lógica Contradictoria (n=0) [44]
-  - 1.1 Estructura [46]
-  - 1.2 Axiomas de L₀ [61]
-  - 1.3 Tablas de Verdad (Degeneradas) [81]
-  - 1.4 Teoremas de L₀ [107]
-  - 1.5 Propiedades de L₀ [127]
-  - 2. L₁: Lógica de Posibilidad (n=1) [148]
-  - 2.1 Estructura [150]
-  - 2.2 Axiomas de L₁ [165]
-  - 2.3 Tablas de Verdad [193]
-  - 2.4 Teoremas de L₁ [232]
-  - 2.5 Propiedades de L₁ [258]
-  - 3. L₂: Lógica Dual (n=2) [276]
-  - 3.1 Estructura [278]
-  - 3.2 Axiomas de L₂ [297]
-  - 3.3 Tablas de Verdad [322]
-  - 3.4 Teoremas de L₂ [371]
-  - 3.5 Propiedades de L₂ [398]
-  - 4. L₃: Lógica Ternaria con Observador (n=3) [417]
-  - 4.1 Estructura [419]
-  - 4.2 Axiomas de L₃ [434]
-  - 4.3 Tablas de Verdad (Clásicas) [460]
-  - 4.4 Teoremas de L₃ (Clásicos) [502]
-  - 4.5 Propiedades de L₃ [528]
-  - 5. L₆: Lógica Bayesiana (n=6) [553]
-  - 5.1 Estructura [555]
-  - 5.2 Axiomas de L₆ [570]
-  - 5.3 Operadores (Probabilísticos) [596]
-  - 5.4 Teoremas de L₆ [619]
-  - 5.5 Propiedades de L₆ [647]
-  - 6. L₁₁: Lógica Gauge U(1) (n=11) [666]
-  - 6.1 Estructura [668]
-  - 6.2 Axiomas de L₁₁ [683]
-  - 6.3 Operadores (con Gauge) [710]
-  - 6.4 Teoremas de L₁₁ [731]
-  - 6.5 Propiedades de L₁₁ [760]
-  - 7. L₁₃: Lógica de Mezcla Débil (n=13) [779]
-  - 7.1 Estructura [781]
-  - 7.2 Axiomas de L₁₃ [796]
-  - 7.3 Operadores (Base-Dependientes) [824]
-  - 7.4 Teoremas de L₁₃ [843]
-  - 7.5 Propiedades de L₁₃ [872]
-  - 8. Jerarquía Completa de Lógicas [891]
-  - 8.1 Tabla Resumen [893]
+- **arxe_n-aridad_logica_philosophy_en.md**
+[GitHub: arxe_n-aridad_logica_philosophy_en.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core/arxe_n-aridad_logica_philosophy_en.md)
+  - n-ary Logics: Ontological and Phenomenological Foundations [1]
+  - 🌟 Preliminary Note [3]
+  - 🔄 Fundamental Structures by Arity Level [8]
+  - 1. Unary Logic (1-ary) - Level T⁰ [10]
+  - 2. Binary Logic (2-ary) - Level T¹ [26]
+  - 🔁 Alterity [35]
+  - 🚫 Excluded Third [41]
+  - ⚡ Immediacy [46]
+  - 🔄 Mutuality [50]
+  - 3. Ternary Logic (3-ary) - Level T⁻¹ [65]
+  - 🎭 Variance [73]
+  - 🔄 Alternation [77]
+  - 👁️ Third Participant [82]
+  - 4. Quaternary Logic (4-ary) - Level T² [101]
+  - 🌌 Containence [112]
+  - 📐 Parallax [117]
+  - ⚡ Pansion [122]
+  - 🕰️ Quantized Temporal Phenomenology [133]
+  - Temporal Particles (Tf) - Formal Definition [135]
+  - Temporal Structure Table [143]
+  - 🎪 Key Emergent Phenomena [155]
+  - 1. Perceived Regularity 🎵 [157]
+  - 2. Emergence of Space 🌌 [167]
+  - 3. Dimensional Ambiguity 📍 [175]
+  - 💡 Fundamental Principles [189]
+  - Limits of Experience [191]
+  - Structural Progression [197]
+  - Philosophical Implications [206]
+  - 🎯 Key Conclusions [214]
+  - 📚 Higher Levels (Summary) [224]
+  - 5-ary Logic (T⁻²) [226]
+  - 6-ary Logic (T³) [232]
+  - 7-ary Logic (T⁻³) [239]
+  - 8-ary Logic (T⁴) [243]
+  - 9-ary Logic (T⁻⁴) [246]
 
-- **Logicas n-arias_es.md**
-[GitHub: Logicas n-arias_es.md](https://github.com/diego-tentor/arxelogic/tree/master/2_logical_core/Logicas n-arias_es.md)
-  - Lo que sigue es un descripción abstracta, no demostrada, sobre aridad lógica [2]
-  - Principales características Lógica unaria o 1aria(T^0) [14]
-  - Principales características Lógica binaria o 2aria(T^1) [26]
-  - Principales características Lógica ternaria o 3aria (T^-1) [72]
-  - Principales características Lógica cuaternaria o 4-aria (T^2) [127]
-  - Principales características Lógica cuaternaria o 5-aria (T^-2) [154]
-  - 2. Fases como partículas temporales (Tf) [198]
-  - Definición establecida: [200]
-  - Propiedades de las partículas temporales: [207]
-  - 3. Estructura cuantizada de cada nivel [230]
-  - Tabla de partículas temporales: [232]
-  - 4. El quantum temporal como fundamento físico [245]
-  - Conexiones potenciales: [247]
-  - 5. Progresión estructural (adelanto) [268]
-  - Patrón de crecimiento: [270]
-  - Regularidad emergente (t^-1) [282]
-  - Espacialidad emergente (T^2) [294]
-  - Ambiguedad espacial: radial-angular (n=3) [304]
+- **2_summary.md**
+[GitHub: 2_summary.md](https://github.com/diego-tentor/arxelogic/tree/master/2_summary.md)
+  - Summary with line numbers [1]
 
-- **ArXe Derivation of Lepton Mass Ratios Evaluation_es.md**
-[GitHub: ArXe Derivation of Lepton Mass Ratios Evaluation_es.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/ArXe Derivation of Lepton Mass Ratios Evaluation_es.md)
+- **Angular Projection Factor Theorem_8pi_en.md**
+[GitHub: Angular Projection Factor Theorem_8pi_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/Angular Projection Factor Theorem_8pi_en.md)
+  - Angular Projection Factor Theorem: 8/π as Ternary Transition Emergent [1]
+  - Theorem Statement [3]
+  - **Formal Expression:** [9]
+  - 🧩 **Proof Structure** [20]
+  - **Step 1: Binary Logical Foundation** [22]
+  - **Step 2: Ternary Logical Necessity** [29]
+  - **Step 3: 3D Spatial Configuration Space** [37]
+  - **Step 4: Projection Cost π** [55]
+  - **Step 5: Emergence of 8/π** [67]
+  - 🎯 **Corollaries and Predictions** [85]
+  - **Corollary 1 (Sign Uniformity)** [87]
+  - **Corollary 2 (Dimensional Generalization)** [93]
+  - **Corollary 3 (Aridy Progression)** [103]
+  - 🔬 **Experimental Verification** [111]
+  - **Current Evidence**: [113]
+  - **Predictions**: [117]
+  - ✅ **Theorem Conclusion** [124]
+  - 📊 **Mathematical Consistency Check** [130]
+  - Theoretical prediction [135]
+  - From muon-tau transition empirical [139]
+  - Error analysis [143]
 
 - **arxe-commutator-markdown_en.md**
 [GitHub: arxe-commutator-markdown_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe-commutator-markdown_en.md)
@@ -1132,53 +2137,103 @@
   - Table of Contents [8]
   - 1. Executive Summary [28]
   - What We Derive [32]
-  - Foundation [61]
-  - 2. Electromagnetic Potential [72]
-  - 2.1 Four-Vector Potential [74]
-  - 2.2 Gauge Freedom [94]
-  - 2.3 Lorenz Gauge [129]
-  - 3. Field Strength Tensor [155]
-  - 3.1 Definition [157]
-  - 3.2 Components [173]
-  - 3.3 Lorentz Invariants [195]
-  - 4. U(1) Gauge Symmetry [216]
-  - 4.1 Local Phase Transformation [218]
-  - 4.2 Gauge Transformation of A^μ [240]
-  - 4.3 Tensor Invariance [256]
-  - 4.4 Why U(1)? [271]
-  - 5. Derivation of Maxwell Equations [293]
-  - 5.1 Source-Free Equations (Bianchi Identities) [295]
-  - 5.2 Equations with Sources (Dynamical) [322]
-  - 5.3 Complete Maxwell Equations [353]
-  - 6. ArXe Structure and T^-5 [382]
-  - 6.1 Electromagnetic Field Level [384]
-  - 6.2 Fine Structure Constant [402]
-  - 6.3 Field as Oscillator Network [422]
-  - 6.4 Photon Masslessness [449]
-  - 7. Second Quantization [474]
-  - 7.1 Mode Expansion [476]
-  - 7.2 Commutation Relations [503]
-  - 7.3 Hamiltonian [523]
-  - 7.4 Fock Space (Photon States) [547]
-  - 8. Connection to Harmonic Oscillator [585]
-  - 8.1 Each Mode = One Oscillator [587]
-  - 8.2 Comparison Table [616]
-  - 8.3 Vacuum Energy Problem [630]
-  - 9. Electromagnetic Waves [668]
-  - 9.1 Plane Wave Solutions [670]
-  - 9.2 Dispersion Relation [690]
-  - 9.3 Polarization States [716]
-  - 10. Gauge Choices [752]
-  - 10.1 Lorenz Gauge [754]
-  - 10.2 Coulomb Gauge (Radiation Gauge) [776]
-  - 10.3 Temporal Gauge [806]
-  - 10.4 ArXe: Gauge as Phase Redundancy [828]
-  - 11. Interaction with Matter [858]
-  - 11.1 Minimal Coupling [860]
-  - 11.2 Conserved Current [885]
-  - 11.3 QED (Quantum Electrodynamics) [904]
-  - 12. ArXe Deep Interpretation [933]
-  - 12.1 Detailed n=11 Structure [935]
+  - Foundation [65]
+  - 2. Electromagnetic Potential [76]
+  - 2.1 Four-Vector Potential [78]
+  - 2.2 Gauge Freedom [98]
+  - 2.3 Lorenz Gauge [133]
+  - 3. Field Strength Tensor [161]
+  - 3.1 Definition [163]
+  - 3.2 Components [179]
+  - 3.3 Lorentz Invariants [201]
+  - 4. U(1) Gauge Symmetry [222]
+  - 4.1 Local Phase Transformation [224]
+  - 4.2 Gauge Transformation of A^μ [246]
+  - 4.3 Tensor Invariance [262]
+  - 4.4 Why U(1)? [277]
+  - 5. Derivation of Maxwell Equations [303]
+  - 5.1 Source-Free Equations (Bianchi Identities) [305]
+  - 5.2 Equations with Sources (Dynamical) [332]
+  - 5.3 Complete Maxwell Equations [363]
+  - 6. ArXe Structure and T^-5 [396]
+  - 6.1 Electromagnetic Field Level [398]
+  - 6.2 Fine Structure Constant [416]
+  - 6.3 Field as Oscillator Network [436]
+  - 6.4 Photon Masslessness [466]
+  - 7. Second Quantization [491]
+  - 7.1 Mode Expansion [493]
+  - 7.2 Commutation Relations [520]
+  - 7.3 Hamiltonian [540]
+  - 7.4 Fock Space (Photon States) [564]
+  - 8. Connection to Harmonic Oscillator [602]
+  - 8.1 Each Mode = One Oscillator [604]
+  - 8.2 Comparison Table [633]
+  - 8.3 Vacuum Energy Problem [647]
+  - 9. Electromagnetic Waves [688]
+  - 9.1 Plane Wave Solutions [690]
+  - 9.2 Dispersion Relation [713]
+  - 9.3 Polarization States [747]
+  - 9.4 Energy and Momentum [802]
+  - 10. Gauge Choices [839]
+  - 10.1 Lorenz Gauge [841]
+  - 10.2 Coulomb Gauge (Radiation Gauge) [877]
+  - 10.3 Temporal Gauge (A⁰ = 0) [916]
+  - 10.4 ArXe: Gauge as Phase Redundancy [946]
+  - 11. Interaction with Matter [1007]
+  - 11.1 Minimal Coupling [1009]
+  - 11.2 Conserved Current [1047]
+  - 11.3 QED (Quantum Electrodynamics) [1089]
+  - 11.4 Running of α [1150]
+  - 12. ArXe Deep Interpretation [1194]
+  - 12.1 Detailed n=11 Structure [1196]
+  - 12.2 Why Photon is Massless [1234]
+  - 12.3 EM as Network of Oscillators [1277]
+  - 12.4 Gauge Freedom and Open BC [1332]
+  - 12.5 Connection to Harmonic Oscillator [1383]
+  - 13. Predictions and Tests [1432]
+  - 13.1 From n=11 Structure [1434]
+  - 13.2 Running of α [1478]
+  - 13.3 Photon Mass Limit [1513]
+  - 13.4 Gauge Structure Tests [1540]
+  - 13.5 Connections to Other Constants [1564]
+  - 14. Implementation [1592]
+  - 14.1 Computational Verification [1594]
+  - ArXe derivation [1601]
+  - Output: 137.510 [1608]
+  - Including loop corrections [1610]
+  - Output: 137.036 [1614]
+  - Experimental value [1616]
+  - Output: 0.001% [1620]
+  - Test at different scales [1640]
+  - Output: [1651]
+  - α^-1 at Electron scale: 137.04 [1652]
+  - α^-1 at Muon scale: 135.97 [1653]
+  - α^-1 at Z boson scale: 128.91 [1654]
+  - Define symbols [1661]
+  - Gauss's law [1668]
+  - No magnetic monopoles [1675]
+  - Verify c² = 1/(ε₀μ₀) [1682]
+  - Parameters [1706]
+  - Space and time [1712]
+  - Calculate fields [1716]
+  - Plot [1719]
+  - Verify dispersion relation [1730]
+  - Compute gradient of chi [1750]
+  - Transform potential [1753]
+  - Electric field: E_i = -∂A_i/∂t - ∂A0/∂x_i [1766]
+  - Magnetic field: B_i = ε_ijk ∂_j A_k [1771]
+  - Test gauge invariance [1778]
+  - Original potential [1783]
+  - Compute original fields [1790]
+  - Apply gauge transformation [1793]
+  - Compute transformed fields [1797]
+  - Verify invariance [1800]
+  - Experimental data (approximate) [1814]
+  - ArXe prediction [1820]
+  - 1-loop running [1829]
+  - Generate predictions [1838]
+  - Plot comparison [1842]
+  - Calculate errors at key scales [1855]
 
 - **arxe-quantum-derivation_2_en.md**
 [GitHub: arxe-quantum-derivation_2_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe-quantum-derivation_2_en.md)
@@ -1460,55 +2515,150 @@
   - 20. Final Remarks [1731]
   - Document Statistics [1765]
 
-- **arxe_derive_4pi_es.md**
-[GitHub: arxe_derive_4pi_es.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe_derive_4pi_es.md)
-  - ArXe: Derivación Pura de 4π [1]
-  - Desde Estructura n-aria y Transiciones Temporales [2]
-  - 1. El Problema de Buffon: Lección Clave [13]
-  - 1.1 Setup Clásico [15]
-  - 1.2 ¿Qué está pasando realmente? [40]
-  - 2. Estructura n-aria: 3 ↔ 2 [69]
-  - 2.1 T³ (n=6) y T² (n=4) [71]
-  - 2.2 Transición T³ → T² [93]
-  - 2.3 Orientaciones de Proyección [115]
-  - 3. Derivación desde Estructura n-aria Pura [151]
-  - 3.1 Condiciones de Contorno: Angular vs Lineal [153]
-  - 3.2 Caso 1: Pérdida de Radial [173]
-  - 3.3 Caso 2: Pérdida de Angular [196]
-  - 3.4 Estructura General [217]
-  - 4. Derivación Formal: Conteo de Configuraciones [236]
-  - 4.1 Espacio de Fases Discreto [238]
-  - 4.2 Transición T³ → T² con Pérdida [256]
-  - 4.3 ¿De Dónde Sale π? [281]
-  - 4.4 Aproximación Combinatoria [301]
-  - 5. Derivación Probabilística Directa [329]
-  - 5.1 Problema de Buffon Generalizado para T³→T² [331]
-  - 5.2 Interpretación en Términos de Actos Absolutos [366]
-  - 6. Formalización: Factor de Transición General [397]
-  - 6.1 Fórmula de Transición T^k → T^(k-1) [399]
-  - 6.2 Aplicación a ArXe [430]
-  - 7. Verificación: ¿Por Qué NO 2π o π? [453]
-  - 7.1 ¿Por Qué NO 2π? [455]
-  - 7.2 ¿Por Qué NO π? [478]
-  - 7.3 ¿Por Qué Exactamente 4π? [494]
-  - 8. El Factor 12π: Derivación Análoga [526]
-  - 8.1 ¿Por Qué 12π para Fermiones? [528]
-  - 8.2 Derivación desde Estructura [545]
-  - 8.3 Alternativa: 12π como Transición Compuesta [589]
-  - 9. Resumen: 4π Derivado [620]
-  - 9.1 Origen de 4π [622]
-  - 9.2 Fórmula General [639]
-  - 9.3 Aplicación a Constantes [654]
-  - 10. Implementación: Cálculo Numérico [680]
-  - 10.1 Código Python [682]
-  - Verificar [695]
-  - Para α^-1 [701]
-  - Error [709]
-  - 10.2 Derivación Numérica de 4π [715]
-  - 11. Conclusión [744]
-  - 11.1 ¿4π Completamente Derivado? [746]
-  - 11.2 Mejora Respecto a Antes [765]
-  - 11.3 Veredicto Final: α^-1 [781]
+- **arxe_bc_transition_theorem_en.md**
+[GitHub: arxe_bc_transition_theorem_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe_bc_transition_theorem_en.md)
+  - 🧠 Theorem of Boundary Condition Transitions in ArXe [1]
+  - 📌 Theorem Statement [2]
+  - 1. Number of Iterations [13]
+  - 2. Resulting Mass Formula [21]
+  - 3. Amplification Factor [29]
+  - 🧩 Structured Proof [35]
+  - Step 1: Fundamental Definitions [37]
+  - Step 2: Transition Typology [57]
+  - Type A: Continuity [59]
+  - Type B: Alternation [64]
+  - Type C: Alternativity [69]
+  - Step 3: Transition Counting [76]
+  - Step 4: Recursive Formula Derivation [102]
+  - Step 5: Origin of π Factor [126]
+  - 📊 Applications and Verifications [137]
+  - Electron → Muon [139]
+  - Muon → Tau [144]
+  - 🎯 Important Corollaries [151]
+  - Corollary 1 (First Opening) [153]
+  - Corollary 2 (Subsequent Openings) [160]
+  - Corollary 3 (n=2 Impossibility) [167]
+  - 🔮 Predictions and Extensions [174]
+  - Hypothetical Particle with N=2 [176]
+  - Neutrino Extension [182]
+  - ✅ Theorem Conclusion [189]
+  - 📋 Implementation Examples [195]
+  - Electron to Muon Calculation [197]
+  - Electron → Muon [204]
+  - Muon → Tau [209]
+
+- **arxe_derivation_of_lepton_mass_ratios_en.md**
+[GitHub: arxe_derivation_of_lepton_mass_ratios_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe_derivation_of_lepton_mass_ratios_en.md)
+  - ArXe Derivation of Lepton Mass Ratios [1]
+  - Complete Theoretical Framework for m_μ/m_e and m_τ/m_e [2]
+  - Executive Summary [6]
+  - Part I: Empirical Recursive Formula [19]
+  - 1.1 Observed Pattern [21]
+  - 1.2 General Recursive Formula [45]
+  - 1.3 Closed Form (for constant a, all signs +) [56]
+  - Part II: ArXe Theoretical Foundation [70]
+  - 2.1 ArXe Level Structure for Leptons [72]
+  - 2.2 Derivation of n_τ = 85 [85]
+  - 2.3 Physical Interpretation of Factorizations [114]
+  - Part III: Derivation of a = 3 (Electron → Muon) [135]
+  - 3.1 Direct Level Ratio [137]
+  - 3.2 Why 4 Iterations? [147]
+  - 3.3 Role of +π Term [161]
+  - Part IV: Derivation of a = 8/π (Muon → Tau) [175]
+  - 4.1 The Critical Transition [177]
+  - 4.2 Buffon's Problem in Three Dimensions [186]
+  - 4.3 Mathematical Derivation [202]
+  - 4.4 Why π in Denominator (Not Numerator)? [228]
+  - 4.5 Physical Interpretation [241]
+  - Part V: Unified Lepton Mass Formula [258]
+  - 5.1 Complete Hierarchy [260]
+  - 5.2 General Formula by Transition Type [278]
+  - 5.3 Prediction for Hypothetical Heavier Leptons [292]
+  - Part VI: Comparison with Experiment [309]
+  - 6.1 Accuracy Table [311]
+  - 6.2 Why Such High Precision? [319]
+  - 6.3 Parameters vs Predictions [329]
+  - Part VII: Deeper Implications [346]
+  - 7.1 Mass as Ontological Density [348]
+  - 7.2 Why Charged Leptons Only? [354]
+  - 7.3 Connection to Higgs Mechanism [363]
+  - 7.4 Why π Appears Everywhere [370]
+  - Part VIII: Testable Predictions [382]
+  - 8.1 Anomalous Magnetic Moments [384]
+  - 8.2 Production Cross Sections [400]
+  - 8.3 Decay Modes [411]
+  - 8.4 Neutrino Sector [425]
+  - Part IX: Relationship to Standard Model [442]
+  - 9.1 What ArXe Adds [444]
+  - 9.2 Complementarity, Not Replacement [456]
+  - 9.3 Where SM Parameters Come From [465]
+  - Part X: Open Questions and Future Work [477]
+  - 10.1 Remaining Mysteries [479]
+  - 10.2 Extensions Needed [496]
+  - 10.3 Mathematical Formalization [513]
+  - Part XI: Philosophical Implications [530]
+  - 11.1 Nature of Physical Law [532]
+  - 11.2 Role of Constants [542]
+  - 11.3 Explanation vs Description [552]
+  - Part XII: Summary and Conclusions [565]
+  - 12.1 Main Results [567]
+  - 12.2 Theoretical Significance [588]
+  - 12.3 Confidence Assessment [603]
+  - 12.4 Next Steps [621]
+  - Appendix A: Notation and Conventions [640]
+  - A.1 ArXe Levels [642]
+  - A.2 Physical Units [657]
+  - A.3 Mathematical Symbols [667]
+  - Appendix B: Computational Verification [680]
+  - B.1 Python Implementation [682]
+  - Electron to Muon [699]
+  - Muon to Tau [705]
+  - Verify matches recursive [729]
+
+- **arxe_derive_4pi_en.md**
+[GitHub: arxe_derive_4pi_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe_derive_4pi_en.md)
+  - ArXe: Pure Derivation of 4π [1]
+  - From n-ary Structure and Temporal Transitions [2]
+  - 1. Buffon's Problem: Key Lesson [13]
+  - 1.1 Classical Setup [15]
+  - 1.2 What's Really Happening? [43]
+  - 2. n-ary Structure: 3 ↔ 2 [75]
+  - 2.1 T³ (n=6) and T² (n=4) [77]
+  - 2.2 Transition T³ → T² [99]
+  - 2.3 Projection Orientations [123]
+  - 3. Derivation from Pure n-ary Structure [159]
+  - 3.1 Boundary Conditions: Angular vs Linear [161]
+  - 3.2 Case 1: Loss of Radial [183]
+  - 3.3 Case 2: Loss of Angular [206]
+  - 3.4 General Structure [227]
+  - 4. Formal Derivation: Configuration Counting [246]
+  - 4.1 Discrete Phase Space [248]
+  - 4.2 Transition T³ → T² with Loss [266]
+  - 4.3 Where Does π Come From? [291]
+  - 4.4 Combinatorial Approximation [318]
+  - 5. Direct Probabilistic Derivation [346]
+  - 5.1 Generalized Buffon Problem for T³→T² [348]
+  - 5.2 Interpretation in Terms of Absolute Acts [383]
+  - 6. Formalization: General Transition Factor [414]
+  - 6.1 Transition Formula T^k → T^(k-1) [416]
+  - 6.2 Application to ArXe [447]
+  - 7. Verification: Why NOT 2π or π? [470]
+  - 7.1 Why NOT 2π? [472]
+  - 7.2 Why NOT π? [495]
+  - 7.3 Why Exactly 4π? [511]
+  - 8. The 12π Factor: Analogous Derivation [543]
+  - 8.1 Why 12π for Fermions? [545]
+  - 8.2 Derivation from Structure [565]
+  - 8.3 Alternative: 12π as Composite Transition [609]
+  - 9. Summary: 4π Derived [640]
+  - 9.1 Origin of 4π [642]
+  - 9.2 General Formula [659]
+  - 9.3 Application to Constants [674]
+  - 10. Implementation: Numerical Calculation [700]
+  - 10.1 Python Code [702]
+  - Verify [715]
+  - For α^-1 [721]
+  - Error [729]
 
 - **arxe_dirac_derivation_en.md**
 [GitHub: arxe_dirac_derivation_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe_dirac_derivation_en.md)
@@ -1589,96 +2739,8 @@
   - ArXe Path: [1903]
   - Philosophical Difference: [1918]
 
-- **arxe_maxwell_part2.md**
-[GitHub: arxe_maxwell_part2.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/arxe_maxwell_part2.md)
-  - ArXe Theory: Derivation of Maxwell's Equations [1]
-  - Part 2: Sections 9-15 [2]
-  - 9. Electromagnetic Waves [8]
-  - 9.1 Plane Wave Solutions [10]
-  - 9.2 Dispersion Relation [33]
-  - 9.3 Polarization States [67]
-  - 9.4 Energy and Momentum [119]
-  - 10. Gauge Choices [156]
-  - 10.1 Lorenz Gauge [158]
-  - 10.2 Coulomb Gauge (Radiation Gauge) [194]
-  - 10.3 Temporal Gauge (A⁰ = 0) [233]
-  - 10.4 ArXe: Gauge as Phase Redundancy [263]
-  - 11. Interaction with Matter [317]
-  - 11.1 Minimal Coupling [319]
-  - 11.2 Conserved Current [357]
-  - 11.3 QED (Quantum Electrodynamics) [397]
-  - 11.4 Running of α [451]
-  - 12. ArXe Deep Interpretation [488]
-  - 12.1 Detailed n=11 Structure [490]
-  - 12.2 Why Photon is Massless [526]
-  - 12.3 EM as Network of Oscillators [569]
-  - 12.4 Gauge Freedom and Open BC [624]
-  - 12.5 Connection to Harmonic Oscillator [671]
-  - 13. Predictions and Tests [720]
-  - 13.1 From n=11 Structure [722]
-  - 13.2 Running of α [763]
-  - 13.3 Photon Mass Limit [798]
-  - 13.4 Gauge Structure Tests [822]
-  - 13.5 Connections to Other Constants [846]
-  - 14. Implementation [874]
-  - 14.1 Computational Verification [876]
-  - ArXe derivation [883]
-  - Output: 137.510 [890]
-  - Including loop corrections [892]
-  - Output: 137.036 [896]
-  - Experimental value [898]
-  - Output: 0.001% [902]
-  - Test at different scales [924]
-  - Output: [935]
-  - α^-1 at Electron scale: 137.04 [936]
-  - α^-1 at Muon scale: 135.97 [937]
-  - α^-1 at Z boson scale: 128.91 [938]
-  - 14.2 Symbolic Verification [941]
-  - Define symbols [948]
-  - Gauss's law [955]
-  - No magnetic monopoles [962]
-  - Verify c² = 1/(ε₀μ₀) [969]
-  - 14.3 Numerical Field Simulations [974]
-  - Parameters [996]
-  - Space and time [1002]
-  - Calculate fields [1006]
-  - Plot [1009]
-  - Verify dispersion relation [1020]
-  - 14.4 Gauge Transformation Verification [1028]
-  - Compute gradient of chi [1043]
-  - Transform potential [1046]
-  - Electric field: E_i = -∂A_i/∂t - ∂A0/∂x_i [1059]
-  - Magnetic field: B_i = ε_ijk ∂_j A_k [1064]
-  - Test gauge invariance [1071]
-  - Original potential [1076]
-  - Compute original fields [1083]
-  - Apply gauge transformation [1086]
-  - Compute transformed fields [1090]
-  - Verify invariance [1093]
-  - 14.5 Verification of α Running [1102]
-  - Experimental data (approximate) [1110]
-  - ArXe prediction [1116]
-  - 1-loop running [1125]
-  - Generate predictions [1134]
-  - Plot comparison [1138]
-  - Calculate errors at key scales [1151]
-  - 15. Conclusions [1163]
-  - 15.1 What We Have Accomplished [1165]
-  - 15.2 Deep Insights from ArXe [1207]
-  - 15.3 Relationship to Other ArXe Results [1255]
-  - 15.4 Predictions Summary [1290]
-  - 15.5 Philosophical Implications [1320]
-  - 15.6 Open Questions [1355]
-  - 15.7 Future Directions [1397]
-  - 15.8 Significance [1426]
-  - 15.9 Final Summary [1468]
-  - Appendix: Comparison with Standard Approach [1517]
-  - Standard Physics: [1519]
-  - ArXe Approach: [1528]
-  - Philosophical Stance: [1549]
-
-- **Common Mathematical Framework for ArXe Constant Derivations_appendix_en.md**
-[GitHub: Common Mathematical Framework for ArXe Constant Derivations_appendix_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/Common Mathematical Framework for ArXe Constant Derivations_appendix_en.md)
+- **common_mathematical_framework_for_constant_derivations_appendix_en.md**
+[GitHub: common_mathematical_framework_for_constant_derivations_appendix_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/common_mathematical_framework_for_constant_derivations_appendix_en.md)
   - Appendix B: Probabilistic Foundations and n-ary Logic [1]
   - B.1 Purpose and Scope [3]
   - B.2 Temporal Particles (Tf) and Phase Structure [17]
@@ -1746,8 +2808,8 @@
   - B.17.2 Related Physics [849]
   - B.17.3 Philosophical Background [855]
 
-- **Common Mathematical Framework for ArXe Constant Derivations_en.md**
-[GitHub: Common Mathematical Framework for ArXe Constant Derivations_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/Common Mathematical Framework for ArXe Constant Derivations_en.md)
+- **common_mathematical_framework_for_constant_derivations_en.md**
+[GitHub: common_mathematical_framework_for_constant_derivations_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/common_mathematical_framework_for_constant_derivations_en.md)
   - Appendix A: Foundational Structures [1]
   - A.1 The Exentation Hierarchy [7]
   - A.1.1 Definition [9]
@@ -1802,11 +2864,80 @@
   - A.12.2 Natural Units [726]
   - A.12.3 Error Conventions [736]
 
-- **DERIVATION OF THE FINE STRUCTURE CONSTAN from ArXe_en.md**
-[GitHub: DERIVATION OF THE FINE STRUCTURE CONSTAN from ArXe_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/DERIVATION OF THE FINE STRUCTURE CONSTAN from ArXe_en.md)
+- **derivation_of_the_fine_estructure_constant_from ArXe_en.md**
+[GitHub: derivation_of_the_fine_estructure_constant_from ArXe_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/derivation_of_the_fine_estructure_constant_from ArXe_en.md)
 
-- **DERIVATION OF THE WEINBERG ANGLE from ArXe_en.md**
-[GitHub: DERIVATION OF THE WEINBERG ANGLE from ArXe_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/DERIVATION OF THE WEINBERG ANGLE from ArXe_en.md)
+- **derivation_of_the_weinberg_angle_from ArXe_en.md**
+[GitHub: derivation_of_the_weinberg_angle_from ArXe_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/derivation_of_the_weinberg_angle_from ArXe_en.md)
+
+- **tau_anomalous_magnetic_moment_en.md**
+[GitHub: tau_anomalous_magnetic_moment_en.md](https://github.com/diego-tentor/arxelogic/tree/master/3_constants/tau_anomalous_magnetic_moment_en.md)
+  - ArXe Prediction: Tau Anomalous Magnetic Moment from 8/π Factor [1]
+  - Executive Summary [3]
+  - 1. Background: Anomalous Magnetic Moments [22]
+  - 1.1 Definition [24]
+  - 1.2 Current Experimental Status [44]
+  - 2. ArXe Structure for Magnetic Moments [69]
+  - 2.1 Level Structure and g-2 Pattern [71]
+  - 2.2 The 12π Factor in Muon g-2 [79]
+  - 2.3 Central Hypothesis [97]
+  - 3. Standard Model Prediction (Baseline) [115]
+  - 3.1 SM Components [117]
+  - 3.2 Leading QED Contribution [129]
+  - 3.3 Why Leptons Have Similar a_ℓ [143]
+  - 4. ArXe Prediction Derivation [160]
+  - 4.1 Modification Factor from n=85 Structure [162]
+  - 4.2 Estimation of Correction [176]
+  - 4.3 Complete Prediction [201]
+  - 4.4 Summary [227]
+  - 5. Physical Interpretation [246]
+  - 5.1 Why 8/π Appears in g-2 [248]
+  - 5.2 Loop Diagram Modification [267]
+  - 5.3 Why This Differs from Muon Anomaly [291]
+  - 6. Comparison and Testability [306]
+  - 6.1 Comparison Table [308]
+  - 6.2 Experimental Feasibility [316]
+  - 6.3 Discriminating Power [339]
+  - 7. Additional Predictions [361]
+  - 7.1 Energy Dependence [363]
+  - 7.2 Radiative Decays [377]
+  - 7.3 Production Cross Sections [390]
+  - 8. Theoretical Uncertainties [405]
+  - 8.1 Sources of Uncertainty [407]
+  - 8.2 Comparison with SM Uncertainty [431]
+  - 8.3 What Would Improve Prediction [439]
+  - 9. Connection to Muon g-2 Anomaly [454]
+  - 9.1 Pattern Across Leptons [456]
+  - 9.2 Unified Explanation? [466]
+  - 9.3 What If Tau Shows NO Anomaly? [484]
+  - 10. Summary and Conclusions [497]
+  - 10.1 Main Results [499]
+  - 10.2 Theoretical Significance [512]
+  - 10.3 Experimental Path Forward [521]
+  - 10.4 Confidence Assessment [536]
+  - 11. Next Steps [563]
+  - 11.1 Theoretical Refinements [565]
+  - 11.2 Experimental Collaborations [582]
+  - 11.3 Publication Strategy [594]
+  - Appendix A: Derivation Details [603]
+  - A.1 Standard Model Baseline [605]
+  - Fine structure constant [610]
+  - 1-loop Schwinger [613]
+  - Higher loops (from literature) [617]
+  - Hadronic [621]
+  - Electroweak [624]
+  - Total SM [627]
+  - Output: 0.0011777210 [630]
+  - Parameters [633]
+  - Suppression factor (by analogy with muon) [637]
+  - Output: 33.389 [640]
+  - ArXe correction [642]
+  - Output: 0.0762 [645]
+  - Modified prediction [647]
+  - Output: 0.0012677214 [650]
+  - Uncertainty (±20% on delta) [652]
+  - Output: ±0.0000179589 [656]
+  - Output: 0.1268 ± 0.0180 × 10⁻³ [659]
 
 - **Arxe-madelung-complete_V2_en.md**
 [GitHub: Arxe-madelung-complete_V2_en.md](https://github.com/diego-tentor/arxelogic/tree/master/4_electronic_levels/Arxe-madelung-complete_V2_en.md)
@@ -2196,7 +3327,7 @@
   - Summary [172]
 
 - **principio_indeterminacion_es.md**
-[GitHub: principio_indeterminacion_es.md](https://github.com/diego-tentor/arxelogic/tree/master/9_triadic_colpase/principio_indeterminacion_es.md)
+[GitHub: principio_indeterminacion_es.md](https://github.com/diego-tentor/arxelogic/tree/master/9_triadic_colapse/principio_indeterminacion_es.md)
   - El Problema de la Medición Cuántica en la Teoría ArXe: [1]
   - El Colapso como Exentación Triádica desde la Estructura Lógica Ternaria a la Binaria [2]
   - 1. Introducción [16]
@@ -2285,7 +3416,5 @@
   - Apéndice B: Concepciones Erróneas Comunes [1361]
   - Apéndice C: Preguntas de Investigación Abiertas [1389]
 
-- **summary.md**
-[GitHub: summary.md](https://github.com/diego-tentor/arxelogic/tree/master/summary.md)
-  - Summary with line numbers [1]
+
 

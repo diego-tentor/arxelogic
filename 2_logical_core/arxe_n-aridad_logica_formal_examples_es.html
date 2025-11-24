@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos Prácticos - Lógicas n-arias</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin: 20px 0;
+        }
+        .logic-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+        .logic-card:hover {
+            transform: translateX(10px);
+        }
+        .example {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+        .physical-app {
+            background: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .code {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+        h1, h2, h3 {
+            color: #2d3748;
+        }
+        .value-true { color: #28a745; font-weight: bold; }
+        .value-false { color: #dc3545; font-weight: bold; }
+        .value-undefined { color: #ffc107; font-weight: bold; }
+        .analogy {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Ejemplos Prácticos: Lógicas n-arias</h1>
+        <p><strong>Concepto Clave:</strong> Diferentes situaciones requieren diferentes "tipos de verdad"</p>
+
+        <!-- L0: Contradicción -->
+        <div class="logic-card">
+            <h2>🎭 L₀: Cuando TODO es verdadero y falso a la vez</h2>
+            <div class="analogy">
+                <strong>💡 Analogía:</strong> El Big Bang - antes del tiempo y espacio, no hay distinciones
+            </div>
+            
+            <div class="example">
+                <strong>Ejemplo Práctico:</strong> Estado de un sistema antes de inicializar<br>
+                <code>¿Existe el usuario? = ⊤⊥ (ni sí ni no, es ambas)</code>
+            </div>
+
+            <div class="physical-app">
+                <strong>Aplicación Física Real:</strong><br>
+                - Singularidades (agujeros negros)<br>
+                - Escala de Planck (límite del conocimiento físico)<br>
+                - Estado cuántico del universo en t=0
+            </div>
+
+            <div class="code">
+                // En código: Todo colapsa a un solo valor<br>
+                const resultado = sistemaAntesDeInicializar();<br>
+                console.log(resultado); // "⊤⊥" (indistinguible)
+            </div>
+        </div>
+
+        <!-- L1: Posibilidad -->
+        <div class="logic-card">
+            <h2>🔄 L₁: Cuando hay dos opciones PERO no puedes distinguirlas</h2>
+            <div class="analogy">
+                <strong>💡 Analogía:</strong> Un gemelo idéntico - sabes que hay dos personas pero no puedes decir cuál es cuál
+            </div>
+            
+            <div class="example">
+                <strong>Ejemplo Práctico:</strong> Sistema de encriptación simétrica<br>
+                <code>Clave A y Clave B son funcionalmente idénticas<br>
+                No hay forma interna de saber cuál es "la correcta"</code>
+            </div>
+
+            <div class="physical-app">
+                <strong>Aplicación Física Real:</strong><br>
+                - Fluctuaciones cuánticas del vacío<br>
+                - Partículas idénticas (electrones indistinguibles)<br>
+                - Estados simétricos antes de ruptura de simetría
+            </div>
+
+            <div class="code">
+                // En código: Dos valores indistinguibles<br>
+                const particula1 = 'a';<br>
+                const particula2 = 'a′';<br>
+                <br>
+                // No puedes decidir cuál es "verdadera"<br>
+                if (particula1 === particula2) {<br>
+                &nbsp;&nbsp;// ¡Nunca llegará aquí! Son formalmente distintos<br>
+                }<br>
+                // Pero ontológicamente equivalentes
+            </div>
+        </div>
+
+        <!-- L2: Superposición Cuántica -->
+        <div class="logic-card">
+            <h2>⚡ L₂: Cuando algo ES y NO ES al mismo tiempo (hasta que lo miras)</h2>
+            <div class="analogy">
+                <strong>💡 Analogía:</strong> Una moneda girando en el aire - no es cara ni cruz hasta que cae
+            </div>
+            
+            <div class="example">
+                <strong>Ejemplo Práctico:</strong> Criptografía cuántica<br>
+                <code>El fotón está en superposición: |0⟩ + |1⟩<br>
+                Solo al medir colapsa a 0 o 1</code>
+            </div>
+
+            <div class="physical-app">
+                <strong>Aplicación Física Real:</strong><br>
+                - Computación cuántica (qubits en superposición)<br>
+                - Experimento de la doble rendija<br>
+                - Entrelazamiento cuántico<br>
+                - Criptografía QKD (Quantum Key Distribution)
+            </div>
+
+            <div class="code">
+                // En código: Tres valores posibles<br>
+                const qubit = '⊗'; // Indecidible<br>
+                <br>
+                // Operaciones:<br>
+                console.log(qubit + ' Y verdadero =', '⊗'); // Indecidible<br>
+                console.log(qubit + ' O falso =', '⊗');    // Indecidible<br>
+                <br>
+                // Solo con observador (L₃) colapsa:<br>
+                const resultado = medir(qubit); // '⊤' o '⊥'
+            </div>
+        </div>
+
+        <!-- L3: Lógica Clásica con Observador -->
+        <div class="logic-card">
+            <h2>👁️ L₃: Cuando un observador DECIDE la realidad</h2>
+            <div class="analogy">
+                <strong>💡 Analogía:</strong> Un árbitro en un partido - su decisión hace que una jugada sea "falta" o "no falta"
+            </div>
+            
+            <div class="example">
+                <strong>Ejemplo Práctico:</strong> Sistema de votación<br>
+                <code>Una propuesta es "aprobada" o "rechazada"<br>
+                dependiendo del observador (comité de evaluación)</code>
+            </div>
+
+            <div class="physical-app">
+                <strong>Aplicación Física Real:</strong><br>
+                - Medición cuántica (colapso de función de onda)<br>
+                - Relatividad del observador<br>
+                - Sistemas de referencia en relatividad<br>
+                - Efecto del observador en psicología
+            </div>
+
+            <div class="code">
+                // En código: Lógica clásica pero contextual<br>
+                function esAprobado(propuesta, comite) {<br>
+                &nbsp;&nbsp;// Diferentes comités pueden decidir diferente<br>
+                &nbsp;&nbsp;return comite.evaluar(propuesta); // '⊤' o '⊥'<br>
+                }<br>
+                <br>
+                // Misma propuesta, diferentes resultados:<br>
+                console.log(esAprobado(propuesta, comiteA)); // '⊤'<br>
+                console.log(esAprobado(propuesta, comiteB)); // '⊥'
+            </div>
+        </div>
+
+        <!-- L6: Bayesiana -->
+        <div class="logic-card">
+            <h2>📊 L₆: Cuando la verdad es una PROBABILIDAD</h2>
+            <div class="analogy">
+                <strong>💡 Analogía:</strong> Pronóstico del tiempo - no es "lloverá" o "no lloverá", es "70% de probabilidad"
+            </div>
+            
+            <div class="example">
+                <strong>Ejemplo Práctico:</strong> Sistema de recomendaciones<br>
+                <code>¿Al usuario le gustará esta película? = 0.83<br>
+                La "verdad" es un valor entre 0 y 1</code>
+            </div>
+
+            <div class="physical-app">
+                <strong>Aplicación Física Real:</strong><br>
+                - Mecánica cuántica (regla de Born)<br>
+                - Inteligencia artificial<br>
+                - Diagnóstico médico probabilístico<br>
+                - Mercados financieros<br>
+                - Machine Learning
+            </div>
+
+            <div class="code">
+                // En código: Valores continuos [0,1]<br>
+                const probabilidadLluvia = 0.7;<br>
+                const probabilidadSol = 0.3;<br>
+                <br>
+                // Actualización bayesiana:<br>
+                function actualizarProbabilidad(prior, evidencia) {<br>
+                &nbsp;&nbsp;return (evidencia * prior) / <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(evidencia * prior + (1-evidencia)*(1-prior));<br>
+                }<br>
+                <br>
+                console.log(actualizarProbabilidad(0.5, 0.8)); // 0.73
+            </div>
+        </div>
+
+        <!-- Ejemplo Integrado -->
+        <div class="logic-card" style="background: #e7f3ff; border-left: 5px solid #007bff;">
+            <h2>🔄 EJEMPLO INTEGRADO: Sistema de Seguridad Cuántica</h2>
+            
+            <div class="example">
+                <strong>Escenario:</strong> Comunicación segura usando diferentes lógicas en cada etapa
+            </div>
+
+            <div class="code">
+                // 1. L₀: Estado inicial del sistema<br>
+                const estadoInicial = '⊤⊥'; // Contradictorio<br>
+                <br>
+                // 2. L₁: Generación de claves simétricas<br>
+                const [claveA, claveB] = generarClavesIndistinguibles();<br>
+                // claveA ≡ claveB ontológicamente<br>
+                <br>
+                // 3. L₂: Transmisión en superposición cuántica<br>
+                const fotones = transmitirEnSuperposicion(mensaje);<br>
+                // Cada fotón está en estado |0⟩ + |1⟩<br>
+                <br>
+                // 4. L₃: Medición (observador decide realidad)<br>
+                const bitsMedidos = medirFotones(fotones);<br>
+                // Colapsa a '⊤' o '⊥'<br>
+                <br>
+                // 5. L₆: Verificación probabilística<br>
+                const confianza = calcularConfianza(bitsMedidos);<br>
+                // Ej: 0.95 de que la comunicación es segura
+            </div>
+
+            <div class="physical-app">
+                <strong>Beneficio:</strong> Cada nivel de lógica aporta una capa de seguridad:<br>
+                - L₀: Origen impredecible<br>
+                - L₁: Claves indistinguibles<br>
+                - L₂: Estados no clonables (teorema de no-clonación)<br>
+                - L₃: Detección de intrusos (cambia el estado al medir)<br>
+                - L₆: Evaluación continua de seguridad
+            </div>
+        </div>
+
+        <!-- Resumen Visual -->
+        <div class="logic-card" style="text-align: center; background: #fff; border: 2px dashed #667eea;">
+            <h2>📈 RESUMEN VISUAL: ¿Cuándo usar cada lógica?</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0;">
+                <div style="padding: 15px; background: #ffebee; border-radius: 8px;">
+                    <h4>L₀</h4>
+                    <p>Cuando NO HAY distinciones<br>Origen/Singularidad</p>
+                </div>
+                <div style="padding: 15px; background: #e8f5e8; border-radius: 8px;">
+                    <h4>L₁</h4>
+                    <p>Cuando hay opciones PERO son indistinguibles</p>
+                </div>
+                <div style="padding: 15px; background: #e3f2fd; border-radius: 8px;">
+                    <h4>L₂</h4>
+                    <p>Cuando algo ES y NO ES a la vez (cuántico)</p>
+                </div>
+                <div style="padding: 15px; background: #f3e5f5; border-radius: 8px;">
+                    <h4>L₃</h4>
+                    <p>Cuando un OBSERVADOR decide la realidad</p>
+                </div>
+                <div style="padding: 15px; background: #fff8e1; border-radius: 8px;">
+                    <h4>L₆</h4>
+                    <p>Cuando la verdad es una PROBABILIDAD</p>
+                </div>
+            </div>
+
+            <div class="analogy">
+                <strong>🚀 Pensamiento Clave:</strong> No existe "una sola lógica" para todo.<br>
+                La realidad funciona con DIFERENTES reglas en DIFERENTES niveles,<br>
+                y este sistema nos da las herramientas para modelar cada nivel apropiadamente.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Ejemplos interactivos simples
+        console.log("=== DEMOSTRACIÓN PRÁCTICA ===");
+        
+        // Simulador de L₂ (Superposición Cuántica)
+        class SimuladorCuantico {
+            constructor() {
+                this.estado = '⊗'; // Indecidible
+            }
+            
+            medir() {
+                // Colapsa aleatoriamente a ⊤ o ⊥
+                this.estado = Math.random() > 0.5 ? '⊤' : '⊥';
+                return this.estado;
+            }
+            
+            operar(operador, otroEstado) {
+                if (this.estado === '⊗' || otroEstado === '⊗') {
+                    return '⊗'; // Indecidible se propaga
+                }
+                
+                // Lógica clásica para estados decididos
+                if (operador === 'Y') {
+                    return (this.estado === '⊤' && otroEstado === '⊤') ? '⊤' : '⊥';
+                } else if (operador === 'O') {
+                    return (this.estado === '⊤' || otroEstado === '⊤') ? '⊤' : '⊥';
+                }
+            }
+        }
+        
+        // Demostración
+        const qubit = new SimuladorCuantico();
+        console.log("Estado inicial:", qubit.estado);
+        console.log("Qubit Y Verdadero:", qubit.operar('Y', '⊤'));
+        console.log("Medición:", qubit.medir());
+        console.log("Después de medir - Qubit Y Verdadero:", qubit.operar('Y', '⊤'));
+        
+        // Simulador de L₆ (Bayesiano)
+        class DiagnosticoMedical {
+            constructor() {
+                this.probabilidadEnfermedad = 0.01; // 1% de prevalencia
+            }
+            
+            actualizarConTest(eficaciaTest) {
+                // P(enfermedad|test+) = P(test+|enfermedad)*P(enfermedad) / P(test+)
+                const pTestPositivo = (eficaciaTest * this.probabilidadEnfermedad) + 
+                                    ((1 - eficaciaTest) * (1 - this.probabilidadEnfermedad));
+                
+                this.probabilidadEnfermedad = (eficaciaTest * this.probabilidadEnfermedad) / pTestPositivo;
+                return this.probabilidadEnfermedad;
+            }
+        }
+        
+        const paciente = new DiagnosticoMedical();
+        console.log("Probabilidad inicial de enfermedad:", paciente.probabilidadEnfermedad);
+        console.log("Después de test positivo (95% eficaz):", 
+                   paciente.actualizarConTest(0.95).toFixed(4));
+    </script>
+</body>
+</html>
