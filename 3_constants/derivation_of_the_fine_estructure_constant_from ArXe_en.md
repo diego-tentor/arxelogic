@@ -6,6 +6,10 @@ From Ontological Structure - ArXe Theory
 INTRODUCTION
 ================================================================================
 
+Fórmula de Pauli (de sus sueños con Jung):
+α⁻¹ = π + π² + 4π³
+
+
 1.1 The Constant
 Fine structure constant:
 α = e²/(4πε₀ℏc) ≈ 1/137.035999084(21)

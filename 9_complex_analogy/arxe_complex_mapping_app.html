@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArXe Theory - Complex Mapping Demonstrations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: #ecf0f1;
+            min-height: 100vh;
+            padding: 30px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px;
+            background: rgba(44, 62, 80, 0.8);
+            border-radius: 8px;
+            border: 1px solid #34495e;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            opacity: 0.8;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .theory-section {
+            background: rgba(44, 62, 80, 0.6);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #3498db;
+        }
+
+        .theory-text {
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: rgba(44, 62, 80, 0.8);
+            border-radius: 8px;
+            padding: 30px;
+            border: 1px solid #34495e;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .card h2 {
+            margin-bottom: 25px;
+            color: #3498db;
+            font-weight: 400;
+            font-size: 1.6em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 12px;
+        }
+
+        .controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 0.95em;
+            color: #bdc3c7;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: #34495e;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #3498db;
+            cursor: pointer;
+            border: 2px solid #ecf0f1;
+        }
+
+        select {
+            background: #34495e;
+            color: #ecf0f1;
+            border: 1px solid #2c3e50;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .value-display {
+            font-family: 'Courier New', monospace;
+            background: #34495e;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 0.95em;
+            text-align: center;
+            border: 1px solid #2c3e50;
+        }
+
+        canvas {
+            width: 100%;
+            height: 320px;
+            background: #2c3e50;
+            border-radius: 4px;
+            margin-top: 20px;
+            border: 1px solid #34495e;
+        }
+
+        .results {
+            margin-top: 25px;
+            padding: 20px;
+            background: #34495e;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            border: 1px solid #2c3e50;
+        }
+
+        .arxe-dimension {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .complex-value {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .physical-interpretation {
+            color: #e74c3c;
+            font-style: italic;
+        }
+
+        .phase-display {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .phase-bar {
+            flex: 1;
+            height: 6px;
+            background: #2c3e50;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .phase-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 5px;
+            font-family: inherit;
+        }
+
+        button:hover {
+            background: #2980b9;
+            transform: translateY(-1px);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .theory-explanation {
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #bdc3c7;
+        }
+
+        .math-expression {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-size: 1.1em;
+            background: #34495e;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .dimension-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: #34495e;
+        }
+
+        .dimension-table th,
+        .dimension-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #2c3e50;
+        }
+
+        .dimension-table th {
+            background: #2c3e50;
+            color: #3498db;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #bdc3c7;
+            font-size: 0.9em;
+            border-top: 1px solid #34495e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ArXe Theory - Complex Mapping</h1>
+            <p class="subtitle">Interactive demonstrations of the correspondence between ArXe dimensions and complex numbers</p>
+        </header>
+
+        <div class="theory-section">
+            <div class="theory-text">
+                <p>The ArXe Theory establishes a fundamental dimensional duality <span class="highlight">T<sup>k</sup> ↔ T<sup>-k</sup></span> that exhibits structural properties analogous to the complex plane. This correspondence explains the ubiquity of complex numbers in physics: they naturally capture the complementarity between dual magnitudes.</p>
+                
+                <div class="math-expression">
+                    R(T<sup>k</sup>) = { |k| if k > 0 (real axis), |k|·i if k < 0 (imaginary axis), 0 if k = 0 (origin) }
+                </div>
+                
+                <p>This is a <span class="highlight">structural correspondence</span>, not an ontological identity. Complex numbers don't "emerge" from ArXe; they are the natural mathematical representation of its dual structure.</p>
+            </div>
+        </div>
+
+        <div class="grid">
+            <!-- Panel 1: ArXe Dimensional Mapping → ℂ -->
+            <div class="card">
+                <h2>1. ArXe Dimensional Mapping → ℂ</h2>
+                <div class="theory-explanation">
+                    Each ArXe dimension <span class="highlight">T<sup>k</sup></span> maps to the complex plane:
+                    <span class="highlight">T<sup>k</sup> → |k|</span> (real) and 
+                    <span class="highlight">T<sup>-k</sup> → |k|·i</span> (imaginary)
+                </div>
+                
+                <table class="dimension-table">
+                    <thead>
+                        <tr>
+                            <th>k</th>
+                            <th>T<sup>k</sup></th>
+                            <th>Physical Interpretation</th>
+                            <th>Complex Mapping</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0</td><td>T⁰</td><td>Dimensionless</td><td>0</td></tr>
+                        <tr><td>1</td><td>T¹</td><td>Time</td><td>1</td></tr>
+                        <tr><td>-1</td><td>T⁻¹</td><td>Frequency</td><td>i</td></tr>
+                        <tr><td>2</td><td>T²</td><td>Length</td><td>2</td></tr>
+                        <tr><td>-2</td><td>T⁻²</td><td>Curvature</td><td>2i</td></tr>
+                        <tr><td>3</td><td>T³</td><td>Mass</td><td>3</td></tr>
+                        <tr><td>-3</td><td>T⁻³</td><td>Inverse Density</td><td>3i</td></tr>
+                    </tbody>
+                </table>
+                
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="dimensionSlider">ArXe Dimension (k):</label>
+                        <input type="range" id="dimensionSlider" min="-3" max="3" step="1" value="2">
+                        <div class="value-display" id="dimensionValue">T²</div>
+                    </div>
+                    <div class="control-group">
+                        <label for="phaseSlider">Phase (radians):</label>
+                        <input type="range" id="phaseSlider" min="0" max="628" step="1" value="0">
+                        <div class="value-display" id="phaseValue">0.00 rad</div>
+                    </div>
+                </div>
+
+                <canvas id="complexPlane"></canvas>
+                
+                <div class="results">
+                    <div><span class="arxe-dimension" id="arxeDisplay">T²</span> → 
+                         <span class="complex-value" id="complexDisplay">2 + 0i</span></div>
+                    <div>Physical interpretation: <span class="physical-interpretation" id="physicsDisplay">Length (extension)</span></div>
+                    <div class="phase-display">
+                        <span>Phase: </span>
+                        <div class="phase-bar">
+                            <div class="phase-fill" id="phaseFill"></div>
+                        </div>
+                        <span id="phaseAngle">0°</span>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button onclick="animateRotation()">Rotate Phase</button>
+                    <button onclick="resetDemo()">Reset</button>
+                    <button onclick="showPreset('quantum')">Quantum State</button>
+                    <button onclick="showPreset('fourier')">Fourier Transform</button>
+                </div>
+            </div>
+
+            <!-- Panel 2: Fourier Transform Duality -->
+            <div class="card">
+                <h2>2. Temporal-Frequency Duality</h2>
+                <div class="theory-explanation">
+                    The Fourier transform connects dual domains: 
+                    <span class="highlight">T¹ (time) ↔ T⁻¹ (frequency)</span> through complex exponentials
+                </div>
+
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="signalType">Signal Type:</label>
+                        <select id="signalType" onchange="updateFourier()">
+                            <option value="sine">Pure Sine</option>
+                            <option value="cosine">Cosine</option>
+                            <option value="pulse">Pulse</option>
+                            <option value="chirp">Linear Chirp</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="frequencySlider">Frequency (Hz):</label>
+                        <input type="range" id="frequencySlider" min="1" max="10" step="0.1" value="2">
+                        <div class="value-display" id="frequencyValue">2.0 Hz</div>
+                    </div>
+                </div>
+
+                <canvas id="fourierCanvas"></canvas>
+                
+                <div class="results">
+                    <div>Time Domain (<span class="arxe-dimension">T¹</span>): 
+                         <span id="timeDomain">Sinusoidal signal</span></div>
+                    <div>Frequency Domain (<span class="arxe-dimension">T⁻¹</span>): 
+                         <span id="freqDomain">Peak at 2Hz</span></div>
+                    <div>Complex exponential: <span class="complex-value" id="exponentialDisplay">e^(i·4πt)</span></div>
+                </div>
+
+                <div class="button-group">
+                    <button onclick="animateFourier()">Animate Transform</button>
+                    <button onclick="showDuality()">Show Duality</button>
+                </div>
+            </div>
+
+            <!-- Panel 3: Quantum States -->
+            <div class="card">
+                <h2>3. Quantum States at T¹/T⁻¹ Interface</h2>
+                <div class="theory-explanation">
+                    The quantum wavefunction operates simultaneously in 
+                    <span class="highlight">T² (position) and T⁻² (momentum)</span> spaces
+                </div>
+
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="positionSlider">Position (x):</label>
+                        <input type="range" id="positionSlider" min="-5" max="5" step="0.1" value="0">
+                        <div class="value-display" id="positionValue">0.0</div>
+                    </div>
+                    <div class="control-group">
+                        <label for="momentumSlider">Momentum (p):</label>
+                        <input type="range" id="momentumSlider" min="-5" max="5" step="0.1" value="0">
+                        <div class="value-display" id="momentumValue">0.0</div>
+                    </div>
+                </div>
+
+                <canvas id="quantumCanvas"></canvas>
+                
+                <div class="results">
+                    <div>Wavefunction: ψ(x,t) = <span class="complex-value" id="waveFunction">A·e^(i(kx-ωt))</span></div>
+                    <div>Probability amplitude: |ψ|² = <span id="probability">1.00</span></div>
+                    <div>Uncertainty relation: Δx·Δp ≥ ħ/2 = <span id="uncertainty">0.50</span></div>
+                </div>
+
+                <div class="button-group">
+                    <button onclick="collapseWavefunction()">Collapse Wavefunction</button>
+                    <button onclick="showSuperposition()">Superposition</button>
+                    <button onclick="demonstrateUncertainty()">Uncertainty Principle</button>
+                </div>
+            </div>
+
+            <!-- Panel 4: Complex Impedance -->
+            <div class="card">
+                <h2>4. Complex Impedance and Mixed Dimensions</h2>
+                <div class="theory-explanation">
+                    Impedance <span class="highlight">Z = R + iX</span> combines 
+                    direct and inverse dimensions in electrical systems
+                </div>
+
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="resistanceSlider">Resistance R (Ω):</label>
+                        <input type="range" id="resistanceSlider" min="0" max="100" step="1" value="50">
+                        <div class="value-display" id="resistanceValue">50 Ω</div>
+                    </div>
+                    <div class="control-group">
+                        <label for="reactanceSlider">Reactance X (Ω):</label>
+                        <input type="range" id="reactanceSlider" min="-100" max="100" step="1" value="30">
+                        <div class="value-display" id="reactanceValue">30 Ω</div>
+                    </div>
+                </div>
+
+                <canvas id="impedanceCanvas"></canvas>
+                
+                <div class="results">
+                    <div>Impedance: Z = <span class="complex-value" id="impedanceDisplay">50 + 30i Ω</span></div>
+                    <div>Magnitude: |Z| = <span id="impedanceMag">58.31 Ω</span></div>
+                    <div>Phase: φ = <span id="impedancePhase">30.96°</span></div>
+                    <div>Active power: P = <span id="activePower">86.6 W</span> (real)</div>
+                    <div>Reactive power: Q = <span id="reactivePower">52.0 VAR</span> (imaginary)</div>
+                </div>
+
+                <div class="button-group">
+                    <button onclick="showResistive()">Purely Resistive</button>
+                    <button onclick="showCapacitive()">Capacitive</button>
+                    <button onclick="showInductive()">Inductive</button>
+                    <button onclick="showResonance()">Resonance</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>ArXe Theory Complex Mapping Demonstrations | Structural Correspondence Analysis</p>
+        </footer>
+    </div>
+
+    <script>
+        // Canvas configuration
+        const canvases = ['complexPlane', 'fourierCanvas', 'quantumCanvas', 'impedanceCanvas'];
+        const ctx = {};
+        
+        canvases.forEach(id => {
+            const canvas = document.getElementById(id);
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+            ctx[id] = canvas.getContext('2d');
+        });
+
+        // ArXe dimension mapping data
+        const arxeDimensions = {
+            '-3': { name: 'T⁻³', interpretation: 'Inverse density', complex: '-3i', color: '#e74c3c' },
+            '-2': { name: 'T⁻²', interpretation: 'Curvature', complex: '-2i', color: '#e67e22' },
+            '-1': { name: 'T⁻¹', interpretation: 'Frequency', complex: '-1i', color: '#f1c40f' },
+            '0': { name: 'T⁰', interpretation: 'Dimensionless', complex: '0', color: '#2ecc71' },
+            '1': { name: 'T¹', interpretation: 'Time', complex: '1', color: '#3498db' },
+            '2': { name: 'T²', interpretation: 'Length', complex: '2', color: '#9b59b6' },
+            '3': { name: 'T³', interpretation: 'Mass', complex: '3', color: '#1abc9c' }
+        };
+
+        // State variables
+        let currentDimension = 2;
+        let currentPhase = 0;
+        let animationId = null;
+
+        // Initialize demonstrations
+        initializeComplexPlane();
+        initializeFourier();
+        initializeQuantum();
+        initializeImpedance();
+
+        // ===== DEMONSTRATION 1: COMPLEX MAPPING =====
+        function initializeComplexPlane() {
+            updateComplexPlane();
+            
+            document.getElementById('dimensionSlider').addEventListener('input', function() {
+                currentDimension = parseInt(this.value);
+                updateComplexPlane();
+            });
+            
+            document.getElementById('phaseSlider').addEventListener('input', function() {
+                currentPhase = parseInt(this.value) / 100;
+                updateComplexPlane();
+            });
+        }
+
+        function updateComplexPlane() {
+            const canvas = ctx.complexPlane;
+            const width = canvas.canvas.width;
+            const height = canvas.canvas.height;
+            
+            canvas.clearRect(0, 0, width, height);
+            drawComplexPlane(canvas, width, height);
+            
+            const k = Math.abs(currentDimension);
+            const isPositive = currentDimension >= 0;
+            const x = isPositive ? k * 40 + width/2 : width/2;
+            const y = isPositive ? height/2 : k * 40 + height/2;
+            
+            const rotatedX = x + Math.cos(currentPhase) * 20 - Math.sin(currentPhase) * 20;
+            const rotatedY = y + Math.sin(currentPhase) * 20 + Math.cos(currentPhase) * 20;
+            
+            canvas.strokeStyle = arxeDimensions[currentDimension].color;
+            canvas.lineWidth = 3;
+            canvas.beginPath();
+            canvas.moveTo(width/2, height/2);
+            canvas.lineTo(rotatedX, rotatedY);
+            canvas.stroke();
+            
+            canvas.fillStyle = arxeDimensions[currentDimension].color;
+            canvas.beginPath();
+            canvas.arc(rotatedX, rotatedY, 8, 0, 2 * Math.PI);
+            canvas.fill();
+            
+            const dim = arxeDimensions[currentDimension];
+            document.getElementById('dimensionValue').textContent = dim.name;
+            document.getElementById('arxeDisplay').textContent = dim.name;
+            document.getElementById('complexDisplay').textContent = 
+                `${isPositive ? k : 0} ${!isPositive ? k + 'i' : ''}`;
+            document.getElementById('physicsDisplay').textContent = dim.interpretation;
+            document.getElementById('phaseValue').textContent = currentPhase.toFixed(2) + ' rad';
+            document.getElementById('phaseAngle').textContent = Math.round(currentPhase * 180 / Math.PI) + '°';
+            document.getElementById('phaseFill').style.width = (currentPhase / (2 * Math.PI) * 100) + '%';
+        }
+
+        function drawComplexPlane(ctx, width, height) {
+            const centerX = width / 2;
+            const centerY = height / 2;
+            
+            ctx.strokeStyle = 'rgba(236, 240, 241, 0.3)';
+            ctx.lineWidth = 1;
+            
+            ctx.beginPath();
+            ctx.moveTo(0, centerY);
+            ctx.lineTo(width, centerY);
+            ctx.stroke();
+            
+            ctx.beginPath();
+            ctx.moveTo(centerX, 0);
+            ctx.lineTo(centerX, height);
+            ctx.stroke();
+            
+            ctx.fillStyle = 'rgba(236, 240, 241, 0.8)';
+            ctx.font = '14px Georgia';
+            ctx.fillText('Re (T^k)', width - 50, centerY - 15);
+            ctx.fillText('Im (T^-k)', centerX + 15, 25);
+            
+            ctx.strokeStyle = 'rgba(236, 240, 241, 0.1)';
+            for (let i = -5; i <= 5; i++) {
+                if (i !== 0) {
+                    const x = centerX + i * 40;
+                    const y = centerY + i * 40;
+                    
+                    ctx.beginPath();
+                    ctx.moveTo(x, 0);
+                    ctx.lineTo(x, height);
+                    ctx.stroke();
+                    
+                    ctx.beginPath();
+                    ctx.moveTo(0, y);
+                    ctx.lineTo(width, y);
+                    ctx.stroke();
+                    
+                    ctx.fillStyle = 'rgba(236, 240, 241, 0.5)';
+                    ctx.fillText(i, x - 8, centerY + 20);
+                    ctx.fillText(i + 'i', centerX + 8, y - 8);
+                }
+            }
+        }
+
+        function animateRotation() {
+            if (animationId) cancelAnimationFrame(animationId);
+            
+            const startTime = Date.now();
+            const duration = 3000;
+            
+            function animate() {
+                const elapsed = Date.now() - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                currentPhase = progress * 2 * Math.PI;
+                document.getElementById('phaseSlider').value = currentPhase * 100;
+                updateComplexPlane();
+                
+                if (progress < 1) {
+                    animationId = requestAnimationFrame(animate);
+                } else {
+                    animationId = null;
+                }
+            }
+            
+            animate();
+        }
+
+        function resetDemo() {
+            currentDimension = 2;
+            currentPhase = 0;
+            document.getElementById('dimensionSlider').value = currentDimension;
+            document.getElementById('phaseSlider').value = currentPhase * 100;
+            updateComplexPlane();
+        }
+
+        function showPreset(type) {
+            if (type === 'quantum') {
+                currentDimension = -2;
+                currentPhase = Math.PI / 4;
+            } else if (type === 'fourier') {
+                currentDimension = -1;
+                currentPhase = Math.PI / 2;
+            }
+            document.getElementById('dimensionSlider').value = currentDimension;
+            document.getElementById('phaseSlider').value = currentPhase * 100;
+            updateComplexPlane();
+        }
+
+        // ===== DEMONSTRATION 2: FOURIER =====
+        function initializeFourier() {
+            updateFourier();
+            
+            document.getElementById('frequencySlider').addEventListener('input', updateFourier);
+            document.getElementById('signalType').addEventListener('change', updateFourier);
+        }
+
+        function updateFourier() {
+            const frequency = parseFloat(document.getElementById('frequencySlider').value);
+            const signalType = document.getElementById('signalType').value;
+            
+            drawFourierDemo(frequency, signalType);
+            
+            document.getElementById('frequencyValue').textContent = frequency.toFixed(1) + ' Hz';
+            document.getElementById('exponentialDisplay').textContent = `e^(i·${(2 * Math.PI * frequency).toFixed(2)}t)`;
+            
+            let timeDesc = '', freqDesc = '';
+            switch(signalType) {
+                case 'sine':
+                    timeDesc = 'Sinusoidal signal';
+                    freqDesc = `Peak at ${frequency}Hz (imaginary part)`;
+                    break;
+                case 'cosine':
+                    timeDesc = 'Cosine signal';
+                    freqDesc = `Peak at ${frequency}Hz (real part)`;
+                    break;
+                case 'pulse':
+                    timeDesc = 'Rectangular pulse';
+                    freqDesc = 'Sinc spectrum (both components)';
+                    break;
+                case 'chirp':
+                    timeDesc = 'Linear chirp';
+                    freqDesc = 'Broad frequency distribution';
+                    break;
+            }
+            
+            document.getElementById('timeDomain').textContent = timeDesc;
+            document.getElementById('freqDomain').textContent = freqDesc;
+        }
+
+        function drawFourierDemo(frequency, signalType) {
+            const canvas = ctx.fourierCanvas;
+            const width = canvas.canvas.width;
+            const height = canvas.canvas.height;
+            
+            canvas.clearRect(0, 0, width, height);
+            
+            canvas.strokeStyle = '#3498db';
+            canvas.lineWidth = 2;
+            canvas.beginPath();
+            
+            for (let x = 0; x < width; x++) {
+                const t = (x / width) * 4 * Math.PI;
+                let y = 0;
+                
+                switch(signalType) {
+                    case 'sine':
+                        y = Math.sin(frequency * t);
+                        break;
+                    case 'cosine':
+                        y = Math.cos(frequency * t);
+                        break;
+                    case 'pulse':
+                        y = Math.sin(frequency * t) > 0.5 ? 1 : -1;
+                        break;
+                    case 'chirp':
+                        y = Math.sin(frequency * t * t / 10);
+                        break;
+                }
+                
+                const pixelY = height/4 - y * height/8;
+                if (x === 0) canvas.moveTo(x, pixelY);
+                else canvas.lineTo(x, pixelY);
+            }
+            canvas.stroke();
+            
+            canvas.strokeStyle = '#2ecc71';
+            canvas.beginPath();
+            
+            for (let x = 0; x < width; x++) {
+                const freq = (x / width) * 20;
+                let magnitude = 0;
+                
+                switch(signalType) {
+                    case 'sine':
+                    case 'cosine':
+                        magnitude = Math.exp(-Math.pow(freq - frequency, 2) * 10);
+                        break;
+                    case 'pulse':
+                        magnitude = Math.abs(Math.sin(Math.PI * freq / 2) / (Math.PI * freq / 2)) || 1;
+                        break;
+                    case 'chirp':
+                        magnitude = Math.exp(-Math.pow(freq - frequency, 2) * 2);
+                        break;
+                }
+                
+                const pixelY = height * 3/4 - magnitude * height/4;
+                if (x === 0) canvas.moveTo(x, pixelY);
+                else canvas.lineTo(x, pixelY);
+            }
+            canvas.stroke();
+            
+            canvas.fillStyle = 'rgba(236, 240, 241, 0.9)';
+            canvas.font = '14px Georgia';
+            canvas.fillText('Time Domain (T¹)', 15, 25);
+            canvas.fillText('Frequency Domain (T⁻¹)', 15, height/2 + 25);
+        }
+
+        function animateFourier() {
+            let freq = 1;
+            const interval = setInterval(() => {
+                freq += 0.1;
+                if (freq > 10) freq = 1;
+                document.getElementById('frequencySlider').value = freq;
+                updateFourier();
+            }, 100);
+            
+            setTimeout(() => clearInterval(interval), 5000);
+        }
+
+        function showDuality() {
+            alert('The T¹ ↔ T⁻¹ duality shows that time and frequency are complementary representations of the same physical reality, connected through Fourier transforms with complex exponentials.');
+        }
+
+        // ===== DEMONSTRATION 3: QUANTUM =====
+        function initializeQuantum() {
+            updateQuantum();
+            document.getElementById('positionSlider').addEventListener('input', updateQuantum);
+            document.getElementById('momentumSlider').addEventListener('input', updateQuantum);
+        }
+
+        function updateQuantum() {
+            const position = parseFloat(document.getElementById('positionSlider').value);
+            const momentum = parseFloat(document.getElementById('momentumSlider').value);
+            
+            drawQuantumDemo(position, momentum);
+            
+            document.getElementById('positionValue').textContent = position.toFixed(1);
+            document.getElementById('momentumValue').textContent = momentum.toFixed(1);
+            
+            const uncertainty = Math.abs(position * momentum);
+            document.getElementById('uncertainty').textContent = Math.max(0.5, uncertainty.toFixed(2));
+            
+            document.getElementById('waveFunction').textContent = 
+                `e^(i(${momentum.toFixed(1)}x - ${(position * 2).toFixed(1)}t))`;
+            document.getElementById('probability').textContent = 
+                Math.exp(-position * position - momentum * momentum).toFixed(2);
+        }
+
+        function drawQuantumDemo(position, momentum) {
+            const canvas = ctx.quantumCanvas;
+            const width = canvas.canvas.width;
+            const height = canvas.canvas.height;
+            
+            canvas.clearRect(0, 0, width, height);
+            
+            const colors = ['#3498db', '#2ecc71', '#e74c3c'];
+            
+            for (let part = 0; part < 3; part++) {
+                canvas.strokeStyle = colors[part];
+                canvas.lineWidth = 2;
+                canvas.beginPath();
+                
+                for (let x = 0; x < width; x++) {
+                    const xPos = (x / width - 0.5) * 10;
+                    let y = 0;
+                    
+                    if (part === 0) {
+                        y = Math.cos(momentum * xPos - position * 2);
+                    } else if (part === 1) {
+                        y = Math.sin(momentum * xPos - position * 2);
+                    } else {
+                        y = Math.exp(-xPos * xPos / 4) * Math.cos(momentum * xPos - position * 2);
+                    }
+                    
+                    y *= Math.exp(-xPos * xPos / 8);
+                    
+                    const pixelY = height/2 - y * height/4;
+                    if (x === 0) canvas.moveTo(x, pixelY);
+                    else canvas.lineTo(x, pixelY);
+                }
+                canvas.stroke();
+            }
+            
+            canvas.fillStyle = 'rgba(236, 240, 241, 0.9)';
+            canvas.font = '14px Georgia';
+            canvas.fillText('Re(ψ) - Blue | Im(ψ) - Green | |ψ|² - Red', 15, 25);
+        }
+
+        function collapseWavefunction() {
+            document.getElementById('positionSlider').value = 0;
+            document.getElementById('momentumSlider').value = 0;
+            updateQuantum();
+            
+            setTimeout(() => {
+                alert('Wavefunction has collapsed to a definite state. In ArXe interpretation, this represents a transition between dual dimensions.');
+            }, 500);
+        }
+
+        function showSuperposition() {
+            document.getElementById('positionSlider').value = 2;
+            document.getElementById('momentumSlider').value = 2;
+            updateQuantum();
+        }
+
+        function demonstrateUncertainty() {
+            alert('The uncertainty principle Δx·Δp ≥ ħ/2 reflects the impossibility of simultaneously specifying direct (T²) and inverse (T⁻²) dimensions with arbitrary precision.');
+        }
+
+        // ===== DEMONSTRATION 4: IMPEDANCE =====
+        function initializeImpedance() {
+            updateImpedance();
+            document.getElementById('resistanceSlider').addEventListener('input', updateImpedance);
+            document.getElementById('reactanceSlider').addEventListener('input', updateImpedance);
+        }
+
+        function updateImpedance() {
+            const resistance = parseInt(document.getElementById('resistanceSlider').value);
+            const reactance = parseInt(document.getElementById('reactanceSlider').value);
+            
+            drawImpedanceDemo(resistance, reactance);
+            
+            document.getElementById('resistanceValue').textContent = resistance + ' Ω';
+            document.getElementById('reactanceValue').textContent = reactance + ' Ω';
+            
+            const magnitude = Math.sqrt(resistance * resistance + reactance * reactance);
+            const phase = Math.atan2(reactance, resistance);
+            const activePower = 100 * Math.cos(phase);
+            const reactivePower = 100 * Math.sin(phase);
+            
+            document.getElementById('impedanceDisplay').textContent = 
+                `${resistance} ${reactance >= 0 ? '+' : ''}${reactance}i Ω`;
+            document.getElementById('impedanceMag').textContent = magnitude.toFixed(2) + ' Ω';
+            document.getElementById('impedancePhase').textContent = (phase * 180 / Math.PI).toFixed(2) + '°';
+            document.getElementById('activePower').textContent = activePower.toFixed(1) + ' W';
+            document.getElementById('reactivePower').textContent = reactivePower.toFixed(1) + ' VAR';
+        }
+
+        function drawImpedanceDemo(resistance, reactance) {
+            const canvas = ctx.impedanceCanvas;
+            const width = canvas.canvas.width;
+            const height = canvas.canvas.height;
+            
+            canvas.clearRect(0, 0, width, height);
+            
+            const centerX = width / 2;
+            const centerY = height / 2;
+            const scale = 2;
+            
+            ctx.impedanceCanvas.strokeStyle = 'rgba(236, 240, 241, 0.3)';
+            ctx.impedanceCanvas.lineWidth = 1;
+            ctx.impedanceCanvas.beginPath();
+            ctx.impedanceCanvas.moveTo(0, centerY);
+            ctx.impedanceCanvas.lineTo(width, centerY);
+            ctx.impedanceCanvas.moveTo(centerX, 0);
+            ctx.impedanceCanvas.lineTo(centerX, height);
+            ctx.impedanceCanvas.stroke();
+            
+            const endX = centerX + resistance * scale;
+            const endY = centerY - reactance * scale;
+            
+            ctx.impedanceCanvas.strokeStyle = '#e74c3c';
+            ctx.impedanceCanvas.lineWidth = 3;
+            ctx.impedanceCanvas.beginPath();
+            ctx.impedanceCanvas.moveTo(centerX, centerY);
+            ctx.impedanceCanvas.lineTo(endX, endY);
+            ctx.impedanceCanvas.stroke();
+            
+            ctx.impedanceCanvas.strokeStyle = '#3498db';
+            ctx.impedanceCanvas.setLineDash([5, 5]);
+            ctx.impedanceCanvas.beginPath();
+            ctx.impedanceCanvas.moveTo(centerX, centerY);
+            ctx.impedanceCanvas.lineTo(endX, centerY);
+            ctx.impedanceCanvas.stroke();
+            
+            ctx.impedanceCanvas.strokeStyle = '#2ecc71';
+            ctx.impedanceCanvas.beginPath();
+            ctx.impedanceCanvas.moveTo(endX, centerY);
+            ctx.impedanceCanvas.lineTo(endX, endY);
+            ctx.impedanceCanvas.stroke();
+            ctx.impedanceCanvas.setLineDash([]);
+            
+            ctx.impedanceCanvas.fillStyle = 'rgba(236, 240, 241, 0.9)';
+            ctx.impedanceCanvas.font = '14px Georgia';
+            ctx.impedanceCanvas.fillText('R (Real)', endX/2, centerY + 20);
+            ctx.impedanceCanvas.fillText('X (Imag)', endX + 10, (centerY + endY)/2);
+            ctx.impedanceCanvas.fillText(`Z = ${Math.sqrt(resistance*resistance + reactance*reactance).toFixed(1)}Ω`, 
+                                       centerX + 15, 25);
+        }
+
+        function showResistive() {
+            document.getElementById('resistanceSlider').value = 80;
+            document.getElementById('reactanceSlider').value = 0;
+            updateImpedance();
+        }
+
+        function showCapacitive() {
+            document.getElementById('resistanceSlider').value = 30;
+            document.getElementById('reactanceSlider').value = -60;
+            updateImpedance();
+        }
+
+        function showInductive() {
+            document.getElementById('resistanceSlider').value = 40;
+            document.getElementById('reactanceSlider').value = 70;
+            updateImpedance();
+        }
+
+        function showResonance() {
+            document.getElementById('resistanceSlider').value = 50;
+            document.getElementById('reactanceSlider').value = 0;
+            updateImpedance();
+            alert('At resonance, impedance becomes purely real (X=0), showing perfect cancellation of dual dimensions.');
+        }
+
+        // Initialize on load
+        window.addEventListener('load', function() {
+            canvases.forEach(id => {
+                const canvas = document.getElementById(id);
+                canvas.width = canvas.offsetWidth;
+                canvas.height = canvas.offsetHeight;
+            });
+            
+            updateComplexPlane();
+            updateFourier();
+            updateQuantum();
+            updateImpedance();
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            canvases.forEach(id => {
+                const canvas = document.getElementById(id);
+                canvas.width = canvas.offsetWidth;
+                canvas.height = canvas.offsetHeight;
+            });
+            
+            updateComplexPlane();
+            updateFourier();
+            updateQuantum();
+            updateImpedance();
+        });
+    </script>
+</body>
+</html>
