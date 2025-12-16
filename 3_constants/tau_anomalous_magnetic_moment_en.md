@@ -13,7 +13,7 @@ a_τ (SM) = (1.178 ± 0.001) × 10⁻³
 Predicted excess: +7.6 ± 1.7%
 Statistical significance: ~4.5σ (if experimental error ~10⁻⁴)
 
-text
+
 
 This prediction is testable within 5-10 years at Belle-II and future colliders, providing a direct experimental test of ArXe's geometric framework.
 
@@ -26,8 +26,6 @@ This prediction is testable within 5-10 years at Belle-II and future colliders, 
 The magnetic moment of a charged lepton is:
 μ_ℓ = g_ℓ · (e/2m_ℓ) · S
 
-text
-
 where:
 - `g_ℓ` = gyromagnetic factor (g-factor)
 - `e` = electric charge
@@ -37,8 +35,6 @@ where:
 The anomaly is defined as:
 a_ℓ = (g_ℓ - 2)/2
 
-text
-
 Dirac theory predicts g = 2 exactly. Quantum corrections give a_ℓ ≠ 0.
 
 ### 1.2 Current Experimental Status
@@ -47,21 +43,18 @@ Dirac theory predicts g = 2 exactly. Quantum corrections give a_ℓ ≠ 0.
 a_e (exp) = 0.00115965218073(28)
 a_e (QED) = 0.00115965218161(23)
 
-text
 Agreement: 11 significant digits ✓ (Triumph of QED)
 
 **Muon:**
 a_μ (exp) = 0.00116592061(41) [Fermilab 2023]
 a_μ (SM) = 0.00116591810(43)
 
-text
 Discrepancy: 5.1σ (OPEN PROBLEM - potential new physics)
 
 **Tau:**
 a_τ (exp) = -0.052(17) [LEP 1998-2000] ← NOT RELIABLE
 a_τ (SM) = 0.001177721(5)
 
-text
 Current measurements inconsistent with everything. New precision measurements needed.
 
 ---
@@ -74,7 +67,7 @@ Current measurements inconsistent with everything. New precision measurements ne
 |--------|----------|-----------|----------------------|
 | Electron | 11 | T^-5 (gauge U(1)) | — (base) |
 | Muon | 33 = 3×11 | T^-5 + T^-1 | 12π in radiative corrections |
-| Tau | 85 = 5×17 | T² + T^-8 | 8/π in mass ratio |
+| Tau | 85 = 5×17 | T^-2 + T^-8 | 8/π in mass ratio |¡¡¡CORRECTION 5 != T^2 else T^-2
 
 ### 2.2 The 12π Factor in Muon g-2
 
@@ -91,7 +84,6 @@ From ArXe documentation:
 Hadronic contribution to muon g-2:
 a_μ^(had) ≈ 6900 × 10⁻¹¹
 
-text
 This excess involves 12π factor in QCD corrections tied to n=33 internal structure.
 
 ### 2.3 Central Hypothesis
@@ -101,7 +93,7 @@ The characteristic factor appearing in mass ratios also appears in anomalous mag
 Electron → Muon: factor 3 (in mass), factor 12π (in g-2)
 Muon → Tau: factor 8/π (in mass), factor 8/π (in g-2) ← PREDICTION
 
-text
+
 
 **Ontological reason:**
 Both mass and magnetic moment probe internal structure:
@@ -117,8 +109,6 @@ Same configurational complexity (n value) affects both.
 ### 3.1 SM Components
 a_τ (SM) = a_τ^(QED) + a_τ^(EW) + a_τ^(had)
 
-text
-
 **Components:**
 - `a_τ^(QED) ≈ 0.001177200` (99.96%, dominant)
 - `a_τ^(EW)  ≈ 0.000000470` (0.04%, electroweak)
@@ -133,7 +123,6 @@ a_τ^(1-loop) = α/(2π)
 = (1/137.036)/(2π)
 ≈ 0.0011614
 
-text
 
 Higher loops give small corrections:
 - 2-loop: ~10⁻⁶
@@ -151,8 +140,6 @@ In Standard Model:
 a_μ/a_e ≈ 1.0054 (very close to 1)
 a_τ/a_μ ≈ 1.0113 (very close to 1)
 
-text
-
 Mass dependence is weak (logarithmic). But empirically, a_μ shows 5.1σ excess over SM, suggesting internal structure matters.
 
 ---
@@ -166,7 +153,7 @@ Mass dependence is weak (logarithmic). But empirically, a_μ shows 5.1σ excess 
 In vacuum polarization loops, the tau's n=85 = 5×17 structure introduces:
 α_eff (tau) = α × [1 + δ_ArXe]
 
-text
+
 
 where δ_ArXe comes from:
 - Factor 8 = 2³ (three spatial dimensions, binary)
@@ -179,12 +166,12 @@ where δ_ArXe comes from:
 For muon with n=33 and 12π factor:
 δ_μ ~ (12π)/n_μ = (12π)/33 ≈ 1.145
 
-text
+
 
 For tau with n=85 and 8/π factor:
 δ_τ ~ (8/π)/β_τ
 
-text
+
 
 where β_τ is suppression factor.
 
@@ -196,14 +183,14 @@ For tau: `β_τ ~ n_τ/(8/π) = 85/(8/π) = 85π/8 ≈ 33.4`
 **Therefore:**
 δ_τ ~ (8/π)/33.4 ≈ 2.546/33.4 ≈ 0.0762
 
-text
+
 
 ### 4.3 Complete Prediction
 
 **Base from SM:**
 a_τ^(SM base) = 0.001177721
 
-text
+
 
 **ArXe correction:**
 a_τ^(ArXe) = a_τ^(SM base) × [1 + δ_τ]
@@ -211,18 +198,18 @@ a_τ^(ArXe) = a_τ^(SM base) × [1 + δ_τ]
 = 0.001177721 × 1.0762
 = 0.001268
 
-text
+
 
 **With uncertainties:**
 δ_τ = 0.076 ± 0.017 (22% uncertainty on δ)
 a_τ (ArXe) = 0.001268 ± 0.000020
 
-text
+
 
 or equivalently:
 a_τ (ArXe) = (1.268 ± 0.020) × 10⁻³
 
-text
+
 
 ### 4.4 Summary
 ┌─────────────────────────────────────────────┐
@@ -239,7 +226,7 @@ text
 │ │
 └─────────────────────────────────────────────┘
 
-text
+
 
 ---
 
@@ -267,20 +254,20 @@ The 8/π modifies vacuum polarization loops because virtual photons probe tau's 
 ### 5.2 Loop Diagram Modification
 
 **Standard QED vacuum polarization:**
-text
+
 τ ────┬──── γ ────┬──── τ
        │           │
        └─── loop ──┘
-text
+
 Loop integral: ∫ d⁴k [standard propagator]
 Result: α/π
 
 **ArXe-modified with n=85 structure:**
-text
+
 τ ────┬──── γ ────┬──── τ
        │           │
        └─(n=85)───┘
-text
+
 Loop sees 3D spatial structure:
 - 8 directional configurations (2³)
 - Projection cost π
@@ -319,7 +306,7 @@ Modified result: `(α/π) × [1 + (8/π)/β_τ]`
 LEP measurement (1998-2000):
 a_τ (exp) = -0.052 ± 0.017
 
-text
+
 Completely unreliable due to low statistics and large systematic errors.
 
 **Near-term prospects (2025-2030):**
@@ -365,7 +352,7 @@ FCC-ee (Future Circular Collider):
 If 8/π factor is real:
 α_eff(Q²) = α(Q²) × [1 + (8/π)/β(Q²)]
 
-text
+
 
 where β(Q²) depends on momentum transfer.
 
@@ -382,7 +369,7 @@ Process: `τ → μγ` (forbidden in SM, but loop-suppressed)
 Br(τ → μγ)^ArXe ~ Br(τ → μγ)^SM × [1 + (8/π)/β]
 ~ Br(τ → μγ)^SM × 1.076
 
-text
+
 
 Current limit: `< 4.4 × 10⁻⁸`
 ArXe predicts: `~4.7 × 10⁻⁸` (if at limit)
@@ -392,7 +379,7 @@ ArXe predicts: `~4.7 × 10⁻⁸` (if at limit)
 **Ratio of tau to muon pair production:**
 σ(e⁺e⁻ → τ⁺τ⁻)/σ(e⁺e⁻ → μ⁺μ⁻)
 
-text
+
 
 SM: `ratio = (m_μ/m_τ)² × [phase space]`
 
@@ -432,7 +419,7 @@ Excess: +15% over SM prediction (currently testable at Belle-II)
 a_τ (SM): 1.178 ± 0.001 × 10⁻³ (0.08% error)
 a_τ (ArXe): 1.268 ± 0.020 × 10⁻³ (1.6% error)
 
-text
+
 
 ArXe prediction is 20× less precise BUT predicts different central value → Distinguishable at 4-5σ level.
 
@@ -501,7 +488,7 @@ This would be disappointing but not fatal: ArXe would still explain mass ratios 
 We have derived a prediction for the tau's anomalous magnetic moment based on ArXe's geometric structure:
 a_τ (ArXe) = (1.268 ± 0.020) × 10⁻³
 
-text
+
 
 **Key features:**
 - 7.6% excess over Standard Model

@@ -14,18 +14,41 @@ The conceptual core of ArXe lies in recognizing that the fundamental question is
 
 ### 4. Axiom
 ** ArXe Theory proposes a single axiom of its own
-** Axiom: ¬() ≡ Tf ≡ 1Tp (Planck Time)
+** Axiom: ¬() ≜ Tf ⋍ 1Tp
 
 ### The Fundamental Axiom
+The ArXe axiom establishes:  
+**¬() ≜ Tf ⋍ Tp**  
+where:
 
-The ArXe axiom establishes: **¬() = Tf = Tp**
+- **¬()** denotes logical negation (the primitive act of distinction), consistent with classical negation properties.
+- **Tf** denotes *conceptual fundamental time*, the minimal unit of temporal possibility.
+- **Tp** denotes *physical fundamental time*, identified with Planck time (≈ 5.39 × 10⁻⁴⁴ s).
 
-This equation arbitrarily relates three elements:
-- Logical negation ¬() as the fundamental unit of logical structure
-- A fundamental Time (Tf) as the minimum temporal unit with physical meaning  
-- Planck Time (Tp) as the fundamental physical unit
+This triple relation links:
+1. **Logical structure** (¬()) as the fundamental unit of distinction.
+2. **Conceptual time** (Tf) as the minimal frame for actualization.
+3. **Physical time** (Tp) as the empirical lower bound, proposed here as a correspondence.
+
+The symbol `≜` indicates conceptual equivalence (logical-physical kinship), while `⋍` denotes a postulated correspondence with Planck scale, not a derived identity.
 
 It is not a **reduction** of one domain to the other, but a **kinship** that establishes correspondence between the most basic units of logic and physics. It's like "tying two threads at their ends": a bold theoretical gesture that allows explaining the universe from the fundamentals of both domains simultaneously.
+
+### Intuitive Justification  
+
+The axiom can be understood through two complementary images:
+
+1. **The marble-and-hole analogy**  
+   In a fundamental temporal “hole” (Tf), only one elementary act of distinction (¬()) can occur — just as only one marble fits in a single hole. This reflects the indivisibility of the primitive logical-physical unit.
+
+2. **Tying threads at their ends**  
+   Rather than reducing logic to physics or vice versa, ArXe “ties” them at their most basic ends:  
+   - The logical end: negation (¬()) as the minimal act of distinction.  
+   - The physical end: fundamental time (Tf) as the minimal unit of change.  
+   This knot (¬() ≜ Tf) establishes a **generative kinship**, not a reduction.
+
+These analogies highlight a key departure from classical physics:  
+while classical physics treats time and space as given, ArXe **derives** temporal and spatial structures from a single contradictory act, ensuring a necessary correspondence between logical “marbles” and physical “holes” from the outset.
 
 ### The Act as Fundamental Contradiction
 
@@ -211,19 +234,19 @@ The system exhibits multiple dualities:
 From the original contradictory act arise successive **exentations** that build a hierarchical logical-temporal structure. Each level preserves the logical capacities of previous ones while developing new dimensions of complexity:
 
 #### **T^0 - Absolute Non-existence**
-*Logic: Unary*
+*Logic: Unary.
 
 Absolutely negative time lacks existence and physical expression. It represents pure logical non-existence, prior to any determination. It has no physical meaning and cannot be experienced; it constitutes the "zero degree" from which all subsequent determination emerges.
 
 #### **T^1 - Homogeneous Positive Time** 
-*Logic: Binary, Unary*
+*Logic: Binary.
 
 Time that occurs positively with a single direction, but still lacks measurable physical expression. It is a homogeneous temporal field where nothing can be distinguished. It represents pure temporality prior to any variation or differentiation. At this level, temporal experience as we know it does not exist, only **flow** as such.
 
 **Physical similarities**: This level could correspond to the pre-inflationary state of the universe, where temporality exists but without differentiable structure. Quantum vacuum fluctuations would be echoes of the transition from this homogeneous state.
 
 #### **T^-1 - Temporal Alterity**
-*Logic: Ternary, Binary, UNary*
+*Logic: Ternary.
 
 The variation of time arises: experienceable, empirical time as we know it. Temporal phase changes occur, not necessarily regular. Here **alterity** emerges as a principle: the other, the different, the variation.
 
@@ -234,7 +257,7 @@ The variation of time arises: experienceable, empirical time as we know it. Temp
 - Natural **rhythms** and the emergence of periodicities
 
 #### **T^2 - Spatial Anteriority**
-*Logic: 4-ary, 3-ary, Binary, Unary*
+*Logic: 4-ary.
 
 **Anteriority** emerges (what is before, in front, without implying temporality of before/after): spatial simultaneity. Minkowski space is constituted as a great empty and homogeneous field whose evolution is not temporal. Space appears as **contrary** to time: a spatial evolution is not temporal, it is not possible to trace a temporal evolution of empty space.
 
@@ -245,7 +268,7 @@ The variation of time arises: experienceable, empirical time as we know it. Temp
 - **Fields** as homogeneous spatial structures
 
 #### **T^-2 - Spatial Variation**
-*Logic: 5-ary to Unary*  
+*Logic: 5-ary.
 
 **Geodesics** and variations of space become possible. Regions of different temporal densities and the first 'virtual' **particles** of relational character emerge. Here begins the curvature of spacetime.
 
@@ -259,7 +282,7 @@ The variation of time arises: experienceable, empirical time as we know it. Temp
 ### Emergence of the Massive Dimension
 
 #### **T^3 - Mass as Space-Time**
-*Logic: 6-ary to Unary*
+*Logic: 6-ary.
 
 Mass arises as **T2 + T1**: it combines spatiality with positive temporality, corresponding to relativistic spacetime. Temporal distinction between **past-present-future** becomes possible. Physics becomes **'Bayesian'** in the sense that probabilistic structure emerges.
 
@@ -272,8 +295,8 @@ Mass arises as **T2 + T1**: it combines spatiality with positive temporality, co
 
 **Prediction**: Fundamental particle masses should follow patterns derivable from the underlying ternary logical structure.
 
-#### **T^-3 - Massive Variation**  
-*Logic: 7-ary to Unary*
+#### **T^-3 - Massive Variation / Color structure (3 colors, confinement)**  
+*Logic: 7-ary.
 
 **Massive bodies** and Newtonian physics as a limiting case become possible. Here operate the classical laws of motion and mechanics of extended bodies.
 
@@ -382,6 +405,7 @@ Result: Objective facts, ponderable truths
 - **Operative ternary logic:** The third allows verification
 
 **Probability:**
+- Pi probabilistic (Buffon problem)
 - Bayesian probabilities (ternary)
 - Structure: Prior (expectation) → Evidence (experience) → Posterior (valuation)
 - Requires T^3 because it needs:
@@ -408,14 +432,14 @@ Result: Objective facts, ponderable truths
 | **T^1** | (S or ¬S) | Binary (excluded middle) | 1D (contraries) | — | 1/2 (equiprobable) | Without record |
 | **T^-1** | Alternation | 3-ary (included middle) | — | Irreversible, without memory | 1/2 per transition | Without record |
 | **T^2** | Contrary variations | 4-ary | 2D (plane) | Symmetric causality | Kolmogorov (conditional) | Not ponderable (2 bodies) |
-| **T^3** | Triadic depth | 6-ary | 3D (volume) | Past/present/future | Bayesian (updating) | Ponderable facts |
+| **T^3** | Triadic depth | 6-ary | 3D (volume) | Past/present/future | Pi Probabilistic | Bayesian (updating) | Ponderable facts |
 
 ---
 
 ### Higher Levels: Hyperspaces and Information Processing
 
 #### **T4 - Computational Hyperspace**
-*Logic: 8-ary to Unary*
+*Logic: 8-ary.
 
 **Multiple universes** and **natural computers** emerge: black holes, life and intelligence. **Dark physics** develops as manifestation of hyperspatial properties.
 
@@ -428,7 +452,7 @@ Result: Objective facts, ponderable truths
 - **Prediction**: Black holes would have specific computable computational capacities according to their mass/size
 
 #### **T5 - Hyper-computers**
-*Logic: 10-ary to 1-ary*
+*Logic: 10-ary.
 
 Level of **hyper-computers** and **black hole sinks**. Here would operate information processing processes at cosmic scale.
 
@@ -726,7 +750,7 @@ Level of **hyper-computers** and **black hole sinks**. Here would operate inform
 | **3** | 6 | M | Direct massive | Mass, quantity |
 | **-1** | 3 | T⁻¹ | **Inverse temporal** | Frequency, rate, rhythm |
 | **-2** | 5 | L⁻¹, L⁻² | **Inverse spatial** | Curvature, surface density |
-| **-3** | 7 | M⁻¹ | **Inverse massive** | Ratio per unit mass |
+| **-3** | 7 | M⁻¹ | **Inverse massive** | Color structure (3 colors, confinement) | Ratio per unit mass |
 | **-4** | 9 | T⁻² | **Temporal acceleration** | Frequency change |
 | **-5** | 11 | L⁻³ | **Volumetric** | Density, concentration |
 
@@ -747,7 +771,7 @@ The system **T¹=T, T²=L, T³=M** exactly reproduces the **MLT system** (Mass-L
 
 - **k = -1**: Temporal variation (how many times per second?)
 - **k = -2**: Linear/surface spatial variation (how much per meter/meter²?)
-- **k = -3**: Massive variation (how much per kilogram?)
+- **k = -3**: Massive variation (how much per kilogram?) / Color structure (3 colors, confinement)
 - **k = -5**: Volumetric spatial variation (how much per meter³?)
 
 ### Fundamental Duality
@@ -997,7 +1021,7 @@ Complete dimensional mapping from fractal logical structure
 | **3** | 6 | M | Direct mass | Mass, quantity |
 | **-1** | 3 | T⁻¹ | **Inverse temporal** | Frequency, rate, rhythm |
 | **-2** | 5 | L⁻¹, L⁻² | **Inverse spatial** | Curvature, surface density |
-| **-3** | 7 | M⁻¹ | **Inverse mass** | Ratio per unit mass |
+| **-3** | 7 | M⁻¹ | **Inverse mass** | Ratio per unit mass | Color structure (3 colors, confinement)
 | **-4** | 9 | T⁻² | **Temporal acceleration** | Frequency change rate |
 | **-5** | 11 | L⁻³ | **Volumetric** | Density, concentration |
 
