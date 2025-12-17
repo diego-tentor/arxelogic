@@ -1148,62 +1148,12 @@ All "phases" coexist until BC closes
 ### 16.3 What ArXe Does NOT Claim
 
 - Mathematical rigor (focuses on conceptual clarity)
-- Complete theory of everything (work in progress)
 - Replacement of QM/GR (provides deeper foundation)
-- Exact derivation of all constants (some need refinement)
 
-### 16.4 Open Questions
 
-1. **Gravitational constant G**: Formula from primes 5, 7?
-2. **Cosmological constant Λ**: Why so small? (prime 29 structure)
-3. **Neutrino sector**: Detailed mass patterns
-4. **Quark CKM mixing**: Refine θ₁₃ formula
-5. **Higher levels**: What physics beyond T⁻⁸?
-6. **Temperature/entropy**: How to incorporate thermodynamics?
-7. **Quantum gravity**: Explicit T⁻² + T⁻¹ unification
+## 17. Relationship to Existing Theories
 
----
-
-## 17. Experimental Implications and Predictions (Summary)
-
-### 17.1 Critical Tests
-
-| Prediction | Value | Current Status | Test Method | Timeline |
-|------------|-------|----------------|-------------|----------|
-| M_DM | 532 GeV | Unconstrained | LHC monojet+MET | 2025-2030 |
-| M_res | ~710 GeV | Hints? | Dileptons | 2025-2030 |
-| M_H | 125.09 GeV | ✓ Confirmed | - | Verified |
-| α⁻¹(∞) | 138.23 | Unknown | FCC-ee | 2040+ |
-| sin²θ_W | 0.230769 | Near | Neutrino exp | 2024-2030 |
-| m_μ/m_e | 206.769 | ✓ Confirmed | - | Verified |
-
-### 17.2 Falsification Criteria
-
-ArXe Theory is falsified if:
-
-1. ❌ α⁻¹(∞) ≠ 138.23 ± 0.1%
-2. ❌ sin²θ_W does not converge to 3/13
-3. ❌ No prime patterns in new particle discoveries
-4. ❌ Dark matter found at very different mass (< 400 or > 700 GeV)
-5. ❌ Higgs couplings do not follow √mass ratios
-6. ❌ Quark masses show no 2^n pattern in generational ratios
-
-### 17.3 Confirmatory Evidence
-
-ArXe gains support if:
-
-1. ✅ Dark matter discovered at ~532 GeV
-2. ✅ New resonance found at ~710 GeV
-3. ✅ Inflation scale confirmed at ~10¹⁷ GeV
-4. ✅ Tempo-spatial correlations detected
-5. ✅ Future particles follow prime encoding
-6. ✅ Neutrino masses show prime ratio patterns
-
----
-
-## 18. Relationship to Existing Theories
-
-### 18.1 Quantum Mechanics
+### 17.1 Quantum Mechanics
 
 **ArXe provides**:
 - Ontological foundation for indeterminacy (open BC)
@@ -1213,7 +1163,7 @@ ArXe gains support if:
 
 **ArXe does not replace QM**: It provides deeper ontological layer
 
-### 18.2 General Relativity
+### 17.2 General Relativity
 
 **ArXe provides**:
 - Emergence of spacetime (T² from indecidability)
@@ -1222,7 +1172,7 @@ ArXe gains support if:
 
 **ArXe does not replace GR**: It explains why GR structure emerges
 
-### 18.3 Standard Model
+### 17.3 Standard Model
 
 **ArXe provides**:
 - Gauge group explanation (open BC → U(1), SU(2), SU(3))
@@ -1232,7 +1182,7 @@ ArXe gains support if:
 
 **ArXe extends SM**: Predicts new particles and explains SM structure
 
-### 18.4 String Theory
+### 17.4 String Theory
 
 **Potential connections**:
 - Extra dimensions ↔ higher T^k levels?
@@ -1243,9 +1193,9 @@ ArXe gains support if:
 
 ---
 
-## 19. Philosophical Summary
+## 18. Philosophical Summary
 
-### 19.1 Core Theses
+### 18.1 Core Theses
 
 1. **Logic and physics have fundamental kinship** (not reduction either way)
 
@@ -1263,7 +1213,7 @@ ArXe gains support if:
 
 8. **Higher levels read lower levels** (observation is structural, not subjective)
 
-### 19.2 Paradigm Shifts
+### 18.2 Paradigm Shifts
 
 **From**: Objects → Relations → Properties  
 **To**: Indecidability → Simultaneity → Objects
@@ -1280,43 +1230,10 @@ ArXe gains support if:
 **From**: Math describes physics  
 **To**: Math IS physics (kinship)
 
----
-
-## 20. Future Directions
-
-### 20.1 Theoretical Development
-
-1. Complete formalization of BC algebra
-2. Explicit gravitational constant derivation
-3. Thermodynamics integration (temperature, entropy)
-4. Quantum gravity from T⁻² + T⁻¹
-5. Cosmology from primes 23, 29
-6. Information theory connections
-
-### 20.2 Experimental Collaboration
-
-1. Design specific tests for LHC/FCC
-2. Partner with dark matter detection experiments
-3. Cosmology collaborations (CMB, gravitational waves)
-4. Neutrino experiment proposals
-
-### 20.3 Mathematical Formalization
-
-1. Category theory framework for exentations
-2. Topos theory for BC structures
-3. Prime number theory connections
-4. Formal probability theory from BC
-
-### 20.4 Interdisciplinary Expansion
-
-1. Consciousness and higher T^k levels
-2. Biology as T⁴ information processing
-3. Computation theory from hyperspace
-4. Philosophy of time and causality
 
 ---
 
-## 21. Conclusion
+## 19. Conclusion
 
 ArXe Theory presents a comprehensive framework that:
 
@@ -1336,7 +1253,7 @@ The precision of constant derivations (M_H: 0.008% error, m_μ/m_e: 0.0003% erro
 
 ---
 
-## 22. References and Further Reading
+## 20. References and Further Reading
 
 **ArXe Theory Documents**:
 - "ArXe Theory: Fundamental Constants from n-ary Logic Escalation"
@@ -1366,6 +1283,7 @@ The precision of constant derivations (M_H: 0.008% error, m_μ/m_e: 0.0003% erro
 ---
 
 *Document version: 2.0 - Expanded Foundations*  
-*Date: December 2024*  
+*Date: December 2025*  
+*Author: Diego Luis Tentor
 *Status: Complete theoretical framework with testable predictions*  
 *License: CC BY-SA 4.0*
